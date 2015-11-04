@@ -1,0 +1,3282 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.2.1/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.2.1/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose readDependencies loading dependencies from /home/ubuntu/workspace/project_name/package.json
+5 warn package.json foundation-libsass-template@0.0.1 No license field.
+6 verbose install where, deps [ '/home/ubuntu/workspace/project_name',
+6 verbose install   [ 'node-sass', 'grunt', 'grunt-contrib-watch', 'grunt-sass' ] ]
+7 verbose install where, peers [ '/home/ubuntu/workspace/project_name', [] ]
+8 verbose installManyTop reading for lifecycle /home/ubuntu/workspace/project_name/package.json
+9 info preinstall foundation-libsass-template@0.0.1
+10 verbose readDependencies loading dependencies from /home/ubuntu/workspace/project_name/package.json
+11 silly cache add args [ 'grunt@~0.4.5', null ]
+12 verbose cache add spec grunt@~0.4.5
+13 silly cache add parsed spec Result {
+13 silly cache add   raw: 'grunt@~0.4.5',
+13 silly cache add   scope: null,
+13 silly cache add   name: 'grunt',
+13 silly cache add   rawSpec: '~0.4.5',
+13 silly cache add   spec: '>=0.4.5 <0.5.0',
+13 silly cache add   type: 'range' }
+14 silly addNamed grunt@>=0.4.5 <0.5.0
+15 verbose addNamed ">=0.4.5 <0.5.0" is a valid semver range for grunt
+16 silly addNameRange { name: 'grunt', range: '>=0.4.5 <0.5.0', hasData: false }
+17 silly mapToRegistry name grunt
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry uri https://registry.npmjs.org/grunt
+21 verbose addNameRange registry:https://registry.npmjs.org/grunt not in flight; fetching
+22 silly cache add args [ 'grunt-contrib-watch@~0.6.1', null ]
+23 verbose cache add spec grunt-contrib-watch@~0.6.1
+24 silly cache add parsed spec Result {
+24 silly cache add   raw: 'grunt-contrib-watch@~0.6.1',
+24 silly cache add   scope: null,
+24 silly cache add   name: 'grunt-contrib-watch',
+24 silly cache add   rawSpec: '~0.6.1',
+24 silly cache add   spec: '>=0.6.1 <0.7.0',
+24 silly cache add   type: 'range' }
+25 silly addNamed grunt-contrib-watch@>=0.6.1 <0.7.0
+26 verbose addNamed ">=0.6.1 <0.7.0" is a valid semver range for grunt-contrib-watch
+27 silly addNameRange { name: 'grunt-contrib-watch',
+27 silly addNameRange   range: '>=0.6.1 <0.7.0',
+27 silly addNameRange   hasData: false }
+28 silly mapToRegistry name grunt-contrib-watch
+29 silly mapToRegistry using default registry
+30 silly mapToRegistry registry https://registry.npmjs.org/
+31 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-watch
+32 verbose addNameRange registry:https://registry.npmjs.org/grunt-contrib-watch not in flight; fetching
+33 silly cache add args [ 'grunt-sass@1.0.0', null ]
+34 verbose cache add spec grunt-sass@1.0.0
+35 silly cache add parsed spec Result {
+35 silly cache add   raw: 'grunt-sass@1.0.0',
+35 silly cache add   scope: null,
+35 silly cache add   name: 'grunt-sass',
+35 silly cache add   rawSpec: '1.0.0',
+35 silly cache add   spec: '1.0.0',
+35 silly cache add   type: 'version' }
+36 silly addNamed grunt-sass@1.0.0
+37 verbose addNamed "1.0.0" is a plain semver version for grunt-sass
+38 silly mapToRegistry name grunt-sass
+39 silly mapToRegistry using default registry
+40 silly mapToRegistry registry https://registry.npmjs.org/
+41 silly mapToRegistry uri https://registry.npmjs.org/grunt-sass
+42 verbose addNameVersion registry:https://registry.npmjs.org/grunt-sass not in flight; fetching
+43 silly cache add args [ 'node-sass@3.3.3', null ]
+44 verbose cache add spec node-sass@3.3.3
+45 silly cache add parsed spec Result {
+45 silly cache add   raw: 'node-sass@3.3.3',
+45 silly cache add   scope: null,
+45 silly cache add   name: 'node-sass',
+45 silly cache add   rawSpec: '3.3.3',
+45 silly cache add   spec: '3.3.3',
+45 silly cache add   type: 'version' }
+46 silly addNamed node-sass@3.3.3
+47 verbose addNamed "3.3.3" is a plain semver version for node-sass
+48 silly mapToRegistry name node-sass
+49 silly mapToRegistry using default registry
+50 silly mapToRegistry registry https://registry.npmjs.org/
+51 silly mapToRegistry uri https://registry.npmjs.org/node-sass
+52 verbose addNameVersion registry:https://registry.npmjs.org/node-sass not in flight; fetching
+53 verbose request uri https://registry.npmjs.org/grunt-contrib-watch
+54 verbose request no auth needed
+55 info attempt registry request try #1 at 4:22:11 PM
+56 verbose request id 926d4dcf0ea638fa
+57 http request GET https://registry.npmjs.org/grunt-contrib-watch
+58 verbose request uri https://registry.npmjs.org/grunt-sass
+59 verbose request no auth needed
+60 info attempt registry request try #1 at 4:22:11 PM
+61 http request GET https://registry.npmjs.org/grunt-sass
+62 verbose request uri https://registry.npmjs.org/node-sass
+63 verbose request no auth needed
+64 info attempt registry request try #1 at 4:22:11 PM
+65 http request GET https://registry.npmjs.org/node-sass
+66 verbose request uri https://registry.npmjs.org/grunt
+67 verbose request no auth needed
+68 info attempt registry request try #1 at 4:22:11 PM
+69 verbose etag "C0JBA3T6BMQ52WUQJ6SMIP7J9"
+70 http request GET https://registry.npmjs.org/grunt
+71 http 200 https://registry.npmjs.org/grunt-contrib-watch
+72 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+72 verbose headers   etag: '"2GL8OJ9GSB8PE1T7DA18VE24G"',
+72 verbose headers   'content-type': 'application/json',
+72 verbose headers   'cache-control': 'max-age=60',
+72 verbose headers   'content-length': '59026',
+72 verbose headers   'accept-ranges': 'bytes',
+72 verbose headers   date: 'Wed, 04 Nov 2015 16:22:11 GMT',
+72 verbose headers   via: '1.1 varnish',
+72 verbose headers   age: '5',
+72 verbose headers   connection: 'keep-alive',
+72 verbose headers   'x-served-by': 'cache-iad2129-IAD',
+72 verbose headers   'x-cache': 'HIT',
+72 verbose headers   'x-cache-hits': '1',
+72 verbose headers   'x-timer': 'S1446654131.436273,VS0,VE0',
+72 verbose headers   vary: 'Accept' }
+73 silly get cb [ 200,
+73 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+73 silly get     etag: '"2GL8OJ9GSB8PE1T7DA18VE24G"',
+73 silly get     'content-type': 'application/json',
+73 silly get     'cache-control': 'max-age=60',
+73 silly get     'content-length': '59026',
+73 silly get     'accept-ranges': 'bytes',
+73 silly get     date: 'Wed, 04 Nov 2015 16:22:11 GMT',
+73 silly get     via: '1.1 varnish',
+73 silly get     age: '5',
+73 silly get     connection: 'keep-alive',
+73 silly get     'x-served-by': 'cache-iad2129-IAD',
+73 silly get     'x-cache': 'HIT',
+73 silly get     'x-cache-hits': '1',
+73 silly get     'x-timer': 'S1446654131.436273,VS0,VE0',
+73 silly get     vary: 'Accept' } ]
+74 verbose get saving grunt-contrib-watch to /home/ubuntu/.npm/registry.npmjs.org/grunt-contrib-watch/.cache.json
+75 http 200 https://registry.npmjs.org/grunt-sass
+76 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+76 verbose headers   etag: '"6XLS8Q88H2YE3Z6L1Q04HQSU6"',
+76 verbose headers   'content-type': 'application/json',
+76 verbose headers   'cache-control': 'max-age=60',
+76 verbose headers   'content-length': '44758',
+76 verbose headers   'accept-ranges': 'bytes',
+76 verbose headers   date: 'Wed, 04 Nov 2015 16:22:11 GMT',
+76 verbose headers   via: '1.1 varnish',
+76 verbose headers   age: '40',
+76 verbose headers   connection: 'keep-alive',
+76 verbose headers   'x-served-by': 'cache-iad2149-IAD',
+76 verbose headers   'x-cache': 'HIT',
+76 verbose headers   'x-cache-hits': '1',
+76 verbose headers   'x-timer': 'S1446654131.443665,VS0,VE0',
+76 verbose headers   vary: 'Accept' }
+77 silly get cb [ 200,
+77 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+77 silly get     etag: '"6XLS8Q88H2YE3Z6L1Q04HQSU6"',
+77 silly get     'content-type': 'application/json',
+77 silly get     'cache-control': 'max-age=60',
+77 silly get     'content-length': '44758',
+77 silly get     'accept-ranges': 'bytes',
+77 silly get     date: 'Wed, 04 Nov 2015 16:22:11 GMT',
+77 silly get     via: '1.1 varnish',
+77 silly get     age: '40',
+77 silly get     connection: 'keep-alive',
+77 silly get     'x-served-by': 'cache-iad2149-IAD',
+77 silly get     'x-cache': 'HIT',
+77 silly get     'x-cache-hits': '1',
+77 silly get     'x-timer': 'S1446654131.443665,VS0,VE0',
+77 silly get     vary: 'Accept' } ]
+78 verbose get saving grunt-sass to /home/ubuntu/.npm/registry.npmjs.org/grunt-sass/.cache.json
+79 silly addNameRange number 2 { name: 'grunt-contrib-watch',
+79 silly addNameRange   range: '>=0.6.1 <0.7.0',
+79 silly addNameRange   hasData: true }
+80 silly addNameRange versions [ 'grunt-contrib-watch',
+80 silly addNameRange   [ '0.1.0',
+80 silly addNameRange     '0.1.1',
+80 silly addNameRange     '0.1.2',
+80 silly addNameRange     '0.1.3',
+80 silly addNameRange     '0.1.4',
+80 silly addNameRange     '0.2.0',
+80 silly addNameRange     '0.3.0',
+80 silly addNameRange     '0.3.1',
+80 silly addNameRange     '0.4.0',
+80 silly addNameRange     '0.4.1',
+80 silly addNameRange     '0.4.2',
+80 silly addNameRange     '0.4.3',
+80 silly addNameRange     '0.4.4',
+80 silly addNameRange     '0.5.0',
+80 silly addNameRange     '0.5.1',
+80 silly addNameRange     '0.5.2',
+80 silly addNameRange     '0.5.3',
+80 silly addNameRange     '0.6.0',
+80 silly addNameRange     '0.6.1',
+80 silly addNameRange     '0.2.0-a',
+80 silly addNameRange     '0.2.0-rc5',
+80 silly addNameRange     '0.2.0-rc7' ] ]
+81 silly addNamed grunt-contrib-watch@0.6.1
+82 verbose addNamed "0.6.1" is a plain semver version for grunt-contrib-watch
+83 silly mapToRegistry name grunt-sass
+84 silly mapToRegistry using default registry
+85 silly mapToRegistry registry https://registry.npmjs.org/
+86 silly mapToRegistry uri https://registry.npmjs.org/grunt-sass
+87 verbose addRemoteTarball https://registry.npmjs.org/grunt-sass/-/grunt-sass-1.0.0.tgz not in flight; adding
+88 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-sass/-/grunt-sass-1.0.0.tgz',
+88 verbose addRemoteTarball   '84602a9ab0fcb0fe340737612a4ba56cc361bbc4' ]
+89 silly mapToRegistry name grunt-contrib-watch
+90 silly mapToRegistry using default registry
+91 silly mapToRegistry registry https://registry.npmjs.org/
+92 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-watch
+93 verbose addRemoteTarball https://registry.npmjs.org/grunt-contrib-watch/-/grunt-contrib-watch-0.6.1.tgz not in flight; adding
+94 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-contrib-watch/-/grunt-contrib-watch-0.6.1.tgz',
+94 verbose addRemoteTarball   '64fdcba25a635f5b4da1b6ce6f90da0aeb6e3f15' ]
+95 http 200 https://registry.npmjs.org/grunt
+96 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+96 verbose headers   etag: '"40NJ68G3ZWMUMWE9883MTVRWV"',
+96 verbose headers   'content-type': 'application/json',
+96 verbose headers   'cache-control': 'max-age=60',
+96 verbose headers   'content-length': '90614',
+96 verbose headers   'accept-ranges': 'bytes',
+96 verbose headers   date: 'Wed, 04 Nov 2015 16:22:11 GMT',
+96 verbose headers   via: '1.1 varnish',
+96 verbose headers   age: '37',
+96 verbose headers   connection: 'keep-alive',
+96 verbose headers   'x-served-by': 'cache-iad2132-IAD',
+96 verbose headers   'x-cache': 'HIT',
+96 verbose headers   'x-cache-hits': '2',
+96 verbose headers   'x-timer': 'S1446654131.457977,VS0,VE0',
+96 verbose headers   vary: 'Accept' }
+97 silly get cb [ 200,
+97 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+97 silly get     etag: '"40NJ68G3ZWMUMWE9883MTVRWV"',
+97 silly get     'content-type': 'application/json',
+97 silly get     'cache-control': 'max-age=60',
+97 silly get     'content-length': '90614',
+97 silly get     'accept-ranges': 'bytes',
+97 silly get     date: 'Wed, 04 Nov 2015 16:22:11 GMT',
+97 silly get     via: '1.1 varnish',
+97 silly get     age: '37',
+97 silly get     connection: 'keep-alive',
+97 silly get     'x-served-by': 'cache-iad2132-IAD',
+97 silly get     'x-cache': 'HIT',
+97 silly get     'x-cache-hits': '2',
+97 silly get     'x-timer': 'S1446654131.457977,VS0,VE0',
+97 silly get     vary: 'Accept' } ]
+98 verbose get saving grunt to /home/ubuntu/.npm/registry.npmjs.org/grunt/.cache.json
+99 info retry fetch attempt 1 at 4:22:11 PM
+100 info attempt registry request try #1 at 4:22:11 PM
+101 http fetch GET https://registry.npmjs.org/grunt-sass/-/grunt-sass-1.0.0.tgz
+102 silly addNameRange number 2 { name: 'grunt', range: '>=0.4.5 <0.5.0', hasData: true }
+103 silly addNameRange versions [ 'grunt',
+103 silly addNameRange   [ '0.1.0',
+103 silly addNameRange     '0.1.1',
+103 silly addNameRange     '0.1.2',
+103 silly addNameRange     '0.2.0',
+103 silly addNameRange     '0.2.1',
+103 silly addNameRange     '0.2.2',
+103 silly addNameRange     '0.2.3',
+103 silly addNameRange     '0.2.4',
+103 silly addNameRange     '0.2.5',
+103 silly addNameRange     '0.2.6',
+103 silly addNameRange     '0.2.7',
+103 silly addNameRange     '0.2.8',
+103 silly addNameRange     '0.2.9',
+103 silly addNameRange     '0.2.10',
+103 silly addNameRange     '0.2.11',
+103 silly addNameRange     '0.2.12',
+103 silly addNameRange     '0.2.13',
+103 silly addNameRange     '0.2.14',
+103 silly addNameRange     '0.2.15',
+103 silly addNameRange     '0.3.0',
+103 silly addNameRange     '0.3.1',
+103 silly addNameRange     '0.3.2',
+103 silly addNameRange     '0.3.3',
+103 silly addNameRange     '0.3.4',
+103 silly addNameRange     '0.3.5',
+103 silly addNameRange     '0.3.6',
+103 silly addNameRange     '0.3.7',
+103 silly addNameRange     '0.3.8',
+103 silly addNameRange     '0.3.9',
+103 silly addNameRange     '0.3.10',
+103 silly addNameRange     '0.3.11',
+103 silly addNameRange     '0.3.12',
+103 silly addNameRange     '0.3.13',
+103 silly addNameRange     '0.3.14',
+103 silly addNameRange     '0.3.15',
+103 silly addNameRange     '0.3.16',
+103 silly addNameRange     '0.3.17',
+103 silly addNameRange     '0.4.0',
+103 silly addNameRange     '0.4.1',
+103 silly addNameRange     '0.4.2',
+103 silly addNameRange     '0.4.3',
+103 silly addNameRange     '0.4.4',
+103 silly addNameRange     '0.4.5',
+103 silly addNameRange     '0.3.13-a',
+103 silly addNameRange     '0.4.0-a',
+103 silly addNameRange     '0.4.0-rc1',
+103 silly addNameRange     '0.4.0-rc2',
+103 silly addNameRange     '0.4.0-rc3',
+103 silly addNameRange     '0.4.0-rc4',
+103 silly addNameRange     '0.4.0-rc5',
+103 silly addNameRange     '0.4.0-rc6',
+103 silly addNameRange     '0.4.0-rc7',
+103 silly addNameRange     '0.4.0-rc8' ] ]
+104 silly addNamed grunt@0.4.5
+105 verbose addNamed "0.4.5" is a plain semver version for grunt
+106 info retry fetch attempt 1 at 4:22:11 PM
+107 info attempt registry request try #1 at 4:22:11 PM
+108 http fetch GET https://registry.npmjs.org/grunt-contrib-watch/-/grunt-contrib-watch-0.6.1.tgz
+109 silly cache afterAdd grunt@0.4.5
+110 verbose afterAdd /home/ubuntu/.npm/grunt/0.4.5/package/package.json not in flight; writing
+111 verbose afterAdd /home/ubuntu/.npm/grunt/0.4.5/package/package.json written
+112 http 200 https://registry.npmjs.org/node-sass
+113 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+113 verbose headers   etag: '"7GDU3K48RVH2HXXM4A14A9WUG"',
+113 verbose headers   'content-type': 'application/json',
+113 verbose headers   'cache-control': 'max-age=60',
+113 verbose headers   'content-length': '154245',
+113 verbose headers   'accept-ranges': 'bytes',
+113 verbose headers   date: 'Wed, 04 Nov 2015 16:22:11 GMT',
+113 verbose headers   via: '1.1 varnish',
+113 verbose headers   age: '5',
+113 verbose headers   connection: 'keep-alive',
+113 verbose headers   'x-served-by': 'cache-iad2142-IAD',
+113 verbose headers   'x-cache': 'HIT',
+113 verbose headers   'x-cache-hits': '1',
+113 verbose headers   'x-timer': 'S1446654131.450182,VS0,VE0',
+113 verbose headers   vary: 'Accept' }
+114 silly get cb [ 200,
+114 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+114 silly get     etag: '"7GDU3K48RVH2HXXM4A14A9WUG"',
+114 silly get     'content-type': 'application/json',
+114 silly get     'cache-control': 'max-age=60',
+114 silly get     'content-length': '154245',
+114 silly get     'accept-ranges': 'bytes',
+114 silly get     date: 'Wed, 04 Nov 2015 16:22:11 GMT',
+114 silly get     via: '1.1 varnish',
+114 silly get     age: '5',
+114 silly get     connection: 'keep-alive',
+114 silly get     'x-served-by': 'cache-iad2142-IAD',
+114 silly get     'x-cache': 'HIT',
+114 silly get     'x-cache-hits': '1',
+114 silly get     'x-timer': 'S1446654131.450182,VS0,VE0',
+114 silly get     vary: 'Accept' } ]
+115 verbose get saving node-sass to /home/ubuntu/.npm/registry.npmjs.org/node-sass/.cache.json
+116 silly mapToRegistry name node-sass
+117 silly mapToRegistry using default registry
+118 silly mapToRegistry registry https://registry.npmjs.org/
+119 silly mapToRegistry uri https://registry.npmjs.org/node-sass
+120 verbose addRemoteTarball https://registry.npmjs.org/node-sass/-/node-sass-3.3.3.tgz not in flight; adding
+121 verbose addRemoteTarball [ 'https://registry.npmjs.org/node-sass/-/node-sass-3.3.3.tgz',
+121 verbose addRemoteTarball   '620fe2e3149993405ec1b517f8487b6e643b228a' ]
+122 info retry fetch attempt 1 at 4:22:11 PM
+123 info attempt registry request try #1 at 4:22:11 PM
+124 http fetch GET https://registry.npmjs.org/node-sass/-/node-sass-3.3.3.tgz
+125 http fetch 200 https://registry.npmjs.org/grunt-contrib-watch/-/grunt-contrib-watch-0.6.1.tgz
+126 http fetch 200 https://registry.npmjs.org/grunt-sass/-/grunt-sass-1.0.0.tgz
+127 silly fetchAndShaCheck shasum 64fdcba25a635f5b4da1b6ce6f90da0aeb6e3f15
+128 silly fetchAndShaCheck shasum 84602a9ab0fcb0fe340737612a4ba56cc361bbc4
+129 verbose addTmpTarball /tmp/npm-951-d3b619bc/registry.npmjs.org/grunt-contrib-watch/-/grunt-contrib-watch-0.6.1.tgz not in flight; adding
+130 verbose addTmpTarball already have metadata; skipping unpack for grunt-contrib-watch@0.6.1
+131 verbose addTmpTarball /tmp/npm-951-d3b619bc/registry.npmjs.org/grunt-sass/-/grunt-sass-1.0.0.tgz not in flight; adding
+132 verbose addTmpTarball already have metadata; skipping unpack for grunt-sass@1.0.0
+133 silly cache afterAdd grunt-sass@1.0.0
+134 verbose afterAdd /home/ubuntu/.npm/grunt-sass/1.0.0/package/package.json not in flight; writing
+135 silly cache afterAdd grunt-contrib-watch@0.6.1
+136 verbose afterAdd /home/ubuntu/.npm/grunt-contrib-watch/0.6.1/package/package.json not in flight; writing
+137 verbose afterAdd /home/ubuntu/.npm/grunt-sass/1.0.0/package/package.json written
+138 verbose afterAdd /home/ubuntu/.npm/grunt-contrib-watch/0.6.1/package/package.json written
+139 http fetch 200 https://registry.npmjs.org/node-sass/-/node-sass-3.3.3.tgz
+140 silly fetchAndShaCheck shasum 620fe2e3149993405ec1b517f8487b6e643b228a
+141 verbose addTmpTarball /tmp/npm-951-d3b619bc/registry.npmjs.org/node-sass/-/node-sass-3.3.3.tgz not in flight; adding
+142 verbose addTmpTarball already have metadata; skipping unpack for node-sass@3.3.3
+143 silly cache afterAdd node-sass@3.3.3
+144 verbose afterAdd /home/ubuntu/.npm/node-sass/3.3.3/package/package.json not in flight; writing
+145 verbose afterAdd /home/ubuntu/.npm/node-sass/3.3.3/package/package.json written
+146 silly install resolved [ { name: 'grunt',
+146 silly install resolved     description: 'The JavaScript Task Runner',
+146 silly install resolved     version: '0.4.5',
+146 silly install resolved     author: { name: '"Cowboy" Ben Alman', url: 'http://benalman.com/' },
+146 silly install resolved     homepage: 'http://gruntjs.com/',
+146 silly install resolved     repository: { type: 'git', url: 'git://github.com/gruntjs/grunt.git' },
+146 silly install resolved     bugs: { url: 'http://github.com/gruntjs/grunt/issues' },
+146 silly install resolved     licenses: [ [Object] ],
+146 silly install resolved     main: 'lib/grunt',
+146 silly install resolved     scripts: { test: 'grunt test' },
+146 silly install resolved     engines: { node: '>= 0.8.0' },
+146 silly install resolved     keywords:
+146 silly install resolved      [ 'task',
+146 silly install resolved        'async',
+146 silly install resolved        'cli',
+146 silly install resolved        'minify',
+146 silly install resolved        'uglify',
+146 silly install resolved        'build',
+146 silly install resolved        'lodash',
+146 silly install resolved        'unit',
+146 silly install resolved        'test',
+146 silly install resolved        'qunit',
+146 silly install resolved        'nodeunit',
+146 silly install resolved        'server',
+146 silly install resolved        'init',
+146 silly install resolved        'scaffold',
+146 silly install resolved        'make',
+146 silly install resolved        'jake',
+146 silly install resolved        'tool' ],
+146 silly install resolved     dependencies:
+146 silly install resolved      { async: '~0.1.22',
+146 silly install resolved        'coffee-script': '~1.3.3',
+146 silly install resolved        colors: '~0.6.2',
+146 silly install resolved        dateformat: '1.0.2-1.2.3',
+146 silly install resolved        eventemitter2: '~0.4.13',
+146 silly install resolved        'findup-sync': '~0.1.2',
+146 silly install resolved        glob: '~3.1.21',
+146 silly install resolved        hooker: '~0.2.3',
+146 silly install resolved        'iconv-lite': '~0.2.11',
+146 silly install resolved        minimatch: '~0.2.12',
+146 silly install resolved        nopt: '~1.0.10',
+146 silly install resolved        rimraf: '~2.2.8',
+146 silly install resolved        lodash: '~0.9.2',
+146 silly install resolved        'underscore.string': '~2.2.1',
+146 silly install resolved        which: '~1.0.5',
+146 silly install resolved        'js-yaml': '~2.0.5',
+146 silly install resolved        exit: '~0.1.1',
+146 silly install resolved        getobject: '~0.1.0',
+146 silly install resolved        'grunt-legacy-util': '~0.2.0',
+146 silly install resolved        'grunt-legacy-log': '~0.1.0' },
+146 silly install resolved     devDependencies:
+146 silly install resolved      { temporary: '~0.0.4',
+146 silly install resolved        'grunt-contrib-jshint': '~0.6.4',
+146 silly install resolved        'grunt-contrib-nodeunit': '~0.2.0',
+146 silly install resolved        'grunt-contrib-watch': '~0.5.3',
+146 silly install resolved        difflet: '~0.2.3',
+146 silly install resolved        semver: '2.1.0',
+146 silly install resolved        shelljs: '~0.2.5' },
+146 silly install resolved     _id: 'grunt@0.4.5',
+146 silly install resolved     dist:
+146 silly install resolved      { shasum: '56937cd5194324adff6d207631832a9d6ba4e7f0',
+146 silly install resolved        tarball: 'http://registry.npmjs.org/grunt/-/grunt-0.4.5.tgz' },
+146 silly install resolved     _from: 'grunt@>=0.4.5 <0.5.0',
+146 silly install resolved     _npmVersion: '1.4.4',
+146 silly install resolved     _npmUser: { name: 'cowboy', email: 'cowboy@rj3.net' },
+146 silly install resolved     maintainers: [ [Object], [Object] ],
+146 silly install resolved     directories: {},
+146 silly install resolved     _shasum: '56937cd5194324adff6d207631832a9d6ba4e7f0',
+146 silly install resolved     _resolved: 'https://registry.npmjs.org/grunt/-/grunt-0.4.5.tgz',
+146 silly install resolved     readme: 'ERROR: No README data found!' },
+146 silly install resolved   { name: 'grunt-sass',
+146 silly install resolved     version: '1.0.0',
+146 silly install resolved     description: 'Compile Sass to CSS using node-sass',
+146 silly install resolved     license: 'MIT',
+146 silly install resolved     repository:
+146 silly install resolved      { type: 'git',
+146 silly install resolved        url: 'https://github.com/sindresorhus/grunt-sass' },
+146 silly install resolved     author:
+146 silly install resolved      { name: 'Sindre Sorhus',
+146 silly install resolved        email: 'sindresorhus@gmail.com',
+146 silly install resolved        url: 'http://sindresorhus.com' },
+146 silly install resolved     engines: { node: '>=0.10.0' },
+146 silly install resolved     scripts: { test: 'grunt' },
+146 silly install resolved     files: [ 'tasks' ],
+146 silly install resolved     keywords:
+146 silly install resolved      [ 'gruntplugin',
+146 silly install resolved        'css',
+146 silly install resolved        'sass',
+146 silly install resolved        'scss',
+146 silly install resolved        'style',
+146 silly install resolved        'compile',
+146 silly install resolved        'preprocess',
+146 silly install resolved        'compile',
+146 silly install resolved        'libsass' ],
+146 silly install resolved     dependencies:
+146 silly install resolved      { 'each-async': '^1.0.0',
+146 silly install resolved        'node-sass': '^3.0.0',
+146 silly install resolved        'object-assign': '^2.0.0' },
+146 silly install resolved     devDependencies:
+146 silly install resolved      { grunt: '^0.4.5',
+146 silly install resolved        'grunt-cli': '^0.1.13',
+146 silly install resolved        'grunt-contrib-clean': '^0.6.0',
+146 silly install resolved        'grunt-contrib-nodeunit': '^0.4.1' },
+146 silly install resolved     gitHead: 'b82898cc426e6ab3688d9d43b4a3298f69fbf085',
+146 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/grunt-sass/issues' },
+146 silly install resolved     homepage: 'https://github.com/sindresorhus/grunt-sass',
+146 silly install resolved     _id: 'grunt-sass@1.0.0',
+146 silly install resolved     _shasum: '84602a9ab0fcb0fe340737612a4ba56cc361bbc4',
+146 silly install resolved     _from: 'grunt-sass@1.0.0',
+146 silly install resolved     _npmVersion: '2.7.4',
+146 silly install resolved     _nodeVersion: '0.12.2',
+146 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+146 silly install resolved     dist:
+146 silly install resolved      { shasum: '84602a9ab0fcb0fe340737612a4ba56cc361bbc4',
+146 silly install resolved        tarball: 'http://registry.npmjs.org/grunt-sass/-/grunt-sass-1.0.0.tgz' },
+146 silly install resolved     maintainers: [ [Object], [Object] ],
+146 silly install resolved     directories: {},
+146 silly install resolved     _resolved: 'https://registry.npmjs.org/grunt-sass/-/grunt-sass-1.0.0.tgz' },
+146 silly install resolved   { name: 'grunt-contrib-watch',
+146 silly install resolved     description: 'Run predefined tasks whenever watched file patterns are added, changed or deleted.',
+146 silly install resolved     version: '0.6.1',
+146 silly install resolved     homepage: 'https://github.com/gruntjs/grunt-contrib-watch',
+146 silly install resolved     author: { name: 'Grunt Team', url: 'http://gruntjs.com/' },
+146 silly install resolved     repository:
+146 silly install resolved      { type: 'git',
+146 silly install resolved        url: 'git://github.com/gruntjs/grunt-contrib-watch.git' },
+146 silly install resolved     bugs: { url: 'https://github.com/gruntjs/grunt-contrib-watch/issues' },
+146 silly install resolved     licenses: [ [Object] ],
+146 silly install resolved     engines: { node: '>= 0.8.0' },
+146 silly install resolved     scripts: { test: 'grunt nodeunit -v' },
+146 silly install resolved     dependencies:
+146 silly install resolved      { gaze: '~0.5.1',
+146 silly install resolved        'tiny-lr-fork': '0.0.5',
+146 silly install resolved        lodash: '~2.4.1',
+146 silly install resolved        async: '~0.2.9' },
+146 silly install resolved     devDependencies:
+146 silly install resolved      { grunt: '~0.4.0',
+146 silly install resolved        'grunt-contrib-jshint': '~0.8.0',
+146 silly install resolved        'grunt-contrib-nodeunit': '~0.3.3',
+146 silly install resolved        'grunt-contrib-internal': '~0.4.7',
+146 silly install resolved        'underscore.string': '~2.3.3' },
+146 silly install resolved     peerDependencies: { grunt: '~0.4.0' },
+146 silly install resolved     keywords: [ 'gruntplugin', 'watch' ],
+146 silly install resolved     files: [ 'tasks', 'LICENSE-MIT' ],
+146 silly install resolved     _id: 'grunt-contrib-watch@0.6.1',
+146 silly install resolved     dist:
+146 silly install resolved      { shasum: '64fdcba25a635f5b4da1b6ce6f90da0aeb6e3f15',
+146 silly install resolved        tarball: 'http://registry.npmjs.org/grunt-contrib-watch/-/grunt-contrib-watch-0.6.1.tgz' },
+146 silly install resolved     _from: 'grunt-contrib-watch@>=0.6.1 <0.7.0',
+146 silly install resolved     _npmVersion: '1.4.4',
+146 silly install resolved     _npmUser: { name: 'shama', email: 'kyle@dontkry.com' },
+146 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+146 silly install resolved     directories: {},
+146 silly install resolved     _shasum: '64fdcba25a635f5b4da1b6ce6f90da0aeb6e3f15',
+146 silly install resolved     _resolved: 'https://registry.npmjs.org/grunt-contrib-watch/-/grunt-contrib-watch-0.6.1.tgz' },
+146 silly install resolved   { name: 'node-sass',
+146 silly install resolved     version: '3.3.3',
+146 silly install resolved     libsass: '3.2.5',
+146 silly install resolved     description: 'Wrapper around libsass',
+146 silly install resolved     license: 'MIT',
+146 silly install resolved     homepage: 'https://github.com/sass/node-sass',
+146 silly install resolved     repository:
+146 silly install resolved      { type: 'git',
+146 silly install resolved        url: 'git+https://github.com/sass/node-sass.git' },
+146 silly install resolved     author:
+146 silly install resolved      { name: 'Andrew Nesbitt',
+146 silly install resolved        email: 'andrewnez@gmail.com',
+146 silly install resolved        url: 'http://andrew.github.com' },
+146 silly install resolved     engines: { node: '>=0.10.0' },
+146 silly install resolved     main: 'lib/index.js',
+146 silly install resolved     nodeSassConfig: { binarySite: 'https://github.com/sass/node-sass/releases/download' },
+146 silly install resolved     bin: { 'node-sass': 'bin/node-sass' },
+146 silly install resolved     gypfile: true,
+146 silly install resolved     scripts:
+146 silly install resolved      { coverage: 'node scripts/coverage.js',
+146 silly install resolved        install: 'node scripts/install.js',
+146 silly install resolved        postinstall: 'node scripts/build.js',
+146 silly install resolved        pretest: 'jshint bin lib scripts test',
+146 silly install resolved        test: 'mocha test' },
+146 silly install resolved     files: [ 'bin', 'binding.gyp', 'lib', 'scripts', 'src' ],
+146 silly install resolved     keywords: [ 'css', 'libsass', 'preprocessor', 'sass', 'scss', 'style' ],
+146 silly install resolved     dependencies:
+146 silly install resolved      { 'async-foreach': '^0.1.3',
+146 silly install resolved        chalk: '^1.1.1',
+146 silly install resolved        'cross-spawn': '^2.0.0',
+146 silly install resolved        gaze: '^0.5.1',
+146 silly install resolved        'get-stdin': '^4.0.1',
+146 silly install resolved        glob: '^5.0.14',
+146 silly install resolved        meow: '^3.3.0',
+146 silly install resolved        mkdirp: '^0.5.1',
+146 silly install resolved        nan: '^2.0.8',
+146 silly install resolved        npmconf: '^2.1.2',
+146 silly install resolved        'node-gyp': '^3.0.1',
+146 silly install resolved        request: '^2.61.0',
+146 silly install resolved        'sass-graph': '^2.0.1' },
+146 silly install resolved     devDependencies:
+146 silly install resolved      { coveralls: '^2.11.4',
+146 silly install resolved        istanbul: '^0.3.18',
+146 silly install resolved        jshint: '^2.8.0',
+146 silly install resolved        mocha: '^2.2.5',
+146 silly install resolved        'mocha-lcov-reporter': '^0.0.2',
+146 silly install resolved        rimraf: '^2.4.2' },
+146 silly install resolved     gitHead: 'd62f59f4a051b6d538e20f66a5d1ebcf21538ded',
+146 silly install resolved     bugs: { url: 'https://github.com/sass/node-sass/issues' },
+146 silly install resolved     _id: 'node-sass@3.3.3',
+146 silly install resolved     _shasum: '620fe2e3149993405ec1b517f8487b6e643b228a',
+146 silly install resolved     _from: 'node-sass@3.3.3',
+146 silly install resolved     _npmVersion: '2.13.5',
+146 silly install resolved     _nodeVersion: '4.0.0-pre',
+146 silly install resolved     _npmUser: { name: 'saperski', email: 'npm@saper.info' },
+146 silly install resolved     dist:
+146 silly install resolved      { shasum: '620fe2e3149993405ec1b517f8487b6e643b228a',
+146 silly install resolved        tarball: 'http://registry.npmjs.org/node-sass/-/node-sass-3.3.3.tgz' },
+146 silly install resolved     maintainers:
+146 silly install resolved      [ [Object],
+146 silly install resolved        [Object],
+146 silly install resolved        [Object],
+146 silly install resolved        [Object],
+146 silly install resolved        [Object],
+146 silly install resolved        [Object],
+146 silly install resolved        [Object] ],
+146 silly install resolved     directories: {},
+146 silly install resolved     _resolved: 'https://registry.npmjs.org/node-sass/-/node-sass-3.3.3.tgz' } ]
+147 info install grunt@0.4.5 into /home/ubuntu/workspace/project_name
+148 info install grunt-sass@1.0.0 into /home/ubuntu/workspace/project_name
+149 info install grunt-contrib-watch@0.6.1 into /home/ubuntu/workspace/project_name
+150 info install node-sass@3.3.3 into /home/ubuntu/workspace/project_name
+151 info installOne grunt@0.4.5
+152 verbose installOne of grunt to /home/ubuntu/workspace/project_name not in flight; installing
+153 info installOne grunt-sass@1.0.0
+154 verbose installOne of grunt-sass to /home/ubuntu/workspace/project_name not in flight; installing
+155 info installOne grunt-contrib-watch@0.6.1
+156 verbose installOne of grunt-contrib-watch to /home/ubuntu/workspace/project_name not in flight; installing
+157 info installOne node-sass@3.3.3
+158 verbose installOne of node-sass to /home/ubuntu/workspace/project_name not in flight; installing
+159 verbose lock using /home/ubuntu/.npm/_locks/grunt-9d50ddc0f678e320.lock for /home/ubuntu/workspace/project_name/node_modules/grunt
+160 verbose lock using /home/ubuntu/.npm/_locks/grunt-sass-d048031fc775ead6.lock for /home/ubuntu/workspace/project_name/node_modules/grunt-sass
+161 verbose lock using /home/ubuntu/.npm/_locks/grunt-contrib-watch-62051d680fb87a21.lock for /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch
+162 verbose lock using /home/ubuntu/.npm/_locks/node-sass-ab80f6f8a4b028ab.lock for /home/ubuntu/workspace/project_name/node_modules/node-sass
+163 silly install write writing grunt 0.4.5 to /home/ubuntu/workspace/project_name/node_modules/grunt
+164 silly install write writing grunt-sass 1.0.0 to /home/ubuntu/workspace/project_name/node_modules/grunt-sass
+165 silly install write writing grunt-contrib-watch 0.6.1 to /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch
+166 silly install write writing node-sass 3.3.3 to /home/ubuntu/workspace/project_name/node_modules/node-sass
+167 verbose unbuild node_modules/grunt
+168 verbose unbuild node_modules/grunt-sass
+169 verbose unbuild node_modules/grunt-contrib-watch
+170 silly gentlyRm /home/ubuntu/workspace/project_name/node_modules/grunt is being purged from base /home/ubuntu/workspace/project_name
+171 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/project_name/node_modules/grunt
+172 silly gentlyRm /home/ubuntu/workspace/project_name/node_modules/grunt-sass is being purged from base /home/ubuntu/workspace/project_name
+173 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/project_name/node_modules/grunt-sass
+174 verbose unbuild node_modules/node-sass
+175 silly gentlyRm /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch is being purged from base /home/ubuntu/workspace/project_name
+176 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch
+177 verbose tar unpack /home/ubuntu/.npm/grunt/0.4.5/package.tgz
+178 verbose tar unpacking to /home/ubuntu/workspace/project_name/node_modules/grunt
+179 silly gentlyRm /home/ubuntu/workspace/project_name/node_modules/grunt is being purged
+180 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/project_name/node_modules/grunt
+181 verbose tar unpack /home/ubuntu/.npm/grunt-sass/1.0.0/package.tgz
+182 verbose tar unpacking to /home/ubuntu/workspace/project_name/node_modules/grunt-sass
+183 silly gentlyRm /home/ubuntu/workspace/project_name/node_modules/grunt-sass is being purged
+184 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/project_name/node_modules/grunt-sass
+185 verbose tar unpack /home/ubuntu/.npm/grunt-contrib-watch/0.6.1/package.tgz
+186 verbose tar unpacking to /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch
+187 silly gentlyRm /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch is being purged
+188 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch
+189 silly gunzTarPerm modes [ '755', '644' ]
+190 silly gunzTarPerm modes [ '755', '644' ]
+191 silly gentlyRm /home/ubuntu/workspace/project_name/node_modules/node-sass is being purged from base /home/ubuntu/workspace/project_name
+192 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/project_name/node_modules/node-sass
+193 silly gunzTarPerm modes [ '755', '644' ]
+194 verbose tar unpack /home/ubuntu/.npm/node-sass/3.3.3/package.tgz
+195 verbose tar unpacking to /home/ubuntu/workspace/project_name/node_modules/node-sass
+196 silly gentlyRm /home/ubuntu/workspace/project_name/node_modules/node-sass is being purged
+197 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/project_name/node_modules/node-sass
+198 silly gunzTarPerm modes [ '755', '644' ]
+199 silly gunzTarPerm extractEntry package.json
+200 silly gunzTarPerm extractEntry package.json
+201 silly gunzTarPerm extractEntry package.json
+202 silly gunzTarPerm extractEntry package.json
+203 silly gunzTarPerm extractEntry license
+204 silly gunzTarPerm extractEntry tasks/sass.js
+205 silly gunzTarPerm extractEntry README.md
+206 silly gunzTarPerm extractEntry LICENSE-MIT
+207 silly gunzTarPerm extractEntry tasks/watch.js
+208 silly gunzTarPerm extractEntry tasks/lib/livereload.js
+209 silly gunzTarPerm extractEntry tasks/lib/taskrun.js
+210 silly gunzTarPerm extractEntry tasks/lib/taskrunner.js
+211 silly gunzTarPerm extractEntry .npmignore
+212 silly gunzTarPerm extractEntry README.md
+213 silly gunzTarPerm extractEntry README.md
+214 silly gunzTarPerm extractEntry LICENSE
+215 silly gunzTarPerm extractEntry readme.md
+216 silly gunzTarPerm extractEntry CONTRIBUTING.md
+217 silly gunzTarPerm extractEntry LICENSE-MIT
+218 silly gunzTarPerm extractEntry bin/node-sass
+219 silly gunzTarPerm extractEntry binding.gyp
+220 silly gunzTarPerm extractEntry lib/extensions.js
+221 silly gunzTarPerm extractEntry lib/index.js
+222 silly gunzTarPerm extractEntry appveyor.yml
+223 silly gunzTarPerm extractEntry internal-tasks/bump.js
+224 silly gunzTarPerm extractEntry lib/render.js
+225 silly gunzTarPerm extractEntry scripts/build.js
+226 silly gunzTarPerm extractEntry internal-tasks/subgrunt.js
+227 silly gunzTarPerm extractEntry scripts/coverage.js
+228 silly gunzTarPerm extractEntry scripts/install.js
+229 silly gunzTarPerm extractEntry lib/grunt.js
+230 silly gunzTarPerm extractEntry lib/grunt/cli.js
+231 silly gunzTarPerm extractEntry src/custom_importer_bridge.cpp
+232 silly gunzTarPerm extractEntry src/binding.cpp
+233 verbose write writing to /home/ubuntu/workspace/project_name/node_modules/grunt-sass/package.json
+234 silly gunzTarPerm extractEntry lib/grunt/config.js
+235 silly gunzTarPerm extractEntry lib/grunt/event.js
+236 info preinstall grunt-sass@1.0.0
+237 verbose readDependencies loading dependencies from /home/ubuntu/workspace/project_name/node_modules/grunt-sass/package.json
+238 silly gunzTarPerm extractEntry src/create_string.cpp
+239 silly gunzTarPerm extractEntry src/create_string.h
+240 silly gunzTarPerm extractEntry lib/grunt/fail.js
+241 silly gunzTarPerm extractEntry lib/grunt/file.js
+242 silly prepareForInstallMany adding each-async@^1.0.0 from grunt-sass dependencies
+243 silly prepareForInstallMany adding object-assign@^2.0.0 from grunt-sass dependencies
+244 verbose readDependencies loading dependencies from /home/ubuntu/workspace/project_name/node_modules/grunt-sass/package.json
+245 silly gunzTarPerm extractEntry src/custom_function_bridge.cpp
+246 silly gunzTarPerm extractEntry src/custom_function_bridge.h
+247 silly gunzTarPerm extractEntry lib/grunt/help.js
+248 silly gunzTarPerm extractEntry lib/grunt/option.js
+249 silly gunzTarPerm extractEntry src/callback_bridge.h
+250 silly gunzTarPerm extractEntry src/custom_importer_bridge.h
+251 silly gunzTarPerm extractEntry lib/grunt/task.js
+252 silly gunzTarPerm extractEntry lib/grunt/template.js
+253 silly cache add args [ 'each-async@^1.0.0', null ]
+254 verbose cache add spec each-async@^1.0.0
+255 silly cache add parsed spec Result {
+255 silly cache add   raw: 'each-async@^1.0.0',
+255 silly cache add   scope: null,
+255 silly cache add   name: 'each-async',
+255 silly cache add   rawSpec: '^1.0.0',
+255 silly cache add   spec: '>=1.0.0 <2.0.0',
+255 silly cache add   type: 'range' }
+256 silly addNamed each-async@>=1.0.0 <2.0.0
+257 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for each-async
+258 silly addNameRange { name: 'each-async', range: '>=1.0.0 <2.0.0', hasData: false }
+259 silly mapToRegistry name each-async
+260 silly mapToRegistry using default registry
+261 silly mapToRegistry registry https://registry.npmjs.org/
+262 silly mapToRegistry uri https://registry.npmjs.org/each-async
+263 verbose addNameRange registry:https://registry.npmjs.org/each-async not in flight; fetching
+264 silly cache add args [ 'object-assign@^2.0.0', null ]
+265 verbose cache add spec object-assign@^2.0.0
+266 silly cache add parsed spec Result {
+266 silly cache add   raw: 'object-assign@^2.0.0',
+266 silly cache add   scope: null,
+266 silly cache add   name: 'object-assign',
+266 silly cache add   rawSpec: '^2.0.0',
+266 silly cache add   spec: '>=2.0.0 <3.0.0',
+266 silly cache add   type: 'range' }
+267 silly addNamed object-assign@>=2.0.0 <3.0.0
+268 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for object-assign
+269 silly addNameRange { name: 'object-assign',
+269 silly addNameRange   range: '>=2.0.0 <3.0.0',
+269 silly addNameRange   hasData: false }
+270 silly mapToRegistry name object-assign
+271 silly mapToRegistry using default registry
+272 silly mapToRegistry registry https://registry.npmjs.org/
+273 silly mapToRegistry uri https://registry.npmjs.org/object-assign
+274 verbose addNameRange registry:https://registry.npmjs.org/object-assign not in flight; fetching
+275 verbose request uri https://registry.npmjs.org/each-async
+276 verbose request no auth needed
+277 info attempt registry request try #1 at 4:22:11 PM
+278 http request GET https://registry.npmjs.org/each-async
+279 verbose write writing to /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/package.json
+280 info preinstall grunt-contrib-watch@0.6.1
+281 silly gunzTarPerm extractEntry src/libsass/.npmignore
+282 silly gunzTarPerm extractEntry src/libsass/LICENSE
+283 verbose request uri https://registry.npmjs.org/object-assign
+284 verbose request no auth needed
+285 info attempt registry request try #1 at 4:22:11 PM
+286 verbose etag "637E3HK1HW04QPOIQATJZU8ID"
+287 http request GET https://registry.npmjs.org/object-assign
+288 verbose readDependencies loading dependencies from /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/package.json
+289 silly gunzTarPerm extractEntry lib/util/task.js
+290 silly gunzTarPerm extractEntry src/libsass/lexer.cpp
+291 silly gunzTarPerm extractEntry src/libsass/.travis.yml
+292 silly prepareForInstallMany adding gaze@~0.5.1 from grunt-contrib-watch dependencies
+293 silly prepareForInstallMany adding tiny-lr-fork@0.0.5 from grunt-contrib-watch dependencies
+294 silly prepareForInstallMany adding lodash@~2.4.1 from grunt-contrib-watch dependencies
+295 silly prepareForInstallMany adding async@~0.2.9 from grunt-contrib-watch dependencies
+296 verbose readDependencies loading dependencies from /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/package.json
+297 silly gunzTarPerm extractEntry src/libsass/COPYING
+298 silly gunzTarPerm extractEntry src/libsass/INSTALL
+299 silly cache add args [ 'gaze@~0.5.1', null ]
+300 verbose cache add spec gaze@~0.5.1
+301 silly cache add args [ 'tiny-lr-fork@0.0.5', null ]
+302 verbose cache add spec tiny-lr-fork@0.0.5
+303 silly cache add parsed spec Result {
+303 silly cache add   raw: 'gaze@~0.5.1',
+303 silly cache add   scope: null,
+303 silly cache add   name: 'gaze',
+303 silly cache add   rawSpec: '~0.5.1',
+303 silly cache add   spec: '>=0.5.1 <0.6.0',
+303 silly cache add   type: 'range' }
+304 silly addNamed gaze@>=0.5.1 <0.6.0
+305 verbose addNamed ">=0.5.1 <0.6.0" is a valid semver range for gaze
+306 silly addNameRange { name: 'gaze', range: '>=0.5.1 <0.6.0', hasData: false }
+307 silly mapToRegistry name gaze
+308 silly mapToRegistry using default registry
+309 silly mapToRegistry registry https://registry.npmjs.org/
+310 silly mapToRegistry uri https://registry.npmjs.org/gaze
+311 verbose addNameRange registry:https://registry.npmjs.org/gaze not in flight; fetching
+312 silly cache add parsed spec Result {
+312 silly cache add   raw: 'tiny-lr-fork@0.0.5',
+312 silly cache add   scope: null,
+312 silly cache add   name: 'tiny-lr-fork',
+312 silly cache add   rawSpec: '0.0.5',
+312 silly cache add   spec: '0.0.5',
+312 silly cache add   type: 'version' }
+313 silly addNamed tiny-lr-fork@0.0.5
+314 verbose addNamed "0.0.5" is a plain semver version for tiny-lr-fork
+315 silly mapToRegistry name tiny-lr-fork
+316 silly mapToRegistry using default registry
+317 silly mapToRegistry registry https://registry.npmjs.org/
+318 silly mapToRegistry uri https://registry.npmjs.org/tiny-lr-fork
+319 verbose addNameVersion registry:https://registry.npmjs.org/tiny-lr-fork not in flight; fetching
+320 silly cache add args [ 'lodash@~2.4.1', null ]
+321 verbose cache add spec lodash@~2.4.1
+322 silly cache add parsed spec Result {
+322 silly cache add   raw: 'lodash@~2.4.1',
+322 silly cache add   scope: null,
+322 silly cache add   name: 'lodash',
+322 silly cache add   rawSpec: '~2.4.1',
+322 silly cache add   spec: '>=2.4.1 <2.5.0',
+322 silly cache add   type: 'range' }
+323 silly addNamed lodash@>=2.4.1 <2.5.0
+324 verbose addNamed ">=2.4.1 <2.5.0" is a valid semver range for lodash
+325 silly addNameRange { name: 'lodash', range: '>=2.4.1 <2.5.0', hasData: false }
+326 silly mapToRegistry name lodash
+327 silly mapToRegistry using default registry
+328 silly mapToRegistry registry https://registry.npmjs.org/
+329 silly mapToRegistry uri https://registry.npmjs.org/lodash
+330 verbose addNameRange registry:https://registry.npmjs.org/lodash not in flight; fetching
+331 silly cache add args [ 'async@~0.2.9', null ]
+332 verbose cache add spec async@~0.2.9
+333 silly cache add parsed spec Result {
+333 silly cache add   raw: 'async@~0.2.9',
+333 silly cache add   scope: null,
+333 silly cache add   name: 'async',
+333 silly cache add   rawSpec: '~0.2.9',
+333 silly cache add   spec: '>=0.2.9 <0.3.0',
+333 silly cache add   type: 'range' }
+334 silly addNamed async@>=0.2.9 <0.3.0
+335 verbose addNamed ">=0.2.9 <0.3.0" is a valid semver range for async
+336 silly addNameRange { name: 'async', range: '>=0.2.9 <0.3.0', hasData: false }
+337 silly mapToRegistry name async
+338 silly mapToRegistry using default registry
+339 silly mapToRegistry registry https://registry.npmjs.org/
+340 silly mapToRegistry uri https://registry.npmjs.org/async
+341 verbose addNameRange registry:https://registry.npmjs.org/async not in flight; fetching
+342 verbose request uri https://registry.npmjs.org/gaze
+343 verbose request no auth needed
+344 info attempt registry request try #1 at 4:22:11 PM
+345 http request GET https://registry.npmjs.org/gaze
+346 verbose request uri https://registry.npmjs.org/tiny-lr-fork
+347 verbose request no auth needed
+348 info attempt registry request try #1 at 4:22:11 PM
+349 http request GET https://registry.npmjs.org/tiny-lr-fork
+350 silly gunzTarPerm extractEntry src/libsass/.editorconfig
+351 silly gunzTarPerm extractEntry src/libsass/Makefile
+352 verbose request uri https://registry.npmjs.org/lodash
+353 verbose request no auth needed
+354 info attempt registry request try #1 at 4:22:12 PM
+355 verbose etag "ESXB42Q429VCUHETQD54ALIMX"
+356 http request GET https://registry.npmjs.org/lodash
+357 verbose request uri https://registry.npmjs.org/async
+358 verbose request no auth needed
+359 info attempt registry request try #1 at 4:22:12 PM
+360 verbose etag "5V1SIYBHVU5DXD8RK19CBEJY3"
+361 http request GET https://registry.npmjs.org/async
+362 silly gunzTarPerm extractEntry src/libsass/Makefile.am
+363 silly gunzTarPerm extractEntry src/libsass/Readme.md
+364 silly gunzTarPerm extractEntry src/libsass/SECURITY.md
+365 silly gunzTarPerm extractEntry src/libsass/appveyor.yml
+366 silly gunzTarPerm extractEntry src/libsass/ast.cpp
+367 silly gunzTarPerm extractEntry src/libsass/ast.hpp
+368 silly gunzTarPerm extractEntry src/libsass/ast_def_macros.hpp
+369 silly gunzTarPerm extractEntry src/libsass/ast_factory.hpp
+370 silly gunzTarPerm extractEntry src/libsass/ast_fwd_decl.hpp
+371 silly gunzTarPerm extractEntry src/libsass/b64/cencode.h
+372 silly gunzTarPerm extractEntry src/libsass/b64/encode.h
+373 silly gunzTarPerm extractEntry src/libsass/backtrace.hpp
+374 silly gunzTarPerm extractEntry src/libsass/base64vlq.cpp
+375 verbose write writing to /home/ubuntu/workspace/project_name/node_modules/grunt/package.json
+376 silly gunzTarPerm extractEntry src/libsass/base64vlq.hpp
+377 silly gunzTarPerm extractEntry src/libsass/bind.cpp
+378 http 200 https://registry.npmjs.org/object-assign
+379 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+379 verbose headers   etag: '"9X5J81STMG1EY3P0PGJF4S0A2"',
+379 verbose headers   'content-type': 'application/json',
+379 verbose headers   'cache-control': 'max-age=60',
+379 verbose headers   'content-length': '19881',
+379 verbose headers   'accept-ranges': 'bytes',
+379 verbose headers   date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+379 verbose headers   via: '1.1 varnish',
+379 verbose headers   age: '43',
+379 verbose headers   connection: 'keep-alive',
+379 verbose headers   'x-served-by': 'cache-dfw1830-DFW',
+379 verbose headers   'x-cache': 'HIT',
+379 verbose headers   'x-cache-hits': '2',
+379 verbose headers   'x-timer': 'S1446654132.025066,VS0,VE0',
+379 verbose headers   vary: 'Accept' }
+380 silly get cb [ 200,
+380 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+380 silly get     etag: '"9X5J81STMG1EY3P0PGJF4S0A2"',
+380 silly get     'content-type': 'application/json',
+380 silly get     'cache-control': 'max-age=60',
+380 silly get     'content-length': '19881',
+380 silly get     'accept-ranges': 'bytes',
+380 silly get     date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+380 silly get     via: '1.1 varnish',
+380 silly get     age: '43',
+380 silly get     connection: 'keep-alive',
+380 silly get     'x-served-by': 'cache-dfw1830-DFW',
+380 silly get     'x-cache': 'HIT',
+380 silly get     'x-cache-hits': '2',
+380 silly get     'x-timer': 'S1446654132.025066,VS0,VE0',
+380 silly get     vary: 'Accept' } ]
+381 verbose get saving object-assign to /home/ubuntu/.npm/registry.npmjs.org/object-assign/.cache.json
+382 info preinstall grunt@0.4.5
+383 verbose readDependencies loading dependencies from /home/ubuntu/workspace/project_name/node_modules/grunt/package.json
+384 silly gunzTarPerm extractEntry src/libsass/bind.hpp
+385 silly gunzTarPerm extractEntry src/libsass/cencode.c
+386 silly addNameRange number 2 { name: 'object-assign', range: '>=2.0.0 <3.0.0', hasData: true }
+387 silly addNameRange versions [ 'object-assign',
+387 silly addNameRange   [ '0.1.0',
+387 silly addNameRange     '0.1.1',
+387 silly addNameRange     '0.1.2',
+387 silly addNameRange     '0.2.0',
+387 silly addNameRange     '0.2.1',
+387 silly addNameRange     '0.2.2',
+387 silly addNameRange     '0.3.0',
+387 silly addNameRange     '0.3.1',
+387 silly addNameRange     '0.4.0',
+387 silly addNameRange     '1.0.0',
+387 silly addNameRange     '2.0.0',
+387 silly addNameRange     '3.0.0',
+387 silly addNameRange     '2.1.1',
+387 silly addNameRange     '4.0.0',
+387 silly addNameRange     '4.0.1' ] ]
+388 silly addNamed object-assign@2.1.1
+389 verbose addNamed "2.1.1" is a plain semver version for object-assign
+390 http 200 https://registry.npmjs.org/each-async
+391 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+391 verbose headers   etag: '"8Y7OABDLDF8YCL1U0J5SE5I6K"',
+391 verbose headers   'content-type': 'application/json',
+391 verbose headers   'cache-control': 'max-age=60',
+391 verbose headers   'content-length': '10559',
+391 verbose headers   'accept-ranges': 'bytes',
+391 verbose headers   date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+391 verbose headers   via: '1.1 varnish',
+391 verbose headers   age: '43',
+391 verbose headers   connection: 'keep-alive',
+391 verbose headers   'x-served-by': 'cache-iad2148-IAD',
+391 verbose headers   'x-cache': 'HIT',
+391 verbose headers   'x-cache-hits': '1',
+391 verbose headers   'x-timer': 'S1446654132.043695,VS0,VE0',
+391 verbose headers   vary: 'Accept' }
+392 silly get cb [ 200,
+392 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+392 silly get     etag: '"8Y7OABDLDF8YCL1U0J5SE5I6K"',
+392 silly get     'content-type': 'application/json',
+392 silly get     'cache-control': 'max-age=60',
+392 silly get     'content-length': '10559',
+392 silly get     'accept-ranges': 'bytes',
+392 silly get     date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+392 silly get     via: '1.1 varnish',
+392 silly get     age: '43',
+392 silly get     connection: 'keep-alive',
+392 silly get     'x-served-by': 'cache-iad2148-IAD',
+392 silly get     'x-cache': 'HIT',
+392 silly get     'x-cache-hits': '1',
+392 silly get     'x-timer': 'S1446654132.043695,VS0,VE0',
+392 silly get     vary: 'Accept' } ]
+393 verbose get saving each-async to /home/ubuntu/.npm/registry.npmjs.org/each-async/.cache.json
+394 silly prepareForInstallMany adding async@~0.1.22 from grunt dependencies
+395 silly prepareForInstallMany adding coffee-script@~1.3.3 from grunt dependencies
+396 silly prepareForInstallMany adding colors@~0.6.2 from grunt dependencies
+397 silly prepareForInstallMany adding dateformat@1.0.2-1.2.3 from grunt dependencies
+398 silly prepareForInstallMany adding eventemitter2@~0.4.13 from grunt dependencies
+399 silly prepareForInstallMany adding findup-sync@~0.1.2 from grunt dependencies
+400 silly prepareForInstallMany adding glob@~3.1.21 from grunt dependencies
+401 silly prepareForInstallMany adding hooker@~0.2.3 from grunt dependencies
+402 silly prepareForInstallMany adding iconv-lite@~0.2.11 from grunt dependencies
+403 silly prepareForInstallMany adding minimatch@~0.2.12 from grunt dependencies
+404 silly prepareForInstallMany adding nopt@~1.0.10 from grunt dependencies
+405 silly prepareForInstallMany adding rimraf@~2.2.8 from grunt dependencies
+406 silly prepareForInstallMany adding lodash@~0.9.2 from grunt dependencies
+407 silly prepareForInstallMany adding underscore.string@~2.2.1 from grunt dependencies
+408 silly prepareForInstallMany adding which@~1.0.5 from grunt dependencies
+409 silly prepareForInstallMany adding js-yaml@~2.0.5 from grunt dependencies
+410 silly prepareForInstallMany adding exit@~0.1.1 from grunt dependencies
+411 silly prepareForInstallMany adding getobject@~0.1.0 from grunt dependencies
+412 silly prepareForInstallMany adding grunt-legacy-util@~0.2.0 from grunt dependencies
+413 silly prepareForInstallMany adding grunt-legacy-log@~0.1.0 from grunt dependencies
+414 verbose readDependencies loading dependencies from /home/ubuntu/workspace/project_name/node_modules/grunt/package.json
+415 silly cache add args [ 'async@~0.1.22', null ]
+416 verbose cache add spec async@~0.1.22
+417 silly cache add args [ 'coffee-script@~1.3.3', null ]
+418 verbose cache add spec coffee-script@~1.3.3
+419 silly cache add parsed spec Result {
+419 silly cache add   raw: 'async@~0.1.22',
+419 silly cache add   scope: null,
+419 silly cache add   name: 'async',
+419 silly cache add   rawSpec: '~0.1.22',
+419 silly cache add   spec: '>=0.1.22 <0.2.0',
+419 silly cache add   type: 'range' }
+420 silly addNamed async@>=0.1.22 <0.2.0
+421 verbose addNamed ">=0.1.22 <0.2.0" is a valid semver range for async
+422 silly addNameRange { name: 'async', range: '>=0.1.22 <0.2.0', hasData: false }
+423 silly mapToRegistry name async
+424 silly mapToRegistry using default registry
+425 silly mapToRegistry registry https://registry.npmjs.org/
+426 silly mapToRegistry uri https://registry.npmjs.org/async
+427 verbose addNameRange registry:https://registry.npmjs.org/async already in flight; waiting
+428 silly cache add parsed spec Result {
+428 silly cache add   raw: 'coffee-script@~1.3.3',
+428 silly cache add   scope: null,
+428 silly cache add   name: 'coffee-script',
+428 silly cache add   rawSpec: '~1.3.3',
+428 silly cache add   spec: '>=1.3.3 <1.4.0',
+428 silly cache add   type: 'range' }
+429 silly addNamed coffee-script@>=1.3.3 <1.4.0
+430 verbose addNamed ">=1.3.3 <1.4.0" is a valid semver range for coffee-script
+431 silly addNameRange { name: 'coffee-script',
+431 silly addNameRange   range: '>=1.3.3 <1.4.0',
+431 silly addNameRange   hasData: false }
+432 silly mapToRegistry name coffee-script
+433 silly mapToRegistry using default registry
+434 silly mapToRegistry registry https://registry.npmjs.org/
+435 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+436 verbose addNameRange registry:https://registry.npmjs.org/coffee-script not in flight; fetching
+437 silly cache add args [ 'colors@~0.6.2', null ]
+438 verbose cache add spec colors@~0.6.2
+439 silly cache add parsed spec Result {
+439 silly cache add   raw: 'colors@~0.6.2',
+439 silly cache add   scope: null,
+439 silly cache add   name: 'colors',
+439 silly cache add   rawSpec: '~0.6.2',
+439 silly cache add   spec: '>=0.6.2 <0.7.0',
+439 silly cache add   type: 'range' }
+440 silly addNamed colors@>=0.6.2 <0.7.0
+441 verbose addNamed ">=0.6.2 <0.7.0" is a valid semver range for colors
+442 silly addNameRange { name: 'colors', range: '>=0.6.2 <0.7.0', hasData: false }
+443 silly mapToRegistry name colors
+444 silly mapToRegistry using default registry
+445 silly mapToRegistry registry https://registry.npmjs.org/
+446 silly mapToRegistry uri https://registry.npmjs.org/colors
+447 verbose addNameRange registry:https://registry.npmjs.org/colors not in flight; fetching
+448 silly cache add args [ 'dateformat@1.0.2-1.2.3', null ]
+449 verbose cache add spec dateformat@1.0.2-1.2.3
+450 silly cache add parsed spec Result {
+450 silly cache add   raw: 'dateformat@1.0.2-1.2.3',
+450 silly cache add   scope: null,
+450 silly cache add   name: 'dateformat',
+450 silly cache add   rawSpec: '1.0.2-1.2.3',
+450 silly cache add   spec: '1.0.2-1.2.3',
+450 silly cache add   type: 'version' }
+451 silly addNamed dateformat@1.0.2-1.2.3
+452 verbose addNamed "1.0.2-1.2.3" is a plain semver version for dateformat
+453 silly mapToRegistry name dateformat
+454 silly mapToRegistry using default registry
+455 silly mapToRegistry registry https://registry.npmjs.org/
+456 silly mapToRegistry uri https://registry.npmjs.org/dateformat
+457 verbose addNameVersion registry:https://registry.npmjs.org/dateformat not in flight; fetching
+458 silly cache add args [ 'eventemitter2@~0.4.13', null ]
+459 verbose cache add spec eventemitter2@~0.4.13
+460 silly cache add parsed spec Result {
+460 silly cache add   raw: 'eventemitter2@~0.4.13',
+460 silly cache add   scope: null,
+460 silly cache add   name: 'eventemitter2',
+460 silly cache add   rawSpec: '~0.4.13',
+460 silly cache add   spec: '>=0.4.13 <0.5.0',
+460 silly cache add   type: 'range' }
+461 silly addNamed eventemitter2@>=0.4.13 <0.5.0
+462 verbose addNamed ">=0.4.13 <0.5.0" is a valid semver range for eventemitter2
+463 silly addNameRange { name: 'eventemitter2',
+463 silly addNameRange   range: '>=0.4.13 <0.5.0',
+463 silly addNameRange   hasData: false }
+464 silly mapToRegistry name eventemitter2
+465 silly mapToRegistry using default registry
+466 silly mapToRegistry registry https://registry.npmjs.org/
+467 silly mapToRegistry uri https://registry.npmjs.org/eventemitter2
+468 verbose addNameRange registry:https://registry.npmjs.org/eventemitter2 not in flight; fetching
+469 silly cache add args [ 'findup-sync@~0.1.2', null ]
+470 verbose cache add spec findup-sync@~0.1.2
+471 silly cache add parsed spec Result {
+471 silly cache add   raw: 'findup-sync@~0.1.2',
+471 silly cache add   scope: null,
+471 silly cache add   name: 'findup-sync',
+471 silly cache add   rawSpec: '~0.1.2',
+471 silly cache add   spec: '>=0.1.2 <0.2.0',
+471 silly cache add   type: 'range' }
+472 silly addNamed findup-sync@>=0.1.2 <0.2.0
+473 verbose addNamed ">=0.1.2 <0.2.0" is a valid semver range for findup-sync
+474 silly addNameRange { name: 'findup-sync', range: '>=0.1.2 <0.2.0', hasData: false }
+475 silly mapToRegistry name findup-sync
+476 silly mapToRegistry using default registry
+477 silly mapToRegistry registry https://registry.npmjs.org/
+478 silly mapToRegistry uri https://registry.npmjs.org/findup-sync
+479 verbose addNameRange registry:https://registry.npmjs.org/findup-sync not in flight; fetching
+480 silly cache add args [ 'glob@~3.1.21', null ]
+481 verbose cache add spec glob@~3.1.21
+482 silly cache add parsed spec Result {
+482 silly cache add   raw: 'glob@~3.1.21',
+482 silly cache add   scope: null,
+482 silly cache add   name: 'glob',
+482 silly cache add   rawSpec: '~3.1.21',
+482 silly cache add   spec: '>=3.1.21 <3.2.0',
+482 silly cache add   type: 'range' }
+483 silly addNamed glob@>=3.1.21 <3.2.0
+484 verbose addNamed ">=3.1.21 <3.2.0" is a valid semver range for glob
+485 silly addNameRange { name: 'glob', range: '>=3.1.21 <3.2.0', hasData: false }
+486 silly mapToRegistry name glob
+487 silly mapToRegistry using default registry
+488 silly mapToRegistry registry https://registry.npmjs.org/
+489 silly mapToRegistry uri https://registry.npmjs.org/glob
+490 verbose addNameRange registry:https://registry.npmjs.org/glob not in flight; fetching
+491 silly cache add args [ 'hooker@~0.2.3', null ]
+492 verbose cache add spec hooker@~0.2.3
+493 silly cache add parsed spec Result {
+493 silly cache add   raw: 'hooker@~0.2.3',
+493 silly cache add   scope: null,
+493 silly cache add   name: 'hooker',
+493 silly cache add   rawSpec: '~0.2.3',
+493 silly cache add   spec: '>=0.2.3 <0.3.0',
+493 silly cache add   type: 'range' }
+494 silly addNamed hooker@>=0.2.3 <0.3.0
+495 verbose addNamed ">=0.2.3 <0.3.0" is a valid semver range for hooker
+496 silly addNameRange { name: 'hooker', range: '>=0.2.3 <0.3.0', hasData: false }
+497 silly mapToRegistry name hooker
+498 silly mapToRegistry using default registry
+499 silly mapToRegistry registry https://registry.npmjs.org/
+500 silly mapToRegistry uri https://registry.npmjs.org/hooker
+501 verbose addNameRange registry:https://registry.npmjs.org/hooker not in flight; fetching
+502 silly cache add args [ 'iconv-lite@~0.2.11', null ]
+503 verbose cache add spec iconv-lite@~0.2.11
+504 silly cache add parsed spec Result {
+504 silly cache add   raw: 'iconv-lite@~0.2.11',
+504 silly cache add   scope: null,
+504 silly cache add   name: 'iconv-lite',
+504 silly cache add   rawSpec: '~0.2.11',
+504 silly cache add   spec: '>=0.2.11 <0.3.0',
+504 silly cache add   type: 'range' }
+505 silly addNamed iconv-lite@>=0.2.11 <0.3.0
+506 verbose addNamed ">=0.2.11 <0.3.0" is a valid semver range for iconv-lite
+507 silly addNameRange { name: 'iconv-lite', range: '>=0.2.11 <0.3.0', hasData: false }
+508 silly mapToRegistry name iconv-lite
+509 silly mapToRegistry using default registry
+510 silly mapToRegistry registry https://registry.npmjs.org/
+511 silly mapToRegistry uri https://registry.npmjs.org/iconv-lite
+512 verbose addNameRange registry:https://registry.npmjs.org/iconv-lite not in flight; fetching
+513 silly cache add args [ 'minimatch@~0.2.12', null ]
+514 verbose cache add spec minimatch@~0.2.12
+515 silly cache add parsed spec Result {
+515 silly cache add   raw: 'minimatch@~0.2.12',
+515 silly cache add   scope: null,
+515 silly cache add   name: 'minimatch',
+515 silly cache add   rawSpec: '~0.2.12',
+515 silly cache add   spec: '>=0.2.12 <0.3.0',
+515 silly cache add   type: 'range' }
+516 silly addNamed minimatch@>=0.2.12 <0.3.0
+517 verbose addNamed ">=0.2.12 <0.3.0" is a valid semver range for minimatch
+518 silly addNameRange { name: 'minimatch', range: '>=0.2.12 <0.3.0', hasData: false }
+519 silly mapToRegistry name minimatch
+520 silly mapToRegistry using default registry
+521 silly mapToRegistry registry https://registry.npmjs.org/
+522 silly mapToRegistry uri https://registry.npmjs.org/minimatch
+523 verbose addNameRange registry:https://registry.npmjs.org/minimatch not in flight; fetching
+524 silly cache add args [ 'nopt@~1.0.10', null ]
+525 verbose cache add spec nopt@~1.0.10
+526 silly cache add parsed spec Result {
+526 silly cache add   raw: 'nopt@~1.0.10',
+526 silly cache add   scope: null,
+526 silly cache add   name: 'nopt',
+526 silly cache add   rawSpec: '~1.0.10',
+526 silly cache add   spec: '>=1.0.10 <1.1.0',
+526 silly cache add   type: 'range' }
+527 silly addNamed nopt@>=1.0.10 <1.1.0
+528 verbose addNamed ">=1.0.10 <1.1.0" is a valid semver range for nopt
+529 silly addNameRange { name: 'nopt', range: '>=1.0.10 <1.1.0', hasData: false }
+530 silly mapToRegistry name nopt
+531 silly mapToRegistry using default registry
+532 silly mapToRegistry registry https://registry.npmjs.org/
+533 silly mapToRegistry uri https://registry.npmjs.org/nopt
+534 verbose addNameRange registry:https://registry.npmjs.org/nopt not in flight; fetching
+535 silly cache add args [ 'rimraf@~2.2.8', null ]
+536 verbose cache add spec rimraf@~2.2.8
+537 silly cache add parsed spec Result {
+537 silly cache add   raw: 'rimraf@~2.2.8',
+537 silly cache add   scope: null,
+537 silly cache add   name: 'rimraf',
+537 silly cache add   rawSpec: '~2.2.8',
+537 silly cache add   spec: '>=2.2.8 <2.3.0',
+537 silly cache add   type: 'range' }
+538 silly addNamed rimraf@>=2.2.8 <2.3.0
+539 verbose addNamed ">=2.2.8 <2.3.0" is a valid semver range for rimraf
+540 silly addNameRange { name: 'rimraf', range: '>=2.2.8 <2.3.0', hasData: false }
+541 silly mapToRegistry name rimraf
+542 silly mapToRegistry using default registry
+543 silly mapToRegistry registry https://registry.npmjs.org/
+544 silly mapToRegistry uri https://registry.npmjs.org/rimraf
+545 verbose addNameRange registry:https://registry.npmjs.org/rimraf not in flight; fetching
+546 silly cache add args [ 'lodash@~0.9.2', null ]
+547 verbose cache add spec lodash@~0.9.2
+548 silly cache add parsed spec Result {
+548 silly cache add   raw: 'lodash@~0.9.2',
+548 silly cache add   scope: null,
+548 silly cache add   name: 'lodash',
+548 silly cache add   rawSpec: '~0.9.2',
+548 silly cache add   spec: '>=0.9.2 <0.10.0',
+548 silly cache add   type: 'range' }
+549 silly addNamed lodash@>=0.9.2 <0.10.0
+550 verbose addNamed ">=0.9.2 <0.10.0" is a valid semver range for lodash
+551 silly addNameRange { name: 'lodash', range: '>=0.9.2 <0.10.0', hasData: false }
+552 silly mapToRegistry name lodash
+553 silly mapToRegistry using default registry
+554 silly mapToRegistry registry https://registry.npmjs.org/
+555 silly mapToRegistry uri https://registry.npmjs.org/lodash
+556 verbose addNameRange registry:https://registry.npmjs.org/lodash already in flight; waiting
+557 silly cache add args [ 'underscore.string@~2.2.1', null ]
+558 verbose cache add spec underscore.string@~2.2.1
+559 silly cache add parsed spec Result {
+559 silly cache add   raw: 'underscore.string@~2.2.1',
+559 silly cache add   scope: null,
+559 silly cache add   name: 'underscore.string',
+559 silly cache add   rawSpec: '~2.2.1',
+559 silly cache add   spec: '>=2.2.1 <2.3.0',
+559 silly cache add   type: 'range' }
+560 silly addNamed underscore.string@>=2.2.1 <2.3.0
+561 verbose addNamed ">=2.2.1 <2.3.0" is a valid semver range for underscore.string
+562 silly addNameRange { name: 'underscore.string',
+562 silly addNameRange   range: '>=2.2.1 <2.3.0',
+562 silly addNameRange   hasData: false }
+563 silly mapToRegistry name underscore.string
+564 silly mapToRegistry using default registry
+565 silly mapToRegistry registry https://registry.npmjs.org/
+566 silly mapToRegistry uri https://registry.npmjs.org/underscore.string
+567 verbose addNameRange registry:https://registry.npmjs.org/underscore.string not in flight; fetching
+568 silly cache add args [ 'which@~1.0.5', null ]
+569 verbose cache add spec which@~1.0.5
+570 silly cache add parsed spec Result {
+570 silly cache add   raw: 'which@~1.0.5',
+570 silly cache add   scope: null,
+570 silly cache add   name: 'which',
+570 silly cache add   rawSpec: '~1.0.5',
+570 silly cache add   spec: '>=1.0.5 <1.1.0',
+570 silly cache add   type: 'range' }
+571 silly addNamed which@>=1.0.5 <1.1.0
+572 verbose addNamed ">=1.0.5 <1.1.0" is a valid semver range for which
+573 silly addNameRange { name: 'which', range: '>=1.0.5 <1.1.0', hasData: false }
+574 silly mapToRegistry name which
+575 silly mapToRegistry using default registry
+576 silly mapToRegistry registry https://registry.npmjs.org/
+577 silly mapToRegistry uri https://registry.npmjs.org/which
+578 verbose addNameRange registry:https://registry.npmjs.org/which not in flight; fetching
+579 silly cache add args [ 'js-yaml@~2.0.5', null ]
+580 verbose cache add spec js-yaml@~2.0.5
+581 silly cache add parsed spec Result {
+581 silly cache add   raw: 'js-yaml@~2.0.5',
+581 silly cache add   scope: null,
+581 silly cache add   name: 'js-yaml',
+581 silly cache add   rawSpec: '~2.0.5',
+581 silly cache add   spec: '>=2.0.5 <2.1.0',
+581 silly cache add   type: 'range' }
+582 silly addNamed js-yaml@>=2.0.5 <2.1.0
+583 verbose addNamed ">=2.0.5 <2.1.0" is a valid semver range for js-yaml
+584 silly addNameRange { name: 'js-yaml', range: '>=2.0.5 <2.1.0', hasData: false }
+585 silly mapToRegistry name js-yaml
+586 silly mapToRegistry using default registry
+587 silly mapToRegistry registry https://registry.npmjs.org/
+588 silly mapToRegistry uri https://registry.npmjs.org/js-yaml
+589 verbose addNameRange registry:https://registry.npmjs.org/js-yaml not in flight; fetching
+590 silly cache add args [ 'exit@~0.1.1', null ]
+591 verbose cache add spec exit@~0.1.1
+592 silly cache add parsed spec Result {
+592 silly cache add   raw: 'exit@~0.1.1',
+592 silly cache add   scope: null,
+592 silly cache add   name: 'exit',
+592 silly cache add   rawSpec: '~0.1.1',
+592 silly cache add   spec: '>=0.1.1 <0.2.0',
+592 silly cache add   type: 'range' }
+593 silly addNamed exit@>=0.1.1 <0.2.0
+594 verbose addNamed ">=0.1.1 <0.2.0" is a valid semver range for exit
+595 silly addNameRange { name: 'exit', range: '>=0.1.1 <0.2.0', hasData: false }
+596 silly mapToRegistry name exit
+597 silly mapToRegistry using default registry
+598 silly mapToRegistry registry https://registry.npmjs.org/
+599 silly mapToRegistry uri https://registry.npmjs.org/exit
+600 verbose addNameRange registry:https://registry.npmjs.org/exit not in flight; fetching
+601 silly cache add args [ 'getobject@~0.1.0', null ]
+602 verbose cache add spec getobject@~0.1.0
+603 silly cache add parsed spec Result {
+603 silly cache add   raw: 'getobject@~0.1.0',
+603 silly cache add   scope: null,
+603 silly cache add   name: 'getobject',
+603 silly cache add   rawSpec: '~0.1.0',
+603 silly cache add   spec: '>=0.1.0 <0.2.0',
+603 silly cache add   type: 'range' }
+604 silly addNamed getobject@>=0.1.0 <0.2.0
+605 verbose addNamed ">=0.1.0 <0.2.0" is a valid semver range for getobject
+606 silly addNameRange { name: 'getobject', range: '>=0.1.0 <0.2.0', hasData: false }
+607 silly mapToRegistry name getobject
+608 silly mapToRegistry using default registry
+609 silly mapToRegistry registry https://registry.npmjs.org/
+610 silly mapToRegistry uri https://registry.npmjs.org/getobject
+611 verbose addNameRange registry:https://registry.npmjs.org/getobject not in flight; fetching
+612 silly cache add args [ 'grunt-legacy-util@~0.2.0', null ]
+613 verbose cache add spec grunt-legacy-util@~0.2.0
+614 silly cache add parsed spec Result {
+614 silly cache add   raw: 'grunt-legacy-util@~0.2.0',
+614 silly cache add   scope: null,
+614 silly cache add   name: 'grunt-legacy-util',
+614 silly cache add   rawSpec: '~0.2.0',
+614 silly cache add   spec: '>=0.2.0 <0.3.0',
+614 silly cache add   type: 'range' }
+615 silly addNamed grunt-legacy-util@>=0.2.0 <0.3.0
+616 verbose addNamed ">=0.2.0 <0.3.0" is a valid semver range for grunt-legacy-util
+617 silly addNameRange { name: 'grunt-legacy-util',
+617 silly addNameRange   range: '>=0.2.0 <0.3.0',
+617 silly addNameRange   hasData: false }
+618 silly mapToRegistry name grunt-legacy-util
+619 silly mapToRegistry using default registry
+620 silly mapToRegistry registry https://registry.npmjs.org/
+621 silly mapToRegistry uri https://registry.npmjs.org/grunt-legacy-util
+622 verbose addNameRange registry:https://registry.npmjs.org/grunt-legacy-util not in flight; fetching
+623 silly cache add args [ 'grunt-legacy-log@~0.1.0', null ]
+624 verbose cache add spec grunt-legacy-log@~0.1.0
+625 silly cache add parsed spec Result {
+625 silly cache add   raw: 'grunt-legacy-log@~0.1.0',
+625 silly cache add   scope: null,
+625 silly cache add   name: 'grunt-legacy-log',
+625 silly cache add   rawSpec: '~0.1.0',
+625 silly cache add   spec: '>=0.1.0 <0.2.0',
+625 silly cache add   type: 'range' }
+626 silly addNamed grunt-legacy-log@>=0.1.0 <0.2.0
+627 verbose addNamed ">=0.1.0 <0.2.0" is a valid semver range for grunt-legacy-log
+628 silly addNameRange { name: 'grunt-legacy-log',
+628 silly addNameRange   range: '>=0.1.0 <0.2.0',
+628 silly addNameRange   hasData: false }
+629 silly mapToRegistry name grunt-legacy-log
+630 silly mapToRegistry using default registry
+631 silly mapToRegistry registry https://registry.npmjs.org/
+632 silly mapToRegistry uri https://registry.npmjs.org/grunt-legacy-log
+633 verbose addNameRange registry:https://registry.npmjs.org/grunt-legacy-log not in flight; fetching
+634 silly gunzTarPerm extractEntry src/libsass/color_names.hpp
+635 silly gunzTarPerm extractEntry src/libsass/configure.ac
+636 silly addNameRange number 2 { name: 'each-async', range: '>=1.0.0 <2.0.0', hasData: true }
+637 silly addNameRange versions [ 'each-async',
+637 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.2', '0.1.3', '1.0.0', '1.1.0', '1.1.1' ] ]
+638 silly addNamed each-async@1.1.1
+639 verbose addNamed "1.1.1" is a plain semver version for each-async
+640 silly cache afterAdd object-assign@2.1.1
+641 verbose afterAdd /home/ubuntu/.npm/object-assign/2.1.1/package/package.json not in flight; writing
+642 silly mapToRegistry name each-async
+643 silly mapToRegistry using default registry
+644 silly mapToRegistry registry https://registry.npmjs.org/
+645 silly mapToRegistry uri https://registry.npmjs.org/each-async
+646 verbose addRemoteTarball https://registry.npmjs.org/each-async/-/each-async-1.1.1.tgz not in flight; adding
+647 verbose addRemoteTarball [ 'https://registry.npmjs.org/each-async/-/each-async-1.1.1.tgz',
+647 verbose addRemoteTarball   'dee5229bdf0ab6ba2012a395e1b869abf8813473' ]
+648 verbose request uri https://registry.npmjs.org/colors
+649 verbose request no auth needed
+650 info attempt registry request try #1 at 4:22:12 PM
+651 verbose etag "4LRHFSIRCXH9PYDDO855NBRBU"
+652 http request GET https://registry.npmjs.org/colors
+653 verbose request uri https://registry.npmjs.org/dateformat
+654 verbose request no auth needed
+655 info attempt registry request try #1 at 4:22:12 PM
+656 verbose etag "40LW0F6MF6X1HLDMJXOTH1JCD"
+657 http request GET https://registry.npmjs.org/dateformat
+658 verbose request uri https://registry.npmjs.org/coffee-script
+659 verbose request no auth needed
+660 info attempt registry request try #1 at 4:22:12 PM
+661 verbose etag "A2BRCHSJ5TMNBUWR2HS8RDNNL"
+662 http request GET https://registry.npmjs.org/coffee-script
+663 verbose request uri https://registry.npmjs.org/findup-sync
+664 verbose request no auth needed
+665 info attempt registry request try #1 at 4:22:12 PM
+666 verbose etag "B6BINNMDZYTJNG3G1M3XL3JKV"
+667 http request GET https://registry.npmjs.org/findup-sync
+668 verbose request uri https://registry.npmjs.org/glob
+669 verbose request no auth needed
+670 info attempt registry request try #1 at 4:22:12 PM
+671 verbose etag "2E6IF5Y7BMJVETG2NRGLQ1KXX"
+672 http request GET https://registry.npmjs.org/glob
+673 verbose request uri https://registry.npmjs.org/minimatch
+674 verbose request no auth needed
+675 info attempt registry request try #1 at 4:22:12 PM
+676 verbose etag "1NRVLAPXT3XMB0QYUCYMZ8XB"
+677 http request GET https://registry.npmjs.org/minimatch
+678 verbose request uri https://registry.npmjs.org/nopt
+679 verbose request no auth needed
+680 info attempt registry request try #1 at 4:22:12 PM
+681 verbose etag "F22GDGAACVD3ATRE3NVNUREBG"
+682 http request GET https://registry.npmjs.org/nopt
+683 verbose request uri https://registry.npmjs.org/eventemitter2
+684 verbose request no auth needed
+685 info attempt registry request try #1 at 4:22:12 PM
+686 verbose etag "5OVM5CTJ3RP8783CMIZC0IYUK"
+687 http request GET https://registry.npmjs.org/eventemitter2
+688 verbose request uri https://registry.npmjs.org/rimraf
+689 verbose request no auth needed
+690 info attempt registry request try #1 at 4:22:12 PM
+691 verbose etag "BLUG1D8K6P6CPFQK2A2PVL6LH"
+692 http request GET https://registry.npmjs.org/rimraf
+693 verbose request uri https://registry.npmjs.org/js-yaml
+694 verbose request no auth needed
+695 info attempt registry request try #1 at 4:22:12 PM
+696 verbose etag "GDRHTP763J22YU61EQPKLL66"
+697 http request GET https://registry.npmjs.org/js-yaml
+698 verbose request uri https://registry.npmjs.org/iconv-lite
+699 verbose request no auth needed
+700 info attempt registry request try #1 at 4:22:12 PM
+701 verbose etag "BFX9VE0WW4BBYFIXO1QLOPZY"
+702 http request GET https://registry.npmjs.org/iconv-lite
+703 verbose request uri https://registry.npmjs.org/which
+704 verbose request no auth needed
+705 info attempt registry request try #1 at 4:22:12 PM
+706 verbose etag "120NFT01U2TUD96TEVT782NG7"
+707 http request GET https://registry.npmjs.org/which
+708 verbose request uri https://registry.npmjs.org/underscore.string
+709 verbose request no auth needed
+710 info attempt registry request try #1 at 4:22:12 PM
+711 verbose etag "9HLXDOKWC1I2LOXJ9C352NREI"
+712 http request GET https://registry.npmjs.org/underscore.string
+713 verbose request uri https://registry.npmjs.org/exit
+714 verbose request no auth needed
+715 info attempt registry request try #1 at 4:22:12 PM
+716 verbose etag "66GA3RUQR76WJVRZF6ITVOZPO"
+717 http request GET https://registry.npmjs.org/exit
+718 verbose request uri https://registry.npmjs.org/getobject
+719 verbose request no auth needed
+720 info attempt registry request try #1 at 4:22:12 PM
+721 verbose etag "BPRQ6ZA5H0SY8TQS2VENHJTW0"
+722 http request GET https://registry.npmjs.org/getobject
+723 verbose request uri https://registry.npmjs.org/hooker
+724 verbose request no auth needed
+725 info attempt registry request try #1 at 4:22:12 PM
+726 verbose etag "7N8ZCI8M61GJ2PK69DF5E6XWP"
+727 http request GET https://registry.npmjs.org/hooker
+728 verbose request uri https://registry.npmjs.org/grunt-legacy-util
+729 verbose request no auth needed
+730 info attempt registry request try #1 at 4:22:12 PM
+731 verbose etag "937M3ZH1Z0OA0IWSDR7Y8V1TP"
+732 http request GET https://registry.npmjs.org/grunt-legacy-util
+733 verbose request uri https://registry.npmjs.org/grunt-legacy-log
+734 verbose request no auth needed
+735 info attempt registry request try #1 at 4:22:12 PM
+736 verbose etag "BW8R33IX38J1Q09EPN87BQNU5"
+737 http request GET https://registry.npmjs.org/grunt-legacy-log
+738 info retry fetch attempt 1 at 4:22:12 PM
+739 info attempt registry request try #1 at 4:22:12 PM
+740 http fetch GET https://registry.npmjs.org/each-async/-/each-async-1.1.1.tgz
+741 http 304 https://registry.npmjs.org/lodash
+742 verbose headers { date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+742 verbose headers   via: '1.1 varnish',
+742 verbose headers   'cache-control': 'max-age=60',
+742 verbose headers   etag: '"ESXB42Q429VCUHETQD54ALIMX"',
+742 verbose headers   age: '37',
+742 verbose headers   connection: 'keep-alive',
+742 verbose headers   'x-served-by': 'cache-dfw1823-DFW',
+742 verbose headers   'x-cache': 'HIT',
+742 verbose headers   'x-cache-hits': '5',
+742 verbose headers   'x-timer': 'S1446654132.123528,VS0,VE0',
+742 verbose headers   vary: 'Accept' }
+743 silly get cb [ 304,
+743 silly get   { date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+743 silly get     via: '1.1 varnish',
+743 silly get     'cache-control': 'max-age=60',
+743 silly get     etag: '"ESXB42Q429VCUHETQD54ALIMX"',
+743 silly get     age: '37',
+743 silly get     connection: 'keep-alive',
+743 silly get     'x-served-by': 'cache-dfw1823-DFW',
+743 silly get     'x-cache': 'HIT',
+743 silly get     'x-cache-hits': '5',
+743 silly get     'x-timer': 'S1446654132.123528,VS0,VE0',
+743 silly get     vary: 'Accept' } ]
+744 verbose etag https://registry.npmjs.org/lodash from cache
+745 verbose get saving lodash to /home/ubuntu/.npm/registry.npmjs.org/lodash/.cache.json
+746 http 200 https://registry.npmjs.org/tiny-lr-fork
+747 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+747 verbose headers   etag: '"9ATLEQSLOKA6WCFFKVWB9Y5GI"',
+747 verbose headers   'content-type': 'application/json',
+747 verbose headers   'cache-control': 'max-age=60',
+747 verbose headers   'content-length': '12403',
+747 verbose headers   'accept-ranges': 'bytes',
+747 verbose headers   date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+747 verbose headers   via: '1.1 varnish',
+747 verbose headers   age: '5',
+747 verbose headers   connection: 'keep-alive',
+747 verbose headers   'x-served-by': 'cache-iad2128-IAD',
+747 verbose headers   'x-cache': 'HIT',
+747 verbose headers   'x-cache-hits': '1',
+747 verbose headers   'x-timer': 'S1446654132.118424,VS0,VE0',
+747 verbose headers   vary: 'Accept' }
+748 silly get cb [ 200,
+748 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+748 silly get     etag: '"9ATLEQSLOKA6WCFFKVWB9Y5GI"',
+748 silly get     'content-type': 'application/json',
+748 silly get     'cache-control': 'max-age=60',
+748 silly get     'content-length': '12403',
+748 silly get     'accept-ranges': 'bytes',
+748 silly get     date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+748 silly get     via: '1.1 varnish',
+748 silly get     age: '5',
+748 silly get     connection: 'keep-alive',
+748 silly get     'x-served-by': 'cache-iad2128-IAD',
+748 silly get     'x-cache': 'HIT',
+748 silly get     'x-cache-hits': '1',
+748 silly get     'x-timer': 'S1446654132.118424,VS0,VE0',
+748 silly get     vary: 'Accept' } ]
+749 verbose get saving tiny-lr-fork to /home/ubuntu/.npm/registry.npmjs.org/tiny-lr-fork/.cache.json
+750 verbose afterAdd /home/ubuntu/.npm/object-assign/2.1.1/package/package.json written
+751 silly gunzTarPerm extractEntry src/libsass/constants.cpp
+752 silly gunzTarPerm extractEntry src/libsass/constants.hpp
+753 http 200 https://registry.npmjs.org/gaze
+754 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+754 verbose headers   etag: '"DWYI2TV4A5JMAHCQCOBY81UR6"',
+754 verbose headers   'content-type': 'application/json',
+754 verbose headers   'cache-control': 'max-age=60',
+754 verbose headers   'content-length': '48583',
+754 verbose headers   'accept-ranges': 'bytes',
+754 verbose headers   date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+754 verbose headers   via: '1.1 varnish',
+754 verbose headers   age: '15',
+754 verbose headers   connection: 'keep-alive',
+754 verbose headers   'x-served-by': 'cache-iad2134-IAD',
+754 verbose headers   'x-cache': 'HIT',
+754 verbose headers   'x-cache-hits': '1',
+754 verbose headers   'x-timer': 'S1446654132.102307,VS0,VE2',
+754 verbose headers   vary: 'Accept' }
+755 silly get cb [ 200,
+755 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+755 silly get     etag: '"DWYI2TV4A5JMAHCQCOBY81UR6"',
+755 silly get     'content-type': 'application/json',
+755 silly get     'cache-control': 'max-age=60',
+755 silly get     'content-length': '48583',
+755 silly get     'accept-ranges': 'bytes',
+755 silly get     date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+755 silly get     via: '1.1 varnish',
+755 silly get     age: '15',
+755 silly get     connection: 'keep-alive',
+755 silly get     'x-served-by': 'cache-iad2134-IAD',
+755 silly get     'x-cache': 'HIT',
+755 silly get     'x-cache-hits': '1',
+755 silly get     'x-timer': 'S1446654132.102307,VS0,VE2',
+755 silly get     vary: 'Accept' } ]
+756 verbose get saving gaze to /home/ubuntu/.npm/registry.npmjs.org/gaze/.cache.json
+757 silly addNameRange number 2 { name: 'lodash', range: '>=2.4.1 <2.5.0', hasData: true }
+758 silly addNameRange versions [ 'lodash',
+758 silly addNameRange   [ '0.1.0',
+758 silly addNameRange     '0.2.0',
+758 silly addNameRange     '0.2.1',
+758 silly addNameRange     '0.2.2',
+758 silly addNameRange     '0.3.0',
+758 silly addNameRange     '0.3.1',
+758 silly addNameRange     '0.3.2',
+758 silly addNameRange     '0.4.0',
+758 silly addNameRange     '0.4.1',
+758 silly addNameRange     '0.4.2',
+758 silly addNameRange     '0.5.0-rc.1',
+758 silly addNameRange     '0.5.0',
+758 silly addNameRange     '0.5.1',
+758 silly addNameRange     '0.5.2',
+758 silly addNameRange     '0.6.0',
+758 silly addNameRange     '0.6.1',
+758 silly addNameRange     '0.7.0',
+758 silly addNameRange     '0.8.0',
+758 silly addNameRange     '0.8.1',
+758 silly addNameRange     '0.8.2',
+758 silly addNameRange     '0.9.0',
+758 silly addNameRange     '0.9.1',
+758 silly addNameRange     '0.9.2',
+758 silly addNameRange     '0.10.0',
+758 silly addNameRange     '1.0.0-rc.1',
+758 silly addNameRange     '1.0.0-rc.2',
+758 silly addNameRange     '1.0.0-rc.3',
+758 silly addNameRange     '1.0.0',
+758 silly addNameRange     '1.0.1',
+758 silly addNameRange     '1.1.0',
+758 silly addNameRange     '1.1.1',
+758 silly addNameRange     '1.2.0',
+758 silly addNameRange     '1.2.1',
+758 silly addNameRange     '1.3.0',
+758 silly addNameRange     '1.3.1',
+758 silly addNameRange     '2.0.0',
+758 silly addNameRange     '2.1.0',
+758 silly addNameRange     '2.2.0',
+758 silly addNameRange     '2.2.1',
+758 silly addNameRange     '2.3.0',
+758 silly addNameRange     '2.4.0',
+758 silly addNameRange     '2.4.1',
+758 silly addNameRange     '3.0.0',
+758 silly addNameRange     '3.0.1',
+758 silly addNameRange     '3.1.0',
+758 silly addNameRange     '3.2.0',
+758 silly addNameRange     '3.3.0',
+758 silly addNameRange     '3.3.1',
+758 silly addNameRange     '3.4.0',
+758 silly addNameRange     '3.5.0',
+758 silly addNameRange     '3.6.0',
+758 silly addNameRange     '1.0.2',
+758 silly addNameRange     '3.7.0',
+758 silly addNameRange     '2.4.2',
+758 silly addNameRange     '3.8.0',
+758 silly addNameRange     '3.9.0',
+758 silly addNameRange     '3.9.1',
+758 silly addNameRange     '3.9.2',
+758 silly addNameRange     '3.9.3',
+758 silly addNameRange     '3.10.0',
+758 silly addNameRange     '3.10.1' ] ]
+759 silly addNamed lodash@2.4.2
+760 verbose addNamed "2.4.2" is a plain semver version for lodash
+761 silly addNameRange number 2 { name: 'lodash', range: '>=0.9.2 <0.10.0', hasData: true }
+762 silly addNameRange versions [ 'lodash',
+762 silly addNameRange   [ '0.1.0',
+762 silly addNameRange     '0.2.0',
+762 silly addNameRange     '0.2.1',
+762 silly addNameRange     '0.2.2',
+762 silly addNameRange     '0.3.0',
+762 silly addNameRange     '0.3.1',
+762 silly addNameRange     '0.3.2',
+762 silly addNameRange     '0.4.0',
+762 silly addNameRange     '0.4.1',
+762 silly addNameRange     '0.4.2',
+762 silly addNameRange     '0.5.0-rc.1',
+762 silly addNameRange     '0.5.0',
+762 silly addNameRange     '0.5.1',
+762 silly addNameRange     '0.5.2',
+762 silly addNameRange     '0.6.0',
+762 silly addNameRange     '0.6.1',
+762 silly addNameRange     '0.7.0',
+762 silly addNameRange     '0.8.0',
+762 silly addNameRange     '0.8.1',
+762 silly addNameRange     '0.8.2',
+762 silly addNameRange     '0.9.0',
+762 silly addNameRange     '0.9.1',
+762 silly addNameRange     '0.9.2',
+762 silly addNameRange     '0.10.0',
+762 silly addNameRange     '1.0.0-rc.1',
+762 silly addNameRange     '1.0.0-rc.2',
+762 silly addNameRange     '1.0.0-rc.3',
+762 silly addNameRange     '1.0.0',
+762 silly addNameRange     '1.0.1',
+762 silly addNameRange     '1.1.0',
+762 silly addNameRange     '1.1.1',
+762 silly addNameRange     '1.2.0',
+762 silly addNameRange     '1.2.1',
+762 silly addNameRange     '1.3.0',
+762 silly addNameRange     '1.3.1',
+762 silly addNameRange     '2.0.0',
+762 silly addNameRange     '2.1.0',
+762 silly addNameRange     '2.2.0',
+762 silly addNameRange     '2.2.1',
+762 silly addNameRange     '2.3.0',
+762 silly addNameRange     '2.4.0',
+762 silly addNameRange     '2.4.1',
+762 silly addNameRange     '3.0.0',
+762 silly addNameRange     '3.0.1',
+762 silly addNameRange     '3.1.0',
+762 silly addNameRange     '3.2.0',
+762 silly addNameRange     '3.3.0',
+762 silly addNameRange     '3.3.1',
+762 silly addNameRange     '3.4.0',
+762 silly addNameRange     '3.5.0',
+762 silly addNameRange     '3.6.0',
+762 silly addNameRange     '1.0.2',
+762 silly addNameRange     '3.7.0',
+762 silly addNameRange     '2.4.2',
+762 silly addNameRange     '3.8.0',
+762 silly addNameRange     '3.9.0',
+762 silly addNameRange     '3.9.1',
+762 silly addNameRange     '3.9.2',
+762 silly addNameRange     '3.9.3',
+762 silly addNameRange     '3.10.0',
+762 silly addNameRange     '3.10.1' ] ]
+763 silly addNamed lodash@0.9.2
+764 verbose addNamed "0.9.2" is a plain semver version for lodash
+765 http 200 https://registry.npmjs.org/async
+766 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+766 verbose headers   etag: '"CG7ILZCHQONLORM4DOCSTU4SP"',
+766 verbose headers   'content-type': 'application/json',
+766 verbose headers   'cache-control': 'max-age=60',
+766 verbose headers   'content-length': '131904',
+766 verbose headers   'accept-ranges': 'bytes',
+766 verbose headers   date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+766 verbose headers   via: '1.1 varnish',
+766 verbose headers   age: '44',
+766 verbose headers   connection: 'keep-alive',
+766 verbose headers   'x-served-by': 'cache-dfw1825-DFW',
+766 verbose headers   'x-cache': 'HIT',
+766 verbose headers   'x-cache-hits': '5',
+766 verbose headers   'x-timer': 'S1446654132.132794,VS0,VE0',
+766 verbose headers   vary: 'Accept' }
+767 silly get cb [ 200,
+767 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+767 silly get     etag: '"CG7ILZCHQONLORM4DOCSTU4SP"',
+767 silly get     'content-type': 'application/json',
+767 silly get     'cache-control': 'max-age=60',
+767 silly get     'content-length': '131904',
+767 silly get     'accept-ranges': 'bytes',
+767 silly get     date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+767 silly get     via: '1.1 varnish',
+767 silly get     age: '44',
+767 silly get     connection: 'keep-alive',
+767 silly get     'x-served-by': 'cache-dfw1825-DFW',
+767 silly get     'x-cache': 'HIT',
+767 silly get     'x-cache-hits': '5',
+767 silly get     'x-timer': 'S1446654132.132794,VS0,VE0',
+767 silly get     vary: 'Accept' } ]
+768 verbose get saving async to /home/ubuntu/.npm/registry.npmjs.org/async/.cache.json
+769 silly mapToRegistry name tiny-lr-fork
+770 silly mapToRegistry using default registry
+771 silly mapToRegistry registry https://registry.npmjs.org/
+772 silly mapToRegistry uri https://registry.npmjs.org/tiny-lr-fork
+773 verbose addRemoteTarball https://registry.npmjs.org/tiny-lr-fork/-/tiny-lr-fork-0.0.5.tgz not in flight; adding
+774 verbose addRemoteTarball [ 'https://registry.npmjs.org/tiny-lr-fork/-/tiny-lr-fork-0.0.5.tgz',
+774 verbose addRemoteTarball   '1e99e1e2a8469b736ab97d97eefa98c71f76ed0a' ]
+775 silly gunzTarPerm extractEntry src/libsass/context.cpp
+776 silly addNameRange number 2 { name: 'gaze', range: '>=0.5.1 <0.6.0', hasData: true }
+777 silly addNameRange versions [ 'gaze',
+777 silly addNameRange   [ '0.1.0',
+777 silly addNameRange     '0.1.1',
+777 silly addNameRange     '0.1.2',
+777 silly addNameRange     '0.1.3',
+777 silly addNameRange     '0.1.4',
+777 silly addNameRange     '0.1.5',
+777 silly addNameRange     '0.1.6',
+777 silly addNameRange     '0.2.0',
+777 silly addNameRange     '0.2.1',
+777 silly addNameRange     '0.2.2',
+777 silly addNameRange     '0.3.0',
+777 silly addNameRange     '0.3.1',
+777 silly addNameRange     '0.3.2',
+777 silly addNameRange     '0.3.3',
+777 silly addNameRange     '0.3.4',
+777 silly addNameRange     '0.4.0',
+777 silly addNameRange     '0.4.1',
+777 silly addNameRange     '0.4.2',
+777 silly addNameRange     '0.4.3',
+777 silly addNameRange     '0.5.0',
+777 silly addNameRange     '0.5.1',
+777 silly addNameRange     '0.6.0',
+777 silly addNameRange     '0.6.1',
+777 silly addNameRange     '0.6.2',
+777 silly addNameRange     '0.6.3',
+777 silly addNameRange     '0.6.4',
+777 silly addNameRange     '0.5.2' ] ]
+778 silly addNamed gaze@0.5.2
+779 verbose addNamed "0.5.2" is a plain semver version for gaze
+780 silly gunzTarPerm extractEntry src/libsass/context.hpp
+781 info retry fetch attempt 1 at 4:22:12 PM
+782 info attempt registry request try #1 at 4:22:12 PM
+783 http fetch GET https://registry.npmjs.org/tiny-lr-fork/-/tiny-lr-fork-0.0.5.tgz
+784 silly cache afterAdd lodash@2.4.2
+785 verbose afterAdd /home/ubuntu/.npm/lodash/2.4.2/package/package.json not in flight; writing
+786 silly mapToRegistry name gaze
+787 silly mapToRegistry using default registry
+788 silly mapToRegistry registry https://registry.npmjs.org/
+789 silly mapToRegistry uri https://registry.npmjs.org/gaze
+790 verbose addRemoteTarball https://registry.npmjs.org/gaze/-/gaze-0.5.2.tgz not in flight; adding
+791 verbose addRemoteTarball [ 'https://registry.npmjs.org/gaze/-/gaze-0.5.2.tgz',
+791 verbose addRemoteTarball   '40b709537d24d1d45767db5a908689dfe69ac44f' ]
+792 silly cache afterAdd lodash@0.9.2
+793 verbose afterAdd /home/ubuntu/.npm/lodash/0.9.2/package/package.json not in flight; writing
+794 info retry fetch attempt 1 at 4:22:12 PM
+795 info attempt registry request try #1 at 4:22:12 PM
+796 http fetch GET https://registry.npmjs.org/gaze/-/gaze-0.5.2.tgz
+797 silly addNameRange number 2 { name: 'async', range: '>=0.2.9 <0.3.0', hasData: true }
+798 silly addNameRange versions [ 'async',
+798 silly addNameRange   [ '0.1.0',
+798 silly addNameRange     '0.1.1',
+798 silly addNameRange     '0.1.2',
+798 silly addNameRange     '0.1.3',
+798 silly addNameRange     '0.1.4',
+798 silly addNameRange     '0.1.5',
+798 silly addNameRange     '0.1.6',
+798 silly addNameRange     '0.1.7',
+798 silly addNameRange     '0.1.8',
+798 silly addNameRange     '0.1.9',
+798 silly addNameRange     '0.1.10',
+798 silly addNameRange     '0.1.11',
+798 silly addNameRange     '0.1.12',
+798 silly addNameRange     '0.1.13',
+798 silly addNameRange     '0.1.14',
+798 silly addNameRange     '0.1.15',
+798 silly addNameRange     '0.1.16',
+798 silly addNameRange     '0.1.17',
+798 silly addNameRange     '0.1.18',
+798 silly addNameRange     '0.1.19',
+798 silly addNameRange     '0.1.20',
+798 silly addNameRange     '0.1.21',
+798 silly addNameRange     '0.1.22',
+798 silly addNameRange     '0.2.0',
+798 silly addNameRange     '0.2.1',
+798 silly addNameRange     '0.2.2',
+798 silly addNameRange     '0.2.3',
+798 silly addNameRange     '0.2.4',
+798 silly addNameRange     '0.2.5',
+798 silly addNameRange     '0.2.6',
+798 silly addNameRange     '0.2.7',
+798 silly addNameRange     '0.2.8',
+798 silly addNameRange     '0.2.9',
+798 silly addNameRange     '0.2.10',
+798 silly addNameRange     '0.3.0',
+798 silly addNameRange     '0.4.0',
+798 silly addNameRange     '0.4.1',
+798 silly addNameRange     '0.5.0',
+798 silly addNameRange     '0.6.0',
+798 silly addNameRange     '0.6.1',
+798 silly addNameRange     '0.6.2',
+798 silly addNameRange     '0.7.0',
+798 silly addNameRange     '0.8.0',
+798 silly addNameRange     '0.9.0',
+798 silly addNameRange     '0.9.2',
+798 silly addNameRange     '1.0.0',
+798 silly addNameRange     '1.1.0',
+798 silly addNameRange     '1.2.0',
+798 silly addNameRange     '1.1.1',
+798 silly addNameRange     '1.2.1',
+798 silly addNameRange     '1.3.0',
+798 silly addNameRange     '1.4.0',
+798 silly addNameRange     '1.4.1',
+798 silly addNameRange     '1.4.2',
+798 silly addNameRange     '1.5.0' ] ]
+799 silly addNamed async@0.2.10
+800 verbose addNamed "0.2.10" is a plain semver version for async
+801 silly addNameRange number 2 { name: 'async', range: '>=0.1.22 <0.2.0', hasData: true }
+802 silly addNameRange versions [ 'async',
+802 silly addNameRange   [ '0.1.0',
+802 silly addNameRange     '0.1.1',
+802 silly addNameRange     '0.1.2',
+802 silly addNameRange     '0.1.3',
+802 silly addNameRange     '0.1.4',
+802 silly addNameRange     '0.1.5',
+802 silly addNameRange     '0.1.6',
+802 silly addNameRange     '0.1.7',
+802 silly addNameRange     '0.1.8',
+802 silly addNameRange     '0.1.9',
+802 silly addNameRange     '0.1.10',
+802 silly addNameRange     '0.1.11',
+802 silly addNameRange     '0.1.12',
+802 silly addNameRange     '0.1.13',
+802 silly addNameRange     '0.1.14',
+802 silly addNameRange     '0.1.15',
+802 silly addNameRange     '0.1.16',
+802 silly addNameRange     '0.1.17',
+802 silly addNameRange     '0.1.18',
+802 silly addNameRange     '0.1.19',
+802 silly addNameRange     '0.1.20',
+802 silly addNameRange     '0.1.21',
+802 silly addNameRange     '0.1.22',
+802 silly addNameRange     '0.2.0',
+802 silly addNameRange     '0.2.1',
+802 silly addNameRange     '0.2.2',
+802 silly addNameRange     '0.2.3',
+802 silly addNameRange     '0.2.4',
+802 silly addNameRange     '0.2.5',
+802 silly addNameRange     '0.2.6',
+802 silly addNameRange     '0.2.7',
+802 silly addNameRange     '0.2.8',
+802 silly addNameRange     '0.2.9',
+802 silly addNameRange     '0.2.10',
+802 silly addNameRange     '0.3.0',
+802 silly addNameRange     '0.4.0',
+802 silly addNameRange     '0.4.1',
+802 silly addNameRange     '0.5.0',
+802 silly addNameRange     '0.6.0',
+802 silly addNameRange     '0.6.1',
+802 silly addNameRange     '0.6.2',
+802 silly addNameRange     '0.7.0',
+802 silly addNameRange     '0.8.0',
+802 silly addNameRange     '0.9.0',
+802 silly addNameRange     '0.9.2',
+802 silly addNameRange     '1.0.0',
+802 silly addNameRange     '1.1.0',
+802 silly addNameRange     '1.2.0',
+802 silly addNameRange     '1.1.1',
+802 silly addNameRange     '1.2.1',
+802 silly addNameRange     '1.3.0',
+802 silly addNameRange     '1.4.0',
+802 silly addNameRange     '1.4.1',
+802 silly addNameRange     '1.4.2',
+802 silly addNameRange     '1.5.0' ] ]
+803 silly addNamed async@0.1.22
+804 verbose addNamed "0.1.22" is a plain semver version for async
+805 verbose afterAdd /home/ubuntu/.npm/lodash/2.4.2/package/package.json written
+806 silly gunzTarPerm extractEntry src/libsass/contextualize.cpp
+807 silly gunzTarPerm extractEntry src/libsass/contextualize.hpp
+808 verbose afterAdd /home/ubuntu/.npm/lodash/0.9.2/package/package.json written
+809 silly gunzTarPerm extractEntry src/libsass/contextualize_eval.cpp
+810 silly gunzTarPerm extractEntry src/libsass/contextualize_eval.hpp
+811 silly cache afterAdd async@0.2.10
+812 verbose afterAdd /home/ubuntu/.npm/async/0.2.10/package/package.json not in flight; writing
+813 silly cache afterAdd async@0.1.22
+814 verbose afterAdd /home/ubuntu/.npm/async/0.1.22/package/package.json not in flight; writing
+815 verbose afterAdd /home/ubuntu/.npm/async/0.2.10/package/package.json written
+816 silly gunzTarPerm extractEntry src/libsass/contrib/libsass.spec
+817 silly gunzTarPerm extractEntry src/libsass/contrib/plugin.cpp
+818 verbose afterAdd /home/ubuntu/.npm/async/0.1.22/package/package.json written
+819 silly gunzTarPerm extractEntry src/libsass/cssize.cpp
+820 silly gunzTarPerm extractEntry src/libsass/cssize.hpp
+821 silly gunzTarPerm extractEntry src/libsass/debug.hpp
+822 silly gunzTarPerm extractEntry src/libsass/debugger.hpp
+823 silly gunzTarPerm extractEntry src/libsass/emitter.cpp
+824 silly gunzTarPerm extractEntry src/libsass/emitter.hpp
+825 silly gunzTarPerm extractEntry src/libsass/environment.hpp
+826 silly gunzTarPerm extractEntry src/libsass/error_handling.cpp
+827 silly gunzTarPerm extractEntry src/libsass/error_handling.hpp
+828 silly gunzTarPerm extractEntry src/libsass/eval.cpp
+829 silly gunzTarPerm extractEntry src/libsass/eval.hpp
+830 silly gunzTarPerm extractEntry src/libsass/expand.cpp
+831 silly gunzTarPerm extractEntry src/libsass/expand.hpp
+832 silly gunzTarPerm extractEntry src/libsass/extconf.rb
+833 silly gunzTarPerm extractEntry src/libsass/extend.cpp
+834 silly gunzTarPerm extractEntry src/libsass/extend.hpp
+835 silly gunzTarPerm extractEntry src/libsass/file.cpp
+836 silly gunzTarPerm extractEntry src/libsass/file.hpp
+837 silly gunzTarPerm extractEntry src/libsass/functions.cpp
+838 silly gunzTarPerm extractEntry src/libsass/functions.hpp
+839 silly gunzTarPerm extractEntry src/libsass/inspect.cpp
+840 silly gunzTarPerm extractEntry src/libsass/inspect.hpp
+841 silly gunzTarPerm extractEntry src/libsass/json.cpp
+842 silly gunzTarPerm extractEntry src/libsass/json.hpp
+843 silly gunzTarPerm extractEntry src/libsass/kwd_arg_macros.hpp
+844 silly gunzTarPerm extractEntry src/libsass/.gitattributes
+845 silly gunzTarPerm extractEntry src/libsass/lexer.hpp
+846 silly gunzTarPerm extractEntry src/libsass/listize.cpp
+847 silly gunzTarPerm extractEntry src/libsass/listize.hpp
+848 silly gunzTarPerm extractEntry src/libsass/m4/.gitkeep
+849 silly gunzTarPerm extractEntry src/libsass/mapping.hpp
+850 silly gunzTarPerm extractEntry src/libsass/memory_manager.hpp
+851 silly gunzTarPerm extractEntry src/libsass/node.cpp
+852 silly gunzTarPerm extractEntry src/libsass/node.hpp
+853 silly gunzTarPerm extractEntry src/libsass/operation.hpp
+854 silly gunzTarPerm extractEntry src/libsass/output.cpp
+855 silly gunzTarPerm extractEntry src/libsass/output.hpp
+856 silly gunzTarPerm extractEntry src/libsass/parser.cpp
+857 silly gunzTarPerm extractEntry src/libsass/parser.hpp
+858 silly gunzTarPerm extractEntry src/libsass/paths.hpp
+859 silly gunzTarPerm extractEntry src/libsass/plugins.cpp
+860 silly gunzTarPerm extractEntry src/libsass/plugins.hpp
+861 silly gunzTarPerm extractEntry src/libsass/position.cpp
+862 silly gunzTarPerm extractEntry src/libsass/position.hpp
+863 silly gunzTarPerm extractEntry src/libsass/posix/getopt.c
+864 silly gunzTarPerm extractEntry src/libsass/posix/getopt.h
+865 silly gunzTarPerm extractEntry src/libsass/prelexer.cpp
+866 silly gunzTarPerm extractEntry src/libsass/prelexer.hpp
+867 silly gunzTarPerm extractEntry src/libsass/remove_placeholders.cpp
+868 silly gunzTarPerm extractEntry src/libsass/remove_placeholders.hpp
+869 silly gunzTarPerm extractEntry src/libsass/res/resource.rc
+870 silly gunzTarPerm extractEntry src/libsass/sass.cpp
+871 http 200 https://registry.npmjs.org/colors
+872 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+872 verbose headers   etag: '"AF9TRY9LLDUDCCNCJF5OXVF5V"',
+872 verbose headers   'content-type': 'application/json',
+872 verbose headers   'cache-control': 'max-age=60',
+872 verbose headers   'content-length': '20167',
+872 verbose headers   'accept-ranges': 'bytes',
+872 verbose headers   date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+872 verbose headers   via: '1.1 varnish',
+872 verbose headers   age: '1',
+872 verbose headers   connection: 'keep-alive',
+872 verbose headers   'x-served-by': 'cache-dfw1824-DFW',
+872 verbose headers   'x-cache': 'HIT',
+872 verbose headers   'x-cache-hits': '1',
+872 verbose headers   'x-timer': 'S1446654132.240497,VS0,VE0',
+872 verbose headers   vary: 'Accept' }
+873 silly get cb [ 200,
+873 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+873 silly get     etag: '"AF9TRY9LLDUDCCNCJF5OXVF5V"',
+873 silly get     'content-type': 'application/json',
+873 silly get     'cache-control': 'max-age=60',
+873 silly get     'content-length': '20167',
+873 silly get     'accept-ranges': 'bytes',
+873 silly get     date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+873 silly get     via: '1.1 varnish',
+873 silly get     age: '1',
+873 silly get     connection: 'keep-alive',
+873 silly get     'x-served-by': 'cache-dfw1824-DFW',
+873 silly get     'x-cache': 'HIT',
+873 silly get     'x-cache-hits': '1',
+873 silly get     'x-timer': 'S1446654132.240497,VS0,VE0',
+873 silly get     vary: 'Accept' } ]
+874 verbose get saving colors to /home/ubuntu/.npm/registry.npmjs.org/colors/.cache.json
+875 silly gunzTarPerm extractEntry src/libsass/sass.h
+876 silly gunzTarPerm extractEntry src/libsass/sass2scss.cpp
+877 silly addNameRange number 2 { name: 'colors', range: '>=0.6.2 <0.7.0', hasData: true }
+878 silly addNameRange versions [ 'colors',
+878 silly addNameRange   [ '0.3.0',
+878 silly addNameRange     '0.5.0',
+878 silly addNameRange     '0.5.1',
+878 silly addNameRange     '0.6.0',
+878 silly addNameRange     '0.6.0-1',
+878 silly addNameRange     '0.6.1',
+878 silly addNameRange     '0.6.2',
+878 silly addNameRange     '1.0.0',
+878 silly addNameRange     '1.0.1',
+878 silly addNameRange     '1.0.2',
+878 silly addNameRange     '1.0.3',
+878 silly addNameRange     '1.1.0',
+878 silly addNameRange     '1.1.1',
+878 silly addNameRange     '1.1.2' ] ]
+879 silly addNamed colors@0.6.2
+880 verbose addNamed "0.6.2" is a plain semver version for colors
+881 silly gunzTarPerm extractEntry src/libsass/sass2scss.h
+882 silly gunzTarPerm extractEntry src/libsass/sass_context.cpp
+883 silly cache afterAdd colors@0.6.2
+884 verbose afterAdd /home/ubuntu/.npm/colors/0.6.2/package/package.json not in flight; writing
+885 silly gunzTarPerm extractEntry src/libsass/sass_context.h
+886 verbose afterAdd /home/ubuntu/.npm/colors/0.6.2/package/package.json written
+887 silly gunzTarPerm extractEntry src/libsass/sass_functions.cpp
+888 silly gunzTarPerm extractEntry src/libsass/sass_functions.h
+889 silly gunzTarPerm extractEntry src/libsass/sass_interface.cpp
+890 silly gunzTarPerm extractEntry src/libsass/sass_interface.h
+891 silly gunzTarPerm extractEntry src/libsass/sass_util.cpp
+892 silly gunzTarPerm extractEntry src/libsass/sass_util.hpp
+893 silly gunzTarPerm extractEntry src/libsass/sass_values.cpp
+894 silly gunzTarPerm extractEntry src/libsass/sass_values.h
+895 silly gunzTarPerm extractEntry src/libsass/sass_version.h
+896 silly gunzTarPerm extractEntry src/libsass/sass_version.h.in
+897 silly gunzTarPerm extractEntry src/libsass/script/bootstrap
+898 silly gunzTarPerm extractEntry src/libsass/script/branding
+899 silly gunzTarPerm extractEntry src/libsass/script/ci-build-libsass
+900 silly gunzTarPerm extractEntry src/libsass/script/ci-install-compiler
+901 silly gunzTarPerm extractEntry src/libsass/script/ci-install-deps
+902 silly gunzTarPerm extractEntry src/libsass/script/ci-report-coverage
+903 silly gunzTarPerm extractEntry src/libsass/script/coveralls-debug
+904 silly gunzTarPerm extractEntry src/libsass/script/spec
+905 silly gunzTarPerm extractEntry src/libsass/script/tap-driver
+906 silly gunzTarPerm extractEntry src/libsass/script/tap-runner
+907 silly gunzTarPerm extractEntry src/libsass/source_map.cpp
+908 silly gunzTarPerm extractEntry src/libsass/source_map.hpp
+909 silly gunzTarPerm extractEntry src/libsass/subset_map.hpp
+910 silly gunzTarPerm extractEntry src/libsass/support/libsass.pc.in
+911 silly gunzTarPerm extractEntry src/libsass/test/test_node.cpp
+912 silly gunzTarPerm extractEntry src/libsass/test/test_paths.cpp
+913 silly gunzTarPerm extractEntry src/libsass/test/test_selector_difference.cpp
+914 silly gunzTarPerm extractEntry src/libsass/test/test_specificity.cpp
+915 silly gunzTarPerm extractEntry src/libsass/test/test_subset_map.cpp
+916 silly gunzTarPerm extractEntry src/libsass/test/test_superselector.cpp
+917 silly gunzTarPerm extractEntry src/libsass/test/test_unification.cpp
+918 silly gunzTarPerm extractEntry src/libsass/to_c.cpp
+919 silly gunzTarPerm extractEntry src/libsass/to_c.hpp
+920 silly gunzTarPerm extractEntry src/libsass/to_string.cpp
+921 silly gunzTarPerm extractEntry src/libsass/to_string.hpp
+922 silly gunzTarPerm extractEntry src/libsass/units.cpp
+923 silly gunzTarPerm extractEntry src/libsass/units.hpp
+924 silly gunzTarPerm extractEntry src/libsass/utf8/checked.h
+925 silly gunzTarPerm extractEntry src/libsass/utf8/core.h
+926 silly gunzTarPerm extractEntry src/libsass/utf8/unchecked.h
+927 silly gunzTarPerm extractEntry src/libsass/utf8.h
+928 silly gunzTarPerm extractEntry src/libsass/utf8_string.cpp
+929 silly gunzTarPerm extractEntry src/libsass/utf8_string.hpp
+930 silly gunzTarPerm extractEntry src/libsass/util.cpp
+931 silly gunzTarPerm extractEntry src/libsass/util.hpp
+932 silly gunzTarPerm extractEntry src/libsass/version.sh
+933 silly gunzTarPerm extractEntry src/libsass/win/libsass.filters
+934 silly gunzTarPerm extractEntry src/libsass/win/libsass.sln
+935 silly gunzTarPerm extractEntry src/libsass/win/libsass.vcxproj
+936 silly gunzTarPerm extractEntry src/libsass.gyp
+937 silly gunzTarPerm extractEntry src/sass_context_wrapper.cpp
+938 silly gunzTarPerm extractEntry src/sass_context_wrapper.h
+939 silly gunzTarPerm extractEntry src/sass_types/map.cpp
+940 silly gunzTarPerm extractEntry src/sass_types/boolean.cpp
+941 silly gunzTarPerm extractEntry src/sass_types/color.cpp
+942 http 304 https://registry.npmjs.org/findup-sync
+943 verbose headers { date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+943 verbose headers   via: '1.1 varnish',
+943 verbose headers   'cache-control': 'max-age=60',
+943 verbose headers   etag: '"B6BINNMDZYTJNG3G1M3XL3JKV"',
+943 verbose headers   age: '38',
+943 verbose headers   connection: 'keep-alive',
+943 verbose headers   'x-served-by': 'cache-iad2130-IAD',
+943 verbose headers   'x-cache': 'HIT',
+943 verbose headers   'x-cache-hits': '6',
+943 verbose headers   'x-timer': 'S1446654132.299703,VS0,VE0',
+943 verbose headers   vary: 'Accept' }
+944 silly get cb [ 304,
+944 silly get   { date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+944 silly get     via: '1.1 varnish',
+944 silly get     'cache-control': 'max-age=60',
+944 silly get     etag: '"B6BINNMDZYTJNG3G1M3XL3JKV"',
+944 silly get     age: '38',
+944 silly get     connection: 'keep-alive',
+944 silly get     'x-served-by': 'cache-iad2130-IAD',
+944 silly get     'x-cache': 'HIT',
+944 silly get     'x-cache-hits': '6',
+944 silly get     'x-timer': 'S1446654132.299703,VS0,VE0',
+944 silly get     vary: 'Accept' } ]
+945 verbose etag https://registry.npmjs.org/findup-sync from cache
+946 verbose get saving findup-sync to /home/ubuntu/.npm/registry.npmjs.org/findup-sync/.cache.json
+947 silly gunzTarPerm extractEntry src/sass_types/color.h
+948 silly gunzTarPerm extractEntry src/sass_types/error.cpp
+949 silly addNameRange number 2 { name: 'findup-sync', range: '>=0.1.2 <0.2.0', hasData: true }
+950 silly addNameRange versions [ 'findup-sync',
+950 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.2', '0.1.3', '0.2.0', '0.2.1', '0.3.0' ] ]
+951 silly addNamed findup-sync@0.1.3
+952 verbose addNamed "0.1.3" is a plain semver version for findup-sync
+953 silly cache afterAdd findup-sync@0.1.3
+954 verbose afterAdd /home/ubuntu/.npm/findup-sync/0.1.3/package/package.json not in flight; writing
+955 silly gunzTarPerm extractEntry src/sass_types/error.h
+956 silly gunzTarPerm extractEntry src/sass_types/factory.cpp
+957 silly gunzTarPerm extractEntry src/sass_types/factory.h
+958 silly gunzTarPerm extractEntry src/sass_types/list.cpp
+959 silly gunzTarPerm extractEntry src/sass_types/list.h
+960 verbose afterAdd /home/ubuntu/.npm/findup-sync/0.1.3/package/package.json written
+961 silly gunzTarPerm extractEntry src/sass_types/boolean.h
+962 http 304 https://registry.npmjs.org/glob
+963 verbose headers { date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+963 verbose headers   via: '1.1 varnish',
+963 verbose headers   'cache-control': 'max-age=60',
+963 verbose headers   etag: '"2E6IF5Y7BMJVETG2NRGLQ1KXX"',
+963 verbose headers   age: '44',
+963 verbose headers   connection: 'keep-alive',
+963 verbose headers   'x-served-by': 'cache-iad2136-IAD',
+963 verbose headers   'x-cache': 'HIT',
+963 verbose headers   'x-cache-hits': '10',
+963 verbose headers   'x-timer': 'S1446654132.305969,VS0,VE0',
+963 verbose headers   vary: 'Accept' }
+964 silly get cb [ 304,
+964 silly get   { date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+964 silly get     via: '1.1 varnish',
+964 silly get     'cache-control': 'max-age=60',
+964 silly get     etag: '"2E6IF5Y7BMJVETG2NRGLQ1KXX"',
+964 silly get     age: '44',
+964 silly get     connection: 'keep-alive',
+964 silly get     'x-served-by': 'cache-iad2136-IAD',
+964 silly get     'x-cache': 'HIT',
+964 silly get     'x-cache-hits': '10',
+964 silly get     'x-timer': 'S1446654132.305969,VS0,VE0',
+964 silly get     vary: 'Accept' } ]
+965 verbose etag https://registry.npmjs.org/glob from cache
+966 verbose get saving glob to /home/ubuntu/.npm/registry.npmjs.org/glob/.cache.json
+967 silly gunzTarPerm extractEntry src/sass_types/map.h
+968 silly gunzTarPerm extractEntry src/sass_types/null.cpp
+969 http 200 https://registry.npmjs.org/dateformat
+970 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+970 verbose headers   etag: '"7KPMM16E9I2PT7ZQXQLILZCVJ"',
+970 verbose headers   'content-type': 'application/json',
+970 verbose headers   'cache-control': 'max-age=60',
+970 verbose headers   'content-length': '17631',
+970 verbose headers   'accept-ranges': 'bytes',
+970 verbose headers   date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+970 verbose headers   via: '1.1 varnish',
+970 verbose headers   age: '17',
+970 verbose headers   connection: 'keep-alive',
+970 verbose headers   'x-served-by': 'cache-iad2137-IAD',
+970 verbose headers   'x-cache': 'HIT',
+970 verbose headers   'x-cache-hits': '1',
+970 verbose headers   'x-timer': 'S1446654132.281407,VS0,VE0',
+970 verbose headers   vary: 'Accept' }
+971 silly get cb [ 200,
+971 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+971 silly get     etag: '"7KPMM16E9I2PT7ZQXQLILZCVJ"',
+971 silly get     'content-type': 'application/json',
+971 silly get     'cache-control': 'max-age=60',
+971 silly get     'content-length': '17631',
+971 silly get     'accept-ranges': 'bytes',
+971 silly get     date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+971 silly get     via: '1.1 varnish',
+971 silly get     age: '17',
+971 silly get     connection: 'keep-alive',
+971 silly get     'x-served-by': 'cache-iad2137-IAD',
+971 silly get     'x-cache': 'HIT',
+971 silly get     'x-cache-hits': '1',
+971 silly get     'x-timer': 'S1446654132.281407,VS0,VE0',
+971 silly get     vary: 'Accept' } ]
+972 verbose get saving dateformat to /home/ubuntu/.npm/registry.npmjs.org/dateformat/.cache.json
+973 silly addNameRange number 2 { name: 'glob', range: '>=3.1.21 <3.2.0', hasData: true }
+974 silly addNameRange versions [ 'glob',
+974 silly addNameRange   [ '1.1.0',
+974 silly addNameRange     '2.0.9',
+974 silly addNameRange     '2.0.8',
+974 silly addNameRange     '2.0.7',
+974 silly addNameRange     '2.1.0',
+974 silly addNameRange     '3.0.0',
+974 silly addNameRange     '3.0.1',
+974 silly addNameRange     '3.1.0',
+974 silly addNameRange     '3.1.1',
+974 silly addNameRange     '3.1.2',
+974 silly addNameRange     '3.1.3',
+974 silly addNameRange     '3.1.4',
+974 silly addNameRange     '3.1.5',
+974 silly addNameRange     '3.1.6',
+974 silly addNameRange     '3.1.7',
+974 silly addNameRange     '3.1.9',
+974 silly addNameRange     '3.1.10',
+974 silly addNameRange     '3.1.11',
+974 silly addNameRange     '3.1.12',
+974 silly addNameRange     '3.1.13',
+974 silly addNameRange     '3.1.14',
+974 silly addNameRange     '3.1.15',
+974 silly addNameRange     '3.1.16',
+974 silly addNameRange     '3.1.17',
+974 silly addNameRange     '3.1.18',
+974 silly addNameRange     '3.1.19',
+974 silly addNameRange     '3.1.20',
+974 silly addNameRange     '3.1.21',
+974 silly addNameRange     '3.2.0',
+974 silly addNameRange     '3.2.1',
+974 silly addNameRange     '3.2.3',
+974 silly addNameRange     '3.2.4',
+974 silly addNameRange     '3.2.5',
+974 silly addNameRange     '3.2.6',
+974 silly addNameRange     '3.2.7',
+974 silly addNameRange     '3.2.8',
+974 silly addNameRange     '3.2.9',
+974 silly addNameRange     '3.2.10',
+974 silly addNameRange     '3.2.11',
+974 silly addNameRange     '4.0.0',
+974 silly addNameRange     '4.0.1',
+974 silly addNameRange     '4.0.2',
+974 silly addNameRange     '4.0.3',
+974 silly addNameRange     '4.0.4',
+974 silly addNameRange     '4.0.5',
+974 silly addNameRange     '4.0.6',
+974 silly addNameRange     '4.1.2-beta',
+974 silly addNameRange     '4.1.2',
+974 silly addNameRange     '4.1.3',
+974 silly addNameRange     '4.1.4',
+974 silly addNameRange     '4.1.5',
+974 silly addNameRange     '4.1.6',
+974 silly addNameRange     '4.2.0',
+974 silly addNameRange     '4.2.1',
+974 silly addNameRange     '4.2.2',
+974 silly addNameRange     '4.3.0',
+974 silly addNameRange     '4.3.1',
+974 silly addNameRange     '4.3.2',
+974 silly addNameRange     '4.3.3',
+974 silly addNameRange     '4.3.4',
+974 silly addNameRange     '4.3.5',
+974 silly addNameRange     '4.4.0',
+974 silly addNameRange     '4.4.2',
+974 silly addNameRange     '4.5.0',
+974 silly addNameRange     '5.0.0',
+974 silly addNameRange     '4.5.1',
+974 silly addNameRange     '5.0.1',
+974 silly addNameRange     '4.5.2',
+974 silly addNameRange     '5.0.2',
+974 silly addNameRange     '4.5.3',
+974 silly addNameRange     '5.0.3',
+974 silly addNameRange     '5.0.4',
+974 silly addNameRange     '5.0.5',
+974 silly addNameRange     '5.0.6',
+974 silly addNameRange     '5.0.7',
+974 silly addNameRange     '5.0.9',
+974 silly addNameRange     '5.0.10',
+974 silly addNameRange     '5.0.11',
+974 silly addNameRange     '5.0.12',
+974 silly addNameRange     '5.0.13',
+974 silly addNameRange     '5.0.14',
+974 silly addNameRange     '5.0.15' ] ]
+975 silly addNamed glob@3.1.21
+976 verbose addNamed "3.1.21" is a plain semver version for glob
+977 http 200 https://registry.npmjs.org/coffee-script
+978 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+978 verbose headers   etag: '"2SWN8ZYLCS1MC7TVTYLKGHFM1"',
+978 verbose headers   'content-type': 'application/json',
+978 verbose headers   'cache-control': 'max-age=60',
+978 verbose headers   'content-length': '41025',
+978 verbose headers   'accept-ranges': 'bytes',
+978 verbose headers   date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+978 verbose headers   via: '1.1 varnish',
+978 verbose headers   age: '6',
+978 verbose headers   connection: 'keep-alive',
+978 verbose headers   'x-served-by': 'cache-iad2132-IAD',
+978 verbose headers   'x-cache': 'HIT',
+978 verbose headers   'x-cache-hits': '1',
+978 verbose headers   'x-timer': 'S1446654132.290096,VS0,VE0',
+978 verbose headers   vary: 'Accept' }
+979 silly get cb [ 200,
+979 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+979 silly get     etag: '"2SWN8ZYLCS1MC7TVTYLKGHFM1"',
+979 silly get     'content-type': 'application/json',
+979 silly get     'cache-control': 'max-age=60',
+979 silly get     'content-length': '41025',
+979 silly get     'accept-ranges': 'bytes',
+979 silly get     date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+979 silly get     via: '1.1 varnish',
+979 silly get     age: '6',
+979 silly get     connection: 'keep-alive',
+979 silly get     'x-served-by': 'cache-iad2132-IAD',
+979 silly get     'x-cache': 'HIT',
+979 silly get     'x-cache-hits': '1',
+979 silly get     'x-timer': 'S1446654132.290096,VS0,VE0',
+979 silly get     vary: 'Accept' } ]
+980 verbose get saving coffee-script to /home/ubuntu/.npm/registry.npmjs.org/coffee-script/.cache.json
+981 http 304 https://registry.npmjs.org/minimatch
+982 verbose headers { date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+982 verbose headers   via: '1.1 varnish',
+982 verbose headers   'cache-control': 'max-age=60',
+982 verbose headers   etag: '"1NRVLAPXT3XMB0QYUCYMZ8XB"',
+982 verbose headers   age: '29',
+982 verbose headers   connection: 'keep-alive',
+982 verbose headers   'x-served-by': 'cache-iad2132-IAD',
+982 verbose headers   'x-cache': 'HIT',
+982 verbose headers   'x-cache-hits': '6',
+982 verbose headers   'x-timer': 'S1446654132.317014,VS0,VE0',
+982 verbose headers   vary: 'Accept' }
+983 silly get cb [ 304,
+983 silly get   { date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+983 silly get     via: '1.1 varnish',
+983 silly get     'cache-control': 'max-age=60',
+983 silly get     etag: '"1NRVLAPXT3XMB0QYUCYMZ8XB"',
+983 silly get     age: '29',
+983 silly get     connection: 'keep-alive',
+983 silly get     'x-served-by': 'cache-iad2132-IAD',
+983 silly get     'x-cache': 'HIT',
+983 silly get     'x-cache-hits': '6',
+983 silly get     'x-timer': 'S1446654132.317014,VS0,VE0',
+983 silly get     vary: 'Accept' } ]
+984 verbose etag https://registry.npmjs.org/minimatch from cache
+985 verbose get saving minimatch to /home/ubuntu/.npm/registry.npmjs.org/minimatch/.cache.json
+986 silly gunzTarPerm extractEntry src/sass_types/null.h
+987 silly gunzTarPerm extractEntry src/sass_types/number.cpp
+988 silly gunzTarPerm extractEntry src/sass_types/number.h
+989 silly gunzTarPerm extractEntry src/sass_types/sass_value_wrapper.h
+990 silly mapToRegistry name dateformat
+991 silly mapToRegistry using default registry
+992 silly mapToRegistry registry https://registry.npmjs.org/
+993 silly mapToRegistry uri https://registry.npmjs.org/dateformat
+994 verbose addRemoteTarball https://registry.npmjs.org/dateformat/-/dateformat-1.0.2-1.2.3.tgz not in flight; adding
+995 verbose addRemoteTarball [ 'https://registry.npmjs.org/dateformat/-/dateformat-1.0.2-1.2.3.tgz',
+995 verbose addRemoteTarball   'b0220c02de98617433b72851cf47de3df2cdbee9' ]
+996 http 304 https://registry.npmjs.org/exit
+997 verbose headers { date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+997 verbose headers   via: '1.1 varnish',
+997 verbose headers   'cache-control': 'max-age=60',
+997 verbose headers   etag: '"66GA3RUQR76WJVRZF6ITVOZPO"',
+997 verbose headers   age: '35',
+997 verbose headers   connection: 'keep-alive',
+997 verbose headers   'x-served-by': 'cache-iad2124-IAD',
+997 verbose headers   'x-cache': 'HIT',
+997 verbose headers   'x-cache-hits': '2',
+997 verbose headers   'x-timer': 'S1446654132.326216,VS0,VE0',
+997 verbose headers   vary: 'Accept' }
+998 silly get cb [ 304,
+998 silly get   { date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+998 silly get     via: '1.1 varnish',
+998 silly get     'cache-control': 'max-age=60',
+998 silly get     etag: '"66GA3RUQR76WJVRZF6ITVOZPO"',
+998 silly get     age: '35',
+998 silly get     connection: 'keep-alive',
+998 silly get     'x-served-by': 'cache-iad2124-IAD',
+998 silly get     'x-cache': 'HIT',
+998 silly get     'x-cache-hits': '2',
+998 silly get     'x-timer': 'S1446654132.326216,VS0,VE0',
+998 silly get     vary: 'Accept' } ]
+999 verbose etag https://registry.npmjs.org/exit from cache
+1000 verbose get saving exit to /home/ubuntu/.npm/registry.npmjs.org/exit/.cache.json
+1001 silly cache afterAdd glob@3.1.21
+1002 verbose afterAdd /home/ubuntu/.npm/glob/3.1.21/package/package.json not in flight; writing
+1003 info retry fetch attempt 1 at 4:22:12 PM
+1004 info attempt registry request try #1 at 4:22:12 PM
+1005 http fetch GET https://registry.npmjs.org/dateformat/-/dateformat-1.0.2-1.2.3.tgz
+1006 silly addNameRange number 2 { name: 'coffee-script', range: '>=1.3.3 <1.4.0', hasData: true }
+1007 silly addNameRange versions [ 'coffee-script',
+1007 silly addNameRange   [ '0.7.0',
+1007 silly addNameRange     '0.7.1',
+1007 silly addNameRange     '0.7.2',
+1007 silly addNameRange     '0.9.0',
+1007 silly addNameRange     '0.9.1',
+1007 silly addNameRange     '0.9.2',
+1007 silly addNameRange     '0.9.3',
+1007 silly addNameRange     '0.9.4',
+1007 silly addNameRange     '0.9.5',
+1007 silly addNameRange     '0.9.6',
+1007 silly addNameRange     '1.0.0',
+1007 silly addNameRange     '1.0.1',
+1007 silly addNameRange     '1.1.0',
+1007 silly addNameRange     '1.1.1',
+1007 silly addNameRange     '1.1.2',
+1007 silly addNameRange     '1.1.3',
+1007 silly addNameRange     '1.2.0',
+1007 silly addNameRange     '1.3.0',
+1007 silly addNameRange     '1.3.1',
+1007 silly addNameRange     '1.3.2',
+1007 silly addNameRange     '1.3.3',
+1007 silly addNameRange     '1.4.0',
+1007 silly addNameRange     '1.5.0',
+1007 silly addNameRange     '1.6.0',
+1007 silly addNameRange     '1.6.1',
+1007 silly addNameRange     '1.6.2',
+1007 silly addNameRange     '1.6.3',
+1007 silly addNameRange     '1.7.0',
+1007 silly addNameRange     '1.7.1',
+1007 silly addNameRange     '1.8.0',
+1007 silly addNameRange     '1.9.0',
+1007 silly addNameRange     '1.9.1',
+1007 silly addNameRange     '1.9.2',
+1007 silly addNameRange     '1.9.3',
+1007 silly addNameRange     '1.10.0' ] ]
+1008 silly addNamed coffee-script@1.3.3
+1009 verbose addNamed "1.3.3" is a plain semver version for coffee-script
+1010 silly addNameRange number 2 { name: 'minimatch', range: '>=0.2.12 <0.3.0', hasData: true }
+1011 silly addNameRange versions [ 'minimatch',
+1011 silly addNameRange   [ '0.0.1',
+1011 silly addNameRange     '0.0.2',
+1011 silly addNameRange     '0.0.4',
+1011 silly addNameRange     '0.0.5',
+1011 silly addNameRange     '0.1.1',
+1011 silly addNameRange     '0.1.2',
+1011 silly addNameRange     '0.1.3',
+1011 silly addNameRange     '0.1.4',
+1011 silly addNameRange     '0.1.5',
+1011 silly addNameRange     '0.2.0',
+1011 silly addNameRange     '0.2.2',
+1011 silly addNameRange     '0.2.3',
+1011 silly addNameRange     '0.2.4',
+1011 silly addNameRange     '0.2.5',
+1011 silly addNameRange     '0.2.6',
+1011 silly addNameRange     '0.2.7',
+1011 silly addNameRange     '0.2.8',
+1011 silly addNameRange     '0.2.9',
+1011 silly addNameRange     '0.2.10',
+1011 silly addNameRange     '0.2.11',
+1011 silly addNameRange     '0.2.12',
+1011 silly addNameRange     '0.2.13',
+1011 silly addNameRange     '0.2.14',
+1011 silly addNameRange     '0.3.0',
+1011 silly addNameRange     '0.4.0',
+1011 silly addNameRange     '1.0.0',
+1011 silly addNameRange     '2.0.0',
+1011 silly addNameRange     '2.0.1',
+1011 silly addNameRange     '2.0.2',
+1011 silly addNameRange     '2.0.3',
+1011 silly addNameRange     '2.0.4',
+1011 silly addNameRange     '2.0.5',
+1011 silly addNameRange     '2.0.6',
+1011 silly addNameRange     '2.0.7',
+1011 silly addNameRange     '2.0.8',
+1011 silly addNameRange     '2.0.9',
+1011 silly addNameRange     '2.0.10',
+1011 silly addNameRange     '3.0.0' ] ]
+1012 silly addNamed minimatch@0.2.14
+1013 verbose addNamed "0.2.14" is a plain semver version for minimatch
+1014 verbose afterAdd /home/ubuntu/.npm/glob/3.1.21/package/package.json written
+1015 silly gunzTarPerm extractEntry src/sass_types/string.cpp
+1016 silly gunzTarPerm extractEntry src/sass_types/string.h
+1017 silly addNameRange number 2 { name: 'exit', range: '>=0.1.1 <0.2.0', hasData: true }
+1018 silly addNameRange versions [ 'exit', [ '0.1.0', '0.1.1', '0.1.2' ] ]
+1019 silly addNamed exit@0.1.2
+1020 verbose addNamed "0.1.2" is a plain semver version for exit
+1021 silly cache afterAdd minimatch@0.2.14
+1022 verbose afterAdd /home/ubuntu/.npm/minimatch/0.2.14/package/package.json not in flight; writing
+1023 silly cache afterAdd coffee-script@1.3.3
+1024 verbose afterAdd /home/ubuntu/.npm/coffee-script/1.3.3/package/package.json not in flight; writing
+1025 verbose afterAdd /home/ubuntu/.npm/minimatch/0.2.14/package/package.json written
+1026 silly gunzTarPerm extractEntry src/sass_types/value.h
+1027 verbose afterAdd /home/ubuntu/.npm/coffee-script/1.3.3/package/package.json written
+1028 silly cache afterAdd exit@0.1.2
+1029 verbose afterAdd /home/ubuntu/.npm/exit/0.1.2/package/package.json not in flight; writing
+1030 verbose afterAdd /home/ubuntu/.npm/exit/0.1.2/package/package.json written
+1031 http fetch 200 https://registry.npmjs.org/gaze/-/gaze-0.5.2.tgz
+1032 silly fetchAndShaCheck shasum 40b709537d24d1d45767db5a908689dfe69ac44f
+1033 verbose addTmpTarball /tmp/npm-951-d3b619bc/registry.npmjs.org/gaze/-/gaze-0.5.2.tgz not in flight; adding
+1034 verbose addTmpTarball already have metadata; skipping unpack for gaze@0.5.2
+1035 silly cache afterAdd gaze@0.5.2
+1036 verbose afterAdd /home/ubuntu/.npm/gaze/0.5.2/package/package.json not in flight; writing
+1037 http fetch 200 https://registry.npmjs.org/tiny-lr-fork/-/tiny-lr-fork-0.0.5.tgz
+1038 verbose afterAdd /home/ubuntu/.npm/gaze/0.5.2/package/package.json written
+1039 silly fetchAndShaCheck shasum 1e99e1e2a8469b736ab97d97eefa98c71f76ed0a
+1040 verbose addTmpTarball /tmp/npm-951-d3b619bc/registry.npmjs.org/tiny-lr-fork/-/tiny-lr-fork-0.0.5.tgz not in flight; adding
+1041 verbose addTmpTarball already have metadata; skipping unpack for tiny-lr-fork@0.0.5
+1042 silly cache afterAdd tiny-lr-fork@0.0.5
+1043 verbose afterAdd /home/ubuntu/.npm/tiny-lr-fork/0.0.5/package/package.json not in flight; writing
+1044 verbose afterAdd /home/ubuntu/.npm/tiny-lr-fork/0.0.5/package/package.json written
+1045 silly install resolved [ { name: 'lodash',
+1045 silly install resolved     version: '2.4.2',
+1045 silly install resolved     description: 'A utility library delivering consistency, customization, performance, & extras.',
+1045 silly install resolved     homepage: 'http://lodash.com/',
+1045 silly install resolved     license: 'MIT',
+1045 silly install resolved     main: 'dist/lodash.js',
+1045 silly install resolved     keywords:
+1045 silly install resolved      [ 'amd',
+1045 silly install resolved        'browser',
+1045 silly install resolved        'client',
+1045 silly install resolved        'customize',
+1045 silly install resolved        'functional',
+1045 silly install resolved        'server',
+1045 silly install resolved        'util' ],
+1045 silly install resolved     author:
+1045 silly install resolved      { name: 'John-David Dalton',
+1045 silly install resolved        email: 'john.david.dalton@gmail.com',
+1045 silly install resolved        url: 'http://allyoucanleet.com/' },
+1045 silly install resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+1045 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+1045 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+1045 silly install resolved     engines: [ 'node', 'rhino' ],
+1045 silly install resolved     files:
+1045 silly install resolved      [ 'LICENSE.txt',
+1045 silly install resolved        'lodash.js',
+1045 silly install resolved        'dist/lodash.js',
+1045 silly install resolved        'dist/lodash.min.js',
+1045 silly install resolved        'dist/lodash.compat.js',
+1045 silly install resolved        'dist/lodash.compat.min.js',
+1045 silly install resolved        'dist/lodash.underscore.js',
+1045 silly install resolved        'dist/lodash.underscore.min.js' ],
+1045 silly install resolved     jam: { main: 'dist/lodash.compat.js', include: [Object] },
+1045 silly install resolved     volo: { type: 'directory', ignore: [Object] },
+1045 silly install resolved     _id: 'lodash@2.4.2',
+1045 silly install resolved     scripts: {},
+1045 silly install resolved     _shasum: 'fadd834b9683073da179b3eae6d9c0d15053f73e',
+1045 silly install resolved     _from: 'lodash@>=2.4.1 <2.5.0',
+1045 silly install resolved     _npmVersion: '2.7.5',
+1045 silly install resolved     _nodeVersion: '0.12.2',
+1045 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+1045 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+1045 silly install resolved     dist:
+1045 silly install resolved      { shasum: 'fadd834b9683073da179b3eae6d9c0d15053f73e',
+1045 silly install resolved        tarball: 'http://registry.npmjs.org/lodash/-/lodash-2.4.2.tgz' },
+1045 silly install resolved     directories: {},
+1045 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash/-/lodash-2.4.2.tgz',
+1045 silly install resolved     readme: 'ERROR: No README data found!' },
+1045 silly install resolved   { name: 'async',
+1045 silly install resolved     description: 'Higher-order functions and common patterns for asynchronous code',
+1045 silly install resolved     main: './lib/async',
+1045 silly install resolved     author: { name: 'Caolan McMahon' },
+1045 silly install resolved     version: '0.2.10',
+1045 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/caolan/async.git' },
+1045 silly install resolved     bugs: { url: 'https://github.com/caolan/async/issues' },
+1045 silly install resolved     licenses: [ [Object] ],
+1045 silly install resolved     devDependencies: { nodeunit: '>0.0.0', 'uglify-js': '1.2.x', nodelint: '>0.0.0' },
+1045 silly install resolved     jam: { main: 'lib/async.js', include: [Object] },
+1045 silly install resolved     scripts: { test: 'nodeunit test/test-async.js' },
+1045 silly install resolved     _id: 'async@0.2.10',
+1045 silly install resolved     dist:
+1045 silly install resolved      { shasum: 'b6bbe0b0674b9d719708ca38de8c237cb526c3d1',
+1045 silly install resolved        tarball: 'http://registry.npmjs.org/async/-/async-0.2.10.tgz' },
+1045 silly install resolved     _from: 'async@>=0.2.9 <0.3.0',
+1045 silly install resolved     _npmVersion: '1.3.2',
+1045 silly install resolved     _npmUser: { name: 'caolan', email: 'caolan.mcmahon@gmail.com' },
+1045 silly install resolved     maintainers: [ [Object] ],
+1045 silly install resolved     directories: {},
+1045 silly install resolved     _shasum: 'b6bbe0b0674b9d719708ca38de8c237cb526c3d1',
+1045 silly install resolved     _resolved: 'https://registry.npmjs.org/async/-/async-0.2.10.tgz',
+1045 silly install resolved     readme: 'ERROR: No README data found!',
+1045 silly install resolved     homepage: 'https://github.com/caolan/async#readme' },
+1045 silly install resolved   { name: 'gaze',
+1045 silly install resolved     description: 'A globbing fs.watch wrapper built from the best parts of other fine watch libs.',
+1045 silly install resolved     version: '0.5.2',
+1045 silly install resolved     homepage: 'https://github.com/shama/gaze',
+1045 silly install resolved     author: { name: 'Kyle Robinson Young', email: 'kyle@dontkry.com' },
+1045 silly install resolved     repository: { type: 'git', url: 'git://github.com/shama/gaze.git' },
+1045 silly install resolved     bugs: { url: 'https://github.com/shama/gaze/issues' },
+1045 silly install resolved     licenses: [ [Object] ],
+1045 silly install resolved     main: 'lib/gaze',
+1045 silly install resolved     engines: { node: '>= 0.8.0' },
+1045 silly install resolved     scripts: { test: 'grunt nodeunit -v' },
+1045 silly install resolved     dependencies: { globule: '~0.1.0' },
+1045 silly install resolved     devDependencies:
+1045 silly install resolved      { grunt: '~0.4.1',
+1045 silly install resolved        'grunt-contrib-nodeunit': '~0.2.0',
+1045 silly install resolved        'grunt-contrib-jshint': '~0.6.0',
+1045 silly install resolved        'grunt-benchmark': '~0.2.0',
+1045 silly install resolved        'grunt-cli': '~0.1.13',
+1045 silly install resolved        async: '~0.2.10',
+1045 silly install resolved        rimraf: '~2.2.6' },
+1045 silly install resolved     keywords: [ 'watch', 'glob' ],
+1045 silly install resolved     files: [ 'lib', 'LICENSE-MIT' ],
+1045 silly install resolved     contributors:
+1045 silly install resolved      [ [Object],
+1045 silly install resolved        [Object],
+1045 silly install resolved        [Object],
+1045 silly install resolved        [Object],
+1045 silly install resolved        [Object],
+1045 silly install resolved        [Object],
+1045 silly install resolved        [Object],
+1045 silly install resolved        [Object],
+1045 silly install resolved        [Object],
+1045 silly install resolved        [Object] ],
+1045 silly install resolved     gitHead: '52007df64a841ccf52b9f9cd617cd24a4e2ddf8b',
+1045 silly install resolved     _id: 'gaze@0.5.2',
+1045 silly install resolved     _shasum: '40b709537d24d1d45767db5a908689dfe69ac44f',
+1045 silly install resolved     _from: 'gaze@>=0.5.1 <0.6.0',
+1045 silly install resolved     _npmVersion: '3.3.4',
+1045 silly install resolved     _nodeVersion: '4.0.0',
+1045 silly install resolved     _npmUser: { name: 'shama', email: 'kyle@dontkry.com' },
+1045 silly install resolved     maintainers: [ [Object], [Object] ],
+1045 silly install resolved     dist:
+1045 silly install resolved      { shasum: '40b709537d24d1d45767db5a908689dfe69ac44f',
+1045 silly install resolved        tarball: 'http://registry.npmjs.org/gaze/-/gaze-0.5.2.tgz' },
+1045 silly install resolved     directories: {},
+1045 silly install resolved     _resolved: 'https://registry.npmjs.org/gaze/-/gaze-0.5.2.tgz' },
+1045 silly install resolved   { author: { name: 'mklabs' },
+1045 silly install resolved     name: 'tiny-lr-fork',
+1045 silly install resolved     description: 'Tiny LiveReload server, background-friendly',
+1045 silly install resolved     version: '0.0.5',
+1045 silly install resolved     homepage: 'https://github.com/mklabs/tiny-lr',
+1045 silly install resolved     repository: { url: 'git://github.com/mklabs/tiny-lr.git' },
+1045 silly install resolved     bin: { 'tiny-lr-fork': './bin/tiny-lr' },
+1045 silly install resolved     main: './lib',
+1045 silly install resolved     scripts:
+1045 silly install resolved      { 'prepublish:': 'npm test',
+1045 silly install resolved        test: 'mocha --reporter list',
+1045 silly install resolved        'test-debug': 'DEBUG=tinylr:* mocha --reporter list',
+1045 silly install resolved        'test-debug-all': 'DEBUG=* mocha --reporter list' },
+1045 silly install resolved     dependencies:
+1045 silly install resolved      { qs: '~0.5.2',
+1045 silly install resolved        'faye-websocket': '~0.4.3',
+1045 silly install resolved        noptify: '~0.0.3',
+1045 silly install resolved        debug: '~0.7.0' },
+1045 silly install resolved     devDependencies:
+1045 silly install resolved      { mocha: '~1.7.1',
+1045 silly install resolved        request: '~2.12.0',
+1045 silly install resolved        supertest: '~0.4.2',
+1045 silly install resolved        express: '~3.0.6',
+1045 silly install resolved        connect: '~2.7.2' },
+1045 silly install resolved     config: { test_port: '9001' },
+1045 silly install resolved     licenses: [ [Object] ],
+1045 silly install resolved     bugs: { url: 'https://github.com/mklabs/tiny-lr/issues' },
+1045 silly install resolved     _id: 'tiny-lr-fork@0.0.5',
+1045 silly install resolved     dist:
+1045 silly install resolved      { shasum: '1e99e1e2a8469b736ab97d97eefa98c71f76ed0a',
+1045 silly install resolved        tarball: 'http://registry.npmjs.org/tiny-lr-fork/-/tiny-lr-fork-0.0.5.tgz' },
+1045 silly install resolved     _from: 'tiny-lr-fork@0.0.5',
+1045 silly install resolved     _npmVersion: '1.4.3',
+1045 silly install resolved     _npmUser: { name: 'shama', email: 'kyle@dontkry.com' },
+1045 silly install resolved     maintainers: [ [Object] ],
+1045 silly install resolved     directories: {},
+1045 silly install resolved     _shasum: '1e99e1e2a8469b736ab97d97eefa98c71f76ed0a',
+1045 silly install resolved     _resolved: 'https://registry.npmjs.org/tiny-lr-fork/-/tiny-lr-fork-0.0.5.tgz' } ]
+1046 info install lodash@2.4.2 into /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch
+1047 info install async@0.2.10 into /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch
+1048 info install gaze@0.5.2 into /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch
+1049 info install tiny-lr-fork@0.0.5 into /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch
+1050 info installOne lodash@2.4.2
+1051 verbose installOne of lodash to /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch not in flight; installing
+1052 info installOne async@0.2.10
+1053 verbose installOne of async to /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch not in flight; installing
+1054 info installOne gaze@0.5.2
+1055 verbose installOne of gaze to /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch not in flight; installing
+1056 info installOne tiny-lr-fork@0.0.5
+1057 verbose installOne of tiny-lr-fork to /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch not in flight; installing
+1058 verbose lock using /home/ubuntu/.npm/_locks/lodash-295094a55d46e3e7.lock for /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/lodash
+1059 verbose lock using /home/ubuntu/.npm/_locks/async-9a247b86106ec1d8.lock for /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/async
+1060 verbose lock using /home/ubuntu/.npm/_locks/gaze-ab0c5f056f437195.lock for /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/gaze
+1061 verbose lock using /home/ubuntu/.npm/_locks/tiny-lr-fork-0d2bd4e765f5c020.lock for /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork
+1062 silly install write writing lodash 2.4.2 to /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/lodash
+1063 silly install write writing async 0.2.10 to /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/async
+1064 silly install write writing gaze 0.5.2 to /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/gaze
+1065 silly install write writing tiny-lr-fork 0.0.5 to /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork
+1066 verbose unbuild node_modules/grunt-contrib-watch/node_modules/lodash
+1067 verbose unbuild node_modules/grunt-contrib-watch/node_modules/async
+1068 verbose unbuild node_modules/grunt-contrib-watch/node_modules/gaze
+1069 verbose unbuild node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork
+1070 silly gentlyRm /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/lodash is being purged from base /home/ubuntu/workspace/project_name
+1071 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/lodash
+1072 silly gentlyRm /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/async is being purged from base /home/ubuntu/workspace/project_name
+1073 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/async
+1074 silly gentlyRm /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/gaze is being purged from base /home/ubuntu/workspace/project_name
+1075 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/gaze
+1076 verbose tar unpack /home/ubuntu/.npm/lodash/2.4.2/package.tgz
+1077 verbose tar unpacking to /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/lodash
+1078 silly gentlyRm /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/lodash is being purged
+1079 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/lodash
+1080 verbose tar unpack /home/ubuntu/.npm/async/0.2.10/package.tgz
+1081 verbose tar unpacking to /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/async
+1082 silly gentlyRm /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/async is being purged
+1083 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/async
+1084 verbose tar unpack /home/ubuntu/.npm/gaze/0.5.2/package.tgz
+1085 verbose tar unpacking to /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/gaze
+1086 silly gentlyRm /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/gaze is being purged
+1087 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/gaze
+1088 silly gentlyRm /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork is being purged from base /home/ubuntu/workspace/project_name
+1089 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork
+1090 silly gunzTarPerm modes [ '755', '644' ]
+1091 silly gunzTarPerm modes [ '755', '644' ]
+1092 silly gunzTarPerm modes [ '755', '644' ]
+1093 verbose tar unpack /home/ubuntu/.npm/tiny-lr-fork/0.0.5/package.tgz
+1094 verbose tar unpacking to /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork
+1095 silly gentlyRm /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork is being purged
+1096 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork
+1097 silly gunzTarPerm modes [ '755', '644' ]
+1098 http fetch 200 https://registry.npmjs.org/dateformat/-/dateformat-1.0.2-1.2.3.tgz
+1099 silly gunzTarPerm extractEntry package.json
+1100 silly gunzTarPerm extractEntry package.json
+1101 silly fetchAndShaCheck shasum b0220c02de98617433b72851cf47de3df2cdbee9
+1102 silly gunzTarPerm extractEntry package.json
+1103 silly gunzTarPerm extractEntry package.json
+1104 silly gunzTarPerm extractEntry README.md
+1105 silly gunzTarPerm extractEntry lodash.js
+1106 verbose addTmpTarball /tmp/npm-951-d3b619bc/registry.npmjs.org/dateformat/-/dateformat-1.0.2-1.2.3.tgz not in flight; adding
+1107 verbose addTmpTarball already have metadata; skipping unpack for dateformat@1.0.2-1.2.3
+1108 silly gunzTarPerm extractEntry README.md
+1109 silly gunzTarPerm extractEntry LICENSE-MIT
+1110 silly gunzTarPerm extractEntry README.md
+1111 silly gunzTarPerm extractEntry LICENSE
+1112 silly gunzTarPerm extractEntry component.json
+1113 silly gunzTarPerm extractEntry lib/async.js
+1114 silly gunzTarPerm extractEntry .npmignore
+1115 silly gunzTarPerm extractEntry .travis.yml
+1116 silly gunzTarPerm extractEntry lib/gaze.js
+1117 silly gunzTarPerm extractEntry lib/helper.js
+1118 silly gunzTarPerm extractEntry LICENSE.txt
+1119 silly gunzTarPerm extractEntry LICENSE-MIT
+1120 silly gunzTarPerm extractEntry bin/tiny-lr
+1121 silly gunzTarPerm extractEntry dist/lodash.compat.js
+1122 silly gunzTarPerm extractEntry bin/update-livereload
+1123 silly gunzTarPerm extractEntry lib/client.js
+1124 silly cache afterAdd dateformat@1.0.2-1.2.3
+1125 verbose afterAdd /home/ubuntu/.npm/dateformat/1.0.2-1.2.3/package/package.json not in flight; writing
+1126 verbose afterAdd /home/ubuntu/.npm/dateformat/1.0.2-1.2.3/package/package.json written
+1127 silly gunzTarPerm extractEntry lib/index.js
+1128 silly gunzTarPerm extractEntry lib/server.js
+1129 silly gunzTarPerm extractEntry dist/lodash.compat.min.js
+1130 silly gunzTarPerm extractEntry lib/public/livereload.js
+1131 silly gunzTarPerm extractEntry dist/lodash.js
+1132 silly gunzTarPerm extractEntry readme.md
+1133 silly gunzTarPerm extractEntry tasks/tiny-lr.js
+1134 silly gunzTarPerm extractEntry dist/lodash.min.js
+1135 verbose write writing to /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/gaze/package.json
+1136 silly gunzTarPerm extractEntry tasks/tiny-lr.mk
+1137 silly gunzTarPerm extractEntry test/client.js
+1138 silly gunzTarPerm extractEntry dist/lodash.underscore.js
+1139 info preinstall gaze@0.5.2
+1140 verbose write writing to /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/async/package.json
+1141 verbose readDependencies loading dependencies from /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/gaze/package.json
+1142 info preinstall async@0.2.10
+1143 silly gunzTarPerm extractEntry test/middleware.js
+1144 silly gunzTarPerm extractEntry test/server.js
+1145 verbose readDependencies loading dependencies from /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/async/package.json
+1146 silly gunzTarPerm extractEntry dist/lodash.underscore.min.js
+1147 silly prepareForInstallMany adding globule@~0.1.0 from gaze dependencies
+1148 verbose readDependencies loading dependencies from /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/gaze/package.json
+1149 verbose readDependencies loading dependencies from /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/async/package.json
+1150 silly install resolved []
+1151 verbose about to build /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/async
+1152 info build /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/async
+1153 silly cache add args [ 'globule@~0.1.0', null ]
+1154 verbose cache add spec globule@~0.1.0
+1155 silly cache add parsed spec Result {
+1155 silly cache add   raw: 'globule@~0.1.0',
+1155 silly cache add   scope: null,
+1155 silly cache add   name: 'globule',
+1155 silly cache add   rawSpec: '~0.1.0',
+1155 silly cache add   spec: '>=0.1.0 <0.2.0',
+1155 silly cache add   type: 'range' }
+1156 silly addNamed globule@>=0.1.0 <0.2.0
+1157 verbose addNamed ">=0.1.0 <0.2.0" is a valid semver range for globule
+1158 silly addNameRange { name: 'globule', range: '>=0.1.0 <0.2.0', hasData: false }
+1159 silly mapToRegistry name globule
+1160 silly mapToRegistry using default registry
+1161 silly mapToRegistry registry https://registry.npmjs.org/
+1162 silly mapToRegistry uri https://registry.npmjs.org/globule
+1163 verbose addNameRange registry:https://registry.npmjs.org/globule not in flight; fetching
+1164 info linkStuff async@0.2.10
+1165 silly linkStuff async@0.2.10 has /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules as its parent node_modules
+1166 verbose request uri https://registry.npmjs.org/globule
+1167 verbose request no auth needed
+1168 info attempt registry request try #1 at 4:22:12 PM
+1169 http request GET https://registry.npmjs.org/globule
+1170 verbose linkBins async@0.2.10
+1171 verbose linkMans async@0.2.10
+1172 verbose rebuildBundles async@0.2.10
+1173 info install async@0.2.10
+1174 info postinstall async@0.2.10
+1175 verbose unlock done using /home/ubuntu/.npm/_locks/async-9a247b86106ec1d8.lock for /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/async
+1176 verbose write writing to /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork/package.json
+1177 info preinstall tiny-lr-fork@0.0.5
+1178 verbose readDependencies loading dependencies from /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork/package.json
+1179 silly prepareForInstallMany adding qs@~0.5.2 from tiny-lr-fork dependencies
+1180 silly prepareForInstallMany adding faye-websocket@~0.4.3 from tiny-lr-fork dependencies
+1181 silly prepareForInstallMany adding noptify@~0.0.3 from tiny-lr-fork dependencies
+1182 silly prepareForInstallMany adding debug@~0.7.0 from tiny-lr-fork dependencies
+1183 verbose readDependencies loading dependencies from /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork/package.json
+1184 silly cache add args [ 'qs@~0.5.2', null ]
+1185 verbose cache add spec qs@~0.5.2
+1186 silly cache add args [ 'faye-websocket@~0.4.3', null ]
+1187 verbose cache add spec faye-websocket@~0.4.3
+1188 silly cache add parsed spec Result {
+1188 silly cache add   raw: 'qs@~0.5.2',
+1188 silly cache add   scope: null,
+1188 silly cache add   name: 'qs',
+1188 silly cache add   rawSpec: '~0.5.2',
+1188 silly cache add   spec: '>=0.5.2 <0.6.0',
+1188 silly cache add   type: 'range' }
+1189 silly addNamed qs@>=0.5.2 <0.6.0
+1190 verbose addNamed ">=0.5.2 <0.6.0" is a valid semver range for qs
+1191 silly addNameRange { name: 'qs', range: '>=0.5.2 <0.6.0', hasData: false }
+1192 silly mapToRegistry name qs
+1193 silly mapToRegistry using default registry
+1194 silly mapToRegistry registry https://registry.npmjs.org/
+1195 silly mapToRegistry uri https://registry.npmjs.org/qs
+1196 verbose addNameRange registry:https://registry.npmjs.org/qs not in flight; fetching
+1197 silly cache add parsed spec Result {
+1197 silly cache add   raw: 'faye-websocket@~0.4.3',
+1197 silly cache add   scope: null,
+1197 silly cache add   name: 'faye-websocket',
+1197 silly cache add   rawSpec: '~0.4.3',
+1197 silly cache add   spec: '>=0.4.3 <0.5.0',
+1197 silly cache add   type: 'range' }
+1198 silly addNamed faye-websocket@>=0.4.3 <0.5.0
+1199 verbose addNamed ">=0.4.3 <0.5.0" is a valid semver range for faye-websocket
+1200 silly addNameRange { name: 'faye-websocket',
+1200 silly addNameRange   range: '>=0.4.3 <0.5.0',
+1200 silly addNameRange   hasData: false }
+1201 silly mapToRegistry name faye-websocket
+1202 silly mapToRegistry using default registry
+1203 silly mapToRegistry registry https://registry.npmjs.org/
+1204 silly mapToRegistry uri https://registry.npmjs.org/faye-websocket
+1205 verbose addNameRange registry:https://registry.npmjs.org/faye-websocket not in flight; fetching
+1206 silly cache add args [ 'noptify@~0.0.3', null ]
+1207 verbose cache add spec noptify@~0.0.3
+1208 silly cache add parsed spec Result {
+1208 silly cache add   raw: 'noptify@~0.0.3',
+1208 silly cache add   scope: null,
+1208 silly cache add   name: 'noptify',
+1208 silly cache add   rawSpec: '~0.0.3',
+1208 silly cache add   spec: '>=0.0.3 <0.1.0',
+1208 silly cache add   type: 'range' }
+1209 silly addNamed noptify@>=0.0.3 <0.1.0
+1210 verbose addNamed ">=0.0.3 <0.1.0" is a valid semver range for noptify
+1211 silly addNameRange { name: 'noptify', range: '>=0.0.3 <0.1.0', hasData: false }
+1212 silly mapToRegistry name noptify
+1213 silly mapToRegistry using default registry
+1214 silly mapToRegistry registry https://registry.npmjs.org/
+1215 silly mapToRegistry uri https://registry.npmjs.org/noptify
+1216 verbose addNameRange registry:https://registry.npmjs.org/noptify not in flight; fetching
+1217 silly cache add args [ 'debug@~0.7.0', null ]
+1218 verbose cache add spec debug@~0.7.0
+1219 silly cache add parsed spec Result {
+1219 silly cache add   raw: 'debug@~0.7.0',
+1219 silly cache add   scope: null,
+1219 silly cache add   name: 'debug',
+1219 silly cache add   rawSpec: '~0.7.0',
+1219 silly cache add   spec: '>=0.7.0 <0.8.0',
+1219 silly cache add   type: 'range' }
+1220 silly addNamed debug@>=0.7.0 <0.8.0
+1221 verbose addNamed ">=0.7.0 <0.8.0" is a valid semver range for debug
+1222 silly addNameRange { name: 'debug', range: '>=0.7.0 <0.8.0', hasData: false }
+1223 silly mapToRegistry name debug
+1224 silly mapToRegistry using default registry
+1225 silly mapToRegistry registry https://registry.npmjs.org/
+1226 silly mapToRegistry uri https://registry.npmjs.org/debug
+1227 verbose addNameRange registry:https://registry.npmjs.org/debug not in flight; fetching
+1228 verbose request uri https://registry.npmjs.org/faye-websocket
+1229 verbose request no auth needed
+1230 info attempt registry request try #1 at 4:22:12 PM
+1231 http request GET https://registry.npmjs.org/faye-websocket
+1232 verbose request uri https://registry.npmjs.org/noptify
+1233 verbose request no auth needed
+1234 info attempt registry request try #1 at 4:22:12 PM
+1235 http request GET https://registry.npmjs.org/noptify
+1236 verbose request uri https://registry.npmjs.org/debug
+1237 verbose request no auth needed
+1238 info attempt registry request try #1 at 4:22:12 PM
+1239 verbose etag "A4BK56FNR23E0ZUUMABJ7KBH"
+1240 http request GET https://registry.npmjs.org/debug
+1241 verbose request uri https://registry.npmjs.org/qs
+1242 verbose request no auth needed
+1243 info attempt registry request try #1 at 4:22:12 PM
+1244 verbose etag "1VPW8KWY7X8AGUKB3KFVMZOLG"
+1245 http request GET https://registry.npmjs.org/qs
+1246 verbose write writing to /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/lodash/package.json
+1247 info preinstall lodash@2.4.2
+1248 verbose readDependencies loading dependencies from /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/lodash/package.json
+1249 verbose readDependencies loading dependencies from /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/lodash/package.json
+1250 silly install resolved []
+1251 verbose about to build /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/lodash
+1252 info build /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/lodash
+1253 info linkStuff lodash@2.4.2
+1254 silly linkStuff lodash@2.4.2 has /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules as its parent node_modules
+1255 verbose linkBins lodash@2.4.2
+1256 verbose linkMans lodash@2.4.2
+1257 verbose rebuildBundles lodash@2.4.2
+1258 info install lodash@2.4.2
+1259 info postinstall lodash@2.4.2
+1260 verbose unlock done using /home/ubuntu/.npm/_locks/lodash-295094a55d46e3e7.lock for /home/ubuntu/workspace/project_name/node_modules/grunt-contrib-watch/node_modules/lodash
+1261 http 200 https://registry.npmjs.org/faye-websocket
+1262 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+1262 verbose headers   etag: '"6IWLVLS53963B3DEA36MEAKHE"',
+1262 verbose headers   'content-type': 'application/json',
+1262 verbose headers   'cache-control': 'max-age=60',
+1262 verbose headers   'content-length': '42147',
+1262 verbose headers   'accept-ranges': 'bytes',
+1262 verbose headers   date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+1262 verbose headers   via: '1.1 varnish',
+1262 verbose headers   age: '56',
+1262 verbose headers   connection: 'keep-alive',
+1262 verbose headers   'x-served-by': 'cache-ord1728-ORD',
+1262 verbose headers   'x-cache': 'HIT',
+1262 verbose headers   'x-cache-hits': '2',
+1262 verbose headers   'x-timer': 'S1446654132.575227,VS0,VE0',
+1262 verbose headers   vary: 'Accept' }
+1263 silly get cb [ 200,
+1263 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+1263 silly get     etag: '"6IWLVLS53963B3DEA36MEAKHE"',
+1263 silly get     'content-type': 'application/json',
+1263 silly get     'cache-control': 'max-age=60',
+1263 silly get     'content-length': '42147',
+1263 silly get     'accept-ranges': 'bytes',
+1263 silly get     date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+1263 silly get     via: '1.1 varnish',
+1263 silly get     age: '56',
+1263 silly get     connection: 'keep-alive',
+1263 silly get     'x-served-by': 'cache-ord1728-ORD',
+1263 silly get     'x-cache': 'HIT',
+1263 silly get     'x-cache-hits': '2',
+1263 silly get     'x-timer': 'S1446654132.575227,VS0,VE0',
+1263 silly get     vary: 'Accept' } ]
+1264 verbose get saving faye-websocket to /home/ubuntu/.npm/registry.npmjs.org/faye-websocket/.cache.json
+1265 silly addNameRange number 2 { name: 'faye-websocket',
+1265 silly addNameRange   range: '>=0.4.3 <0.5.0',
+1265 silly addNameRange   hasData: true }
+1266 silly addNameRange versions [ 'faye-websocket',
+1266 silly addNameRange   [ '0.1.0',
+1266 silly addNameRange     '0.1.1',
+1266 silly addNameRange     '0.1.2',
+1266 silly addNameRange     '0.2.0',
+1266 silly addNameRange     '0.3.0',
+1266 silly addNameRange     '0.3.1',
+1266 silly addNameRange     '0.4.0',
+1266 silly addNameRange     '0.4.1',
+1266 silly addNameRange     '0.4.2',
+1266 silly addNameRange     '0.4.3',
+1266 silly addNameRange     '0.4.4',
+1266 silly addNameRange     '0.5.0',
+1266 silly addNameRange     '0.6.0',
+1266 silly addNameRange     '0.6.1',
+1266 silly addNameRange     '0.7.0',
+1266 silly addNameRange     '0.7.1',
+1266 silly addNameRange     '0.7.2',
+1266 silly addNameRange     '0.7.3',
+1266 silly addNameRange     '0.8.0',
+1266 silly addNameRange     '0.8.1',
+1266 silly addNameRange     '0.9.0',
+1266 silly addNameRange     '0.9.1',
+1266 silly addNameRange     '0.9.2',
+1266 silly addNameRange     '0.9.3',
+1266 silly addNameRange     '0.9.4',
+1266 silly addNameRange     '0.10.0' ] ]
+1267 silly addNamed faye-websocket@0.4.4
+1268 verbose addNamed "0.4.4" is a plain semver version for faye-websocket
+1269 silly mapToRegistry name faye-websocket
+1270 silly mapToRegistry using default registry
+1271 silly mapToRegistry registry https://registry.npmjs.org/
+1272 silly mapToRegistry uri https://registry.npmjs.org/faye-websocket
+1273 verbose addRemoteTarball https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.4.4.tgz not in flight; adding
+1274 verbose addRemoteTarball [ 'https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.4.4.tgz',
+1274 verbose addRemoteTarball   'c14c5b3bf14d7417ffbfd990c0a7495cd9f337bc' ]
+1275 info retry fetch attempt 1 at 4:22:12 PM
+1276 info attempt registry request try #1 at 4:22:12 PM
+1277 http fetch GET https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.4.4.tgz
+1278 http 200 https://registry.npmjs.org/globule
+1279 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+1279 verbose headers   etag: '"4MRHUL3PZOWAT3TXB1JGH9YUM"',
+1279 verbose headers   'content-type': 'application/json',
+1279 verbose headers   'cache-control': 'max-age=60',
+1279 verbose headers   'content-length': '21150',
+1279 verbose headers   'accept-ranges': 'bytes',
+1279 verbose headers   date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+1279 verbose headers   via: '1.1 varnish',
+1279 verbose headers   age: '16',
+1279 verbose headers   connection: 'keep-alive',
+1279 verbose headers   'x-served-by': 'cache-iad2144-IAD',
+1279 verbose headers   'x-cache': 'HIT',
+1279 verbose headers   'x-cache-hits': '1',
+1279 verbose headers   'x-timer': 'S1446654132.574011,VS0,VE0',
+1279 verbose headers   vary: 'Accept' }
+1280 silly get cb [ 200,
+1280 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+1280 silly get     etag: '"4MRHUL3PZOWAT3TXB1JGH9YUM"',
+1280 silly get     'content-type': 'application/json',
+1280 silly get     'cache-control': 'max-age=60',
+1280 silly get     'content-length': '21150',
+1280 silly get     'accept-ranges': 'bytes',
+1280 silly get     date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+1280 silly get     via: '1.1 varnish',
+1280 silly get     age: '16',
+1280 silly get     connection: 'keep-alive',
+1280 silly get     'x-served-by': 'cache-iad2144-IAD',
+1280 silly get     'x-cache': 'HIT',
+1280 silly get     'x-cache-hits': '1',
+1280 silly get     'x-timer': 'S1446654132.574011,VS0,VE0',
+1280 silly get     vary: 'Accept' } ]
+1281 verbose get saving globule to /home/ubuntu/.npm/registry.npmjs.org/globule/.cache.json
+1282 silly addNameRange number 2 { name: 'globule', range: '>=0.1.0 <0.2.0', hasData: true }
+1283 silly addNameRange versions [ 'globule', [ '0.1.0', '0.2.0' ] ]
+1284 silly addNamed globule@0.1.0
+1285 verbose addNamed "0.1.0" is a plain semver version for globule
+1286 silly mapToRegistry name globule
+1287 silly mapToRegistry using default registry
+1288 silly mapToRegistry registry https://registry.npmjs.org/
+1289 silly mapToRegistry uri https://registry.npmjs.org/globule
+1290 verbose addRemoteTarball https://registry.npmjs.org/globule/-/globule-0.1.0.tgz not in flight; adding
+1291 verbose addRemoteTarball [ 'https://registry.npmjs.org/globule/-/globule-0.1.0.tgz',
+1291 verbose addRemoteTarball   'd9c8edde1da79d125a151b79533b978676346ae5' ]
+1292 info retry fetch attempt 1 at 4:22:12 PM
+1293 info attempt registry request try #1 at 4:22:12 PM
+1294 http fetch GET https://registry.npmjs.org/globule/-/globule-0.1.0.tgz
+1295 verbose write writing to /home/ubuntu/workspace/project_name/node_modules/node-sass/package.json
+1296 info preinstall node-sass@3.3.3
+1297 verbose readDependencies loading dependencies from /home/ubuntu/workspace/project_name/node_modules/node-sass/package.json
+1298 silly prepareForInstallMany adding async-foreach@^0.1.3 from node-sass dependencies
+1299 silly prepareForInstallMany adding chalk@^1.1.1 from node-sass dependencies
+1300 silly prepareForInstallMany adding cross-spawn@^2.0.0 from node-sass dependencies
+1301 silly prepareForInstallMany adding gaze@^0.5.1 from node-sass dependencies
+1302 silly prepareForInstallMany adding get-stdin@^4.0.1 from node-sass dependencies
+1303 silly prepareForInstallMany adding glob@^5.0.14 from node-sass dependencies
+1304 silly prepareForInstallMany adding meow@^3.3.0 from node-sass dependencies
+1305 silly prepareForInstallMany adding mkdirp@^0.5.1 from node-sass dependencies
+1306 silly prepareForInstallMany adding nan@^2.0.8 from node-sass dependencies
+1307 silly prepareForInstallMany adding npmconf@^2.1.2 from node-sass dependencies
+1308 silly prepareForInstallMany adding node-gyp@^3.0.1 from node-sass dependencies
+1309 silly prepareForInstallMany adding request@^2.61.0 from node-sass dependencies
+1310 silly prepareForInstallMany adding sass-graph@^2.0.1 from node-sass dependencies
+1311 verbose readDependencies loading dependencies from /home/ubuntu/workspace/project_name/node_modules/node-sass/package.json
+1312 http 200 https://registry.npmjs.org/noptify
+1313 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+1313 verbose headers   etag: '"54FU4PQ3TD6NXXJ8GHL2OMF67"',
+1313 verbose headers   'content-type': 'application/json',
+1313 verbose headers   'cache-control': 'max-age=60',
+1313 verbose headers   'content-length': '9137',
+1313 verbose headers   'accept-ranges': 'bytes',
+1313 verbose headers   date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+1313 verbose headers   via: '1.1 varnish',
+1313 verbose headers   age: '4',
+1313 verbose headers   connection: 'keep-alive',
+1313 verbose headers   'x-served-by': 'cache-iad2128-IAD',
+1313 verbose headers   'x-cache': 'HIT',
+1313 verbose headers   'x-cache-hits': '1',
+1313 verbose headers   'x-timer': 'S1446654132.625839,VS0,VE0',
+1313 verbose headers   vary: 'Accept' }
+1314 silly get cb [ 200,
+1314 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+1314 silly get     etag: '"54FU4PQ3TD6NXXJ8GHL2OMF67"',
+1314 silly get     'content-type': 'application/json',
+1314 silly get     'cache-control': 'max-age=60',
+1314 silly get     'content-length': '9137',
+1314 silly get     'accept-ranges': 'bytes',
+1314 silly get     date: 'Wed, 04 Nov 2015 16:22:12 GMT',
+1314 silly get     via: '1.1 varnish',
+1314 silly get     age: '4',
+1314 silly get     connection: 'keep-alive',
+1314 silly get     'x-served-by': 'cache-iad2128-IAD',
+1314 silly get     'x-cache': 'HIT',
+1314 silly get     'x-cache-hits': '1',
+1314 silly get     'x-timer': 'S1446654132.625839,VS0,VE0',
+1314 silly get     vary: 'Accept' } ]
+1315 verbose get saving noptify to /home/ubuntu/.npm/registry.npmjs.org/noptify/.cache.json
+1316 silly cache add args [ 'cross-spawn@^2.0.0', null ]
+1317 verbose cache add spec cross-spawn@^2.0.0
+1318 silly cache add parsed spec Result {
+1318 silly cache add   raw: 'cross-spawn@^2.0.0',
+1318 silly cache add   scope: null,
+1318 silly cache add   name: 'cross-spawn',
+1318 silly cache add   rawSpec: '^2.0.0',
+1318 silly cache add   spec: '>=2.0.0 <3.0.0',
+1318 silly cache add   type: 'range' }
+1319 silly addNamed cross-spawn@>=2.0.0 <3.0.0
+1320 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for cross-spawn
+1321 silly addNameRange { name: 'cross-spawn', range: '>=2.0.0 <3.0.0', hasData: false }
+1322 silly mapToRegistry name cross-spawn
+1323 silly mapToRegistry using default registry
+1324 silly mapToRegistry registry https://registry.npmjs.org/
+1325 silly mapToRegistry uri https://registry.npmjs.org/cross-spawn
+1326 verbose addNameRange registry:https://registry.npmjs.org/cross-spawn not in flight; fetching
+1327 silly cache add args [ 'gaze@^0.5.1', null ]
+1328 verbose cache add spec gaze@^0.5.1
+1329 silly cache add parsed spec Result {
+1329 silly cache add   raw: 'gaze@^0.5.1',
+1329 silly cache add   scope: null,
+1329 silly cache add   name: 'gaze',
+1329 silly cache add   rawSpec: '^0.5.1',
+1329 silly cache add   spec: '>=0.5.1 <0.6.0',
+1329 silly cache add   type: 'range' }
+1330 silly addNamed gaze@>=0.5.1 <0.6.0
+1331 verbose addNamed ">=0.5.1 <0.6.0" is a valid semver range for gaze
+1332 silly addNameRange { name: 'gaze', range: '>=0.5.1 <0.6.0', hasData: false }
+1333 silly mapToRegistry name gaze
+1334 silly mapToRegistry using default registry
+1335 silly mapToRegistry registry https://registry.npmjs.org/
+1336 silly mapToRegistry uri https://registry.npmjs.org/gaze
+1337 verbose addNameRange registry:https://registry.npmjs.org/gaze not in flight; fetching
+1338 silly cache add args [ 'get-stdin@^4.0.1', null ]
+1339 verbose cache add spec get-stdin@^4.0.1
+1340 silly cache add parsed spec Result {
+1340 silly cache add   raw: 'get-stdin@^4.0.1',
+1340 silly cache add   scope: null,
+1340 silly cache add   name: 'get-stdin',
+1340 silly cache add   rawSpec: '^4.0.1',
+1340 silly cache add   spec: '>=4.0.1 <5.0.0',
+1340 silly cache add   type: 'range' }
+1341 silly addNamed get-stdin@>=4.0.1 <5.0.0
+1342 verbose addNamed ">=4.0.1 <5.0.0" is a valid semver range for get-stdin
+1343 silly addNameRange { name: 'get-stdin', range: '>=4.0.1 <5.0.0', hasData: false }
+1344 silly mapToRegistry name get-stdin
+1345 silly mapToRegistry using default registry
+1346 silly mapToRegistry registry https://registry.npmjs.org/
+1347 silly mapToRegistry uri https://registry.npmjs.org/get-stdin
+1348 verbose addNameRange registry:https://registry.npmjs.org/get-stdin not in flight; fetching
+1349 silly cache add args [ 'glob@^5.0.14', null ]
+1350 verbose cache add spec glob@^5.0.14
+1351 silly cache add parsed spec Result {
+1351 silly cache add   raw: 'glob@^5.0.14',
+1351 silly cache add   scope: null,
+1351 silly cache add   name: 'glob',
+1351 silly cache add   rawSpec: '^5.0.14',
+1351 silly cache add   spec: '>=5.0.14 <6.0.0',
+1351 silly cache add   type: 'range' }
+1352 silly addNamed glob@>=5.0.14 <6.0.0
+1353 verbose addNamed ">=5.0.14 <6.0.0" is a valid semver range for glob
+1354 silly addNameRange { name: 'glob', range: '>=5.0.14 <6.0.0', hasData: false }
+1355 silly mapToRegistry name glob
+1356 silly mapToRegistry using default registry
+1357 silly mapToRegistry registry https://registry.npmjs.org/
+1358 silly mapToRegistry uri https://registry.npmjs.org/glob
+1359 verbose addNameRange registry:https://registry.npmjs.org/glob not in flight; fetching
+1360 silly cache add args [ 'meow@^3.3.0', null ]
+1361 verbose cache add spec meow@^3.3.0
+1362 silly cache add parsed spec Result {
+1362 silly cache add   raw: 'meow@^3.3.0',
+1362 silly cache add   scope: null,
+1362 silly cache add   name: 'meow',
+1362 silly cache add   rawSpec: '^3.3.0',
+1362 silly cache add   spec: '>=3.3.0 <4.0.0',
+1362 silly cache add   type: 'range' }
+1363 silly addNamed meow@>=3.3.0 <4.0.0
+1364 verbose addNamed ">=3.3.0 <4.0.0" is a valid semver range for meow
+1365 silly addNameRange { name: 'meow', range: '>=3.3.0 <4.0.0', hasData: false }
+1366 silly mapToRegistry name meow
+1367 silly mapToRegistry using default registry
+1368 silly mapToRegistry registry https://registry.npmjs.org/
+1369 silly mapToRegistry uri https://registry.npmjs.org/meow
+1370 verbose addNameRange registry:https://registry.npmjs.org/meow not in flight; fetching
+1371 silly cache add args [ 'mkdirp@^0.5.1', null ]
+1372 verbose cache add spec mkdirp@^0.5.1
+1373 silly cache add parsed spec Result {
+1373 silly cache add   raw: 'mkdirp@^0.5.1',
+1373 silly cache add   scope: null,
+1373 silly cache add   name: 'mkdirp',
+1373 silly cache add   rawSpec: '^0.5.1',
+1373 silly cache add   spec: '>=0.5.1 <0.6.0',
+1373 silly cache add   type: 'range' }
+1374 silly addNamed mkdirp@>=0.5.1 <0.6.0
+1375 verbose addNamed ">=0.5.1 <0.6.0" is a valid semver range for mkdirp
+1376 silly addNameRange { name: 'mkdirp', range: '>=0.5.1 <0.6.0', hasData: false }
+1377 silly mapToRegistry name mkdirp
+1378 silly mapToRegistry using default registry
+1379 silly mapToRegistry registry https://registry.npmjs.org/
+1380 silly mapToRegistry uri https://registry.npmjs.org/mkdirp
+1381 verbose addNameRange registry:https://registry.npmjs.org/mkdirp not in flight; fetching
+1382 silly cache add args [ 'nan@^2.0.8', null ]
+1383 verbose cache add spec nan@^2.0.8
+1384 silly cache add parsed spec Result {
+1384 silly cache add   raw: 'nan@^2.0.8',
+1384 silly cache add   scope: null,
+1384 silly cache add   name: 'nan',
+1384 silly cache add   rawSpec: '^2.0.8',
+1384 silly cache add   spec: '>=2.0.8 <3.0.0',
+1384 silly cache add   type: 'range' }
+1385 silly addNamed nan@>=2.0.8 <3.0.0
+1386 verbose addNamed ">=2.0.8 <3.0.0" is a valid semver range for nan
+1387 silly addNameRange { name: 'nan', range: '>=2.0.8 <3.0.0', hasData: false }
+1388 silly mapToRegistry name nan
+1389 silly mapToRegistry using default registry
+1390 silly mapToRegistry registry https://registry.npmjs.org/
+1391 silly mapToRegistry uri https://registry.npmjs.org/nan
+1392 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+1393 silly cache add args [ 'npmconf@^2.1.2', null ]
+1394 verbose cache add spec npmconf@^2.1.2
+1395 silly cache add parsed spec Result {
+1395 silly cache add   raw: 'npmconf@^2.1.2',
+1395 silly cache add   scope: null,
+1395 silly cache add   name: 'npmconf',
+1395 silly cache add   rawSpec: '^2.1.2',
+1395 silly cache add   spec: '>=2.1.2 <3.0.0',
+1395 silly cache add   type: 'range' }
+1396 silly addNamed npmconf@>=2.1.2 <3.0.0
+1397 verbose addNamed ">=2.1.2 <3.0.0" is a valid semver range for npmconf
+1398 silly addNameRange { name: 'npmconf', range: '>=2.1.2 <3.0.0', hasData: false }
+1399 silly mapToRegistry name npmconf
+1400 silly mapToRegistry using default registry
+1401 silly mapToRegistry registry https://registry.npmjs.org/
+1402 silly mapToRegistry uri https://registry.npmjs.org/npmconf
+1403 verbose addNameRange registry:https://registry.npmjs.org/npmconf not in flight; fetching
+1404 verbose request uri https://registry.npmjs.org/cross-spawn
+1405 verbose request no auth needed
+1406 info attempt registry request try #1 at 4:22:12 PM
+1407 http request GET https://registry.npmjs.org/cross-spawn
+1408 silly cache add args [ 'node-gyp@^3.0.1', null ]
+1409 verbose cache add spec node-gyp@^3.0.1
+1410 silly cache add parsed spec Result {
+1410 silly cache add   raw: 'node-gyp@^3.0.1',
+1410 silly cache add   scope: null,
+1410 silly cache add   name: 'node-gyp',
+1410 silly cache add   rawSpec: '^3.0.1',
+1410 silly cache add   spec: '>=3.0.1 <4.0.0',
+1410 silly cache add   type: 'range' }
+1411 silly addNamed node-gyp@>=3.0.1 <4.0.0
+1412 verbose addNamed ">=3.0.1 <4.0.0" is a valid semver range for node-gyp
+1413 silly addNameRange { name: 'node-gyp', range: '>=3.0.1 <4.0.0', hasData: false }
+1414 silly mapToRegistry name node-gyp
+1415 silly mapToRegistry using default registry
+1416 silly mapToRegistry registry https://registry.npmjs.org/
+1417 silly mapToRegistry uri https://registry.npmjs.org/node-gyp
+1418 verbose addNameRange registry:https://registry.npmjs.org/node-gyp not in flight; fetching
+1419 silly cache add args [ 'request@^2.61.0', null ]
+1420 verbose cache add spec request@^2.61.0
+1421 silly cache add parsed spec Result {
+1421 silly cache add   raw: 'request@^2.61.0',
+1421 silly cache add   scope: null,
+1421 silly cache add   name: 'request',
+1421 silly cache add   rawSpec: '^2.61.0',
+1421 silly cache add   spec: '>=2.61.0 <3.0.0',
+1421 silly cache add   type: 'range' }
+1422 silly addNamed request@>=2.61.0 <3.0.0
+1423 verbose addNamed ">=2.61.0 <3.0.0" is a valid semver range for request
+1424 silly addNameRange { name: 'request', range: '>=2.61.0 <3.0.0', hasData: false }
+1425 silly mapToRegistry name request
+1426 silly mapToRegistry using default registry
+1427 silly mapToRegistry registry https://registry.npmjs.org/
+1428 silly mapToRegistry uri https://registry.npmjs.org/request
+1429 verbose addNameRange registry:https://registry.npmjs.org/request not in flight; fetching
+1430 silly cache add args [ 'sass-graph@^2.0.1', null ]
+1431 verbose cache add spec sass-graph@^2.0.1
+1432 silly cache add parsed spec Result {
+1432 silly cache add   raw: 'sass-graph@^2.0.1',
+1432 silly cache add   scope: null,
+1432 silly cache add   name: 'sass-graph',
+1432 silly cache add   rawSpec: '^2.0.1',
+1432 silly cache add   spec: '>=2.0.1 <3.0.0',
+1432 silly cache add   type: 'range' }
+1433 silly addNamed sass-graph@>=2.0.1 <3.0.0
+1434 verbose addNamed ">=2.0.1 <3.0.0" is a valid semver range for sass-graph
+1435 silly addNameRange { name: 'sass-graph', range: '>=2.0.1 <3.0.0', hasData: false }
+1436 silly mapToRegistry name sass-graph
+1437 silly mapToRegistry using default registry
+1438 silly mapToRegistry registry https://registry.npmjs.org/
+1439 silly mapToRegistry uri https://registry.npmjs.org/sass-graph
+1440 verbose addNameRange registry:https://registry.npmjs.org/sass-graph not in flight; fetching
+1441 silly cache add args [ 'async-foreach@^0.1.3', null ]
+1442 verbose cache add spec async-foreach@^0.1.3
+1443 silly cache add parsed spec Result {
+1443 silly cache add   raw: 'async-foreach@^0.1.3',
+1443 silly cache add   scope: null,
+1443 silly cache add   name: 'async-foreach',
+1443 silly cache add   rawSpec: '^0.1.3',
+1443 silly cache add   spec: '>=0.1.3 <0.2.0',
+1443 silly cache add   type: 'range' }
+1444 silly addNamed async-foreach@>=0.1.3 <0.2.0
+1445 verbose addNamed ">=0.1.3 <0.2.0" is a valid semver range for async-foreach
+1446 silly addNameRange { name: 'async-foreach',
+1446 silly addNameRange   range: '>=0.1.3 <0.2.0',
+1446 silly addNameRange   hasData: false }
+1447 silly mapToRegistry name async-foreach
+1448 silly mapToRegistry using default registry
+1449 silly mapToRegistry registry https://registry.npmjs.org/
+1450 silly mapToRegistry uri https://registry.npmjs.org/async-foreach
+1451 verbose addNameRange registry:https://registry.npmjs.org/async-foreach not in flight; fetching
+1452 silly cache add args [ 'chalk@^1.1.1', null ]
+1453 verbose cache add spec chalk@^1.1.1
+1454 silly cache add parsed spec Result {
+1454 silly cache add   raw: 'chalk@^1.1.1',
+1454 silly cache add   scope: null,
+1454 silly cache add   name: 'chalk',
+1454 silly cache add   rawSpec: '^1.1.1',
+1454 silly cache add   spec: '>=1.1.1 <2.0.0',
+1454 silly cache add   type: 'range' }
+1455 silly addNamed chalk@>=1.1.1 <2.0.0
+1456 verbose addNamed ">=1.1.1 <2.0.0" is a valid semver range for chalk
+1457 silly addNameRange { name: 'chalk', range: '>=1.1.1 <2.0.0', hasData: false }
+1458 silly mapToRegistry name chalk
+1459 silly mapToRegistry using default registry
+1460 silly mapToRegistry registry https://registry.npmjs.org/
+1461 silly mapToRegistry uri https://registry.npmjs.org/chalk
+1462 verbose addNameRange registry:https://registry.npmjs.org/chalk not in flight; fetching
+1463 verbose request uri https://registry.npmjs.org/npmconf
+1464 verbose request no auth needed
+1465 info attempt registry request try #1 at 4:22:12 PM
+1466 http request GET https://registry.npmjs.org/npmconf
+1467 verbose request uri https://registry.npmjs.org/node-gyp
+1468 verbose request no auth needed
+1469 info attempt registry request try #1 at 4:22:12 PM
+1470 http request GET https://registry.npmjs.org/node-gyp
+1471 verbose request uri https://registry.npmjs.org/sass-graph
+1472 verbose request no auth needed
+1473 info attempt registry request try #1 at 4:22:12 PM
+1474 http request GET https://registry.npmjs.org/sass-graph
+1475 verbose request uri https://registry.npmjs.org/async-foreach
+1476 verbose request no auth needed
+1477 info attempt registry request try #1 at 4:22:12 PM
+1478 http request GET https://registry.npmjs.org/async-foreach
+1479 verbose stack Error: read ECONNRESET
+1479 verbose stack     at exports._errnoException (util.js:874:11)
+1479 verbose stack     at TLSWrap.onread (net.js:544:26)
+1480 verbose cwd /home/ubuntu/workspace/project_name
+1481 error Linux 4.2.0-c9
+1482 error argv "/home/ubuntu/.nvm/versions/node/v4.2.1/bin/node" "/home/ubuntu/.nvm/versions/node/v4.2.1/bin/npm" "install"
+1483 error node v4.2.1
+1484 error npm  v2.14.7
+1485 error code ECONNRESET
+1486 error errno ECONNRESET
+1487 error syscall read
+1488 error network read ECONNRESET
+1488 error network This is most likely not a problem with npm itself
+1488 error network and is related to network connectivity.
+1488 error network In most cases you are behind a proxy or have bad network settings.
+1488 error network
+1488 error network If you are behind a proxy, please make sure that the
+1488 error network 'proxy' config is set properly.  See: 'npm help config'
+1489 verbose exit [ 1, true ]
