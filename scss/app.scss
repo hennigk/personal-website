@@ -1,6 +1,135 @@
 @import "settings";
 @import "foundation";
 
+$primary-background-color: #26C6DA;
+$header-color: rgba(0,0,0,0.87);
+$body-font-color: rgba(0,0,0,0.7);
+
+header{
+    padding-top: 1.5rem;
+    background-color: $primary-background-color;
+    text-align: center;
+    width: 100%;
+    h1, h2{
+        color: white;
+    }
+    img{
+        width: 100%;
+        max-width: 53px;
+        // margin: 0 2rem 1rem 2rem;
+    }
+    h2{
+        display: inline-block;
+        font-size: 30px;
+    }
+    hr{
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+}
+
+.about {
+    img {
+        border-radius: 50%;
+        max-width: 250px;
+    }
+    h2 {
+        color: $header-color;
+    }
+    p {
+        color: $body-font-color;
+    }
+}
+.nav{
+    a {
+        display: block;
+    }
+    // .sub-nav dd.active a {
+    //     background-color: $primary-background-color-dark;
+    // }
+    li {
+        margin-left: 0;
+    }
+}
+.skills{
+    h2, h3 {
+        // text-align: center;
+        color: $header-color;
+    }
+    .panel {
+        background-color: white;
+        img{
+            max-width: 200px;
+            height: 120px;
+            display: block;
+            margin: auto;
+        }
+        li {
+            color: $body-font-color;
+        }
+    }
+}
+
+.work {
+    img {
+        max-width: 400px;
+    }
+    h3 {
+        // text-align: center;
+        color: $header-color;
+    }
+    h4 {
+        color: $body-font-color;
+    }
+}
+.contact{
+    color: $body-font-color;
+    h3 {
+        // text-align: center;
+        color: $header-color;
+    }
+}
+@media only screen and (min-width: 40em) {
+  .top-bar {
+    text-align: center;
+  }
+  ul.center-buttons {
+    display: inline-block;
+  }
+  .logo {
+    left: 5px;
+    top: -2px;
+    position: absolute;
+  }
+}
+
+// some mobile resets
+.logo {
+  max-width: 2rem;
+  margin-top: -3px;
+  margin-left: 5px;
+}
+
+// .menu-icon {
+//   padding-top: 1.2rem;
+// }
+// .top-bar.expanded {
+//   background: #333333;
+// }
+// .nav{
+//     width: 100%;
+//   .sub-nav{
+//     list-style: none;
+//     margin: auto;
+//     width: 50%;
+//     }
+//     li {
+//         width: 20%;
+//         min-width: 88px;
+//     }
+// }
+
+ 
 // Or selectively include components
 // @import
 //   "foundation/components/accordion",
