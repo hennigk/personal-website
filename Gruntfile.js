@@ -29,12 +29,28 @@ module.exports = function(grunt) {
         files: 'scss/**/*.scss',
         tasks: ['sass']
       }
+    },
+    bowercopy: {
+  options: {
+    srcPrefix: 'bower_components'
+  },
+  scripts: {
+    options: {
+      destPrefix: 'js'
+    },
+    files: {
+      'lib/jquery.js': 'jquery/dist/jquery.min.js',
+      'lib/modernizr.js': 'modernizr/modernizr.js',
+      'lib/foundation.min.js': 'foundation/js/foundation.min.js'
     }
+  }
+}
   });
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-bowercopy');
 
-  grunt.registerTask('build', ['sass']);
+  grunt.registerTask('build', ['sass', 'bowercopy']);
   grunt.registerTask('default', ['build','watch']);
 }
