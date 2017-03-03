@@ -39,7 +39,7 @@ module.exports = function(grunt) {
       destPrefix: 'js'
     },
     files: {
-      'lib/jquery.js': 'jquery/dist/jquery.min.js',
+      'lib/jquery.min.js': 'jquery/dist/jquery.min.js',
       'lib/modernizr.js': 'modernizr/modernizr.js',
       'lib/foundation.min.js': 'foundation/js/foundation.min.js'
     }
