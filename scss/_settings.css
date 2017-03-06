@@ -1,41 +1,26 @@
 /*
 Error: File to import not found or unreadable: foundation/functions.
         on line 58 of /home/ubuntu/workspace/scss/_settings.scss
-        from line 1 of /home/ubuntu/workspace/scss/app.scss
 
-53: }
-54: .skills{
-55:     h2, h3 {
-56:         color: $header-color;
-57:     }
-58:     .panel {
-59:         background-color: white;
-60:         img{
-61:             max-width: 200px;
-62:             height: 120px;
-63:             display: block;
+53: 
+54: // This is the default html and body font-size for the base rem value.
+55: // $rem-base: 16px;
+56: 
+57: // Allows the use of rem-calc() or lower-bound() in your settings
+58: @import 'foundation/functions';
+59: 
+60: // The default font-size is set to 100% of the browser style sheet (usually 16px)
+61: // for compatibility with browser-based text zoom or user-set defaults.
+62: 
+63: // Since the typical default browser font-size is 16px, that makes the calculation for grid size.
 
 Backtrace:
 /home/ubuntu/workspace/scss/_settings.scss:58
-/home/ubuntu/workspace/scss/app.scss:1
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/import_node.rb:45:in `import'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/import_node.rb:28:in `imported_file'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/import_node.rb:37:in `css_import?'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:326:in `block (2 levels) in visit_import'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:326:in `map'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/stack.rb:88:in `block in with_import'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/stack.rb:88:in `with_import'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
@@ -75,4 +60,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: foundation/functions.\A         on line 58 of /home/ubuntu/workspace/scss/_settings.scss\A         from line 1 of /home/ubuntu/workspace/scss/app.scss\A \A 53: }\A 54: .skills{\A 55:     h2, h3 {\A 56:         color: $header-color;\A 57:     }\A 58:     .panel {\A 59:         background-color: white;\A 60:         img{\A 61:             max-width: 200px;\A 62:             height: 120px;\A 63:             display: block;"; }
+  content: "Error: File to import not found or unreadable: foundation/functions.\A         on line 58 of /home/ubuntu/workspace/scss/_settings.scss\A \A 53: \A 54: // This is the default html and body font-size for the base rem value.\A 55: // $rem-base: 16px;\A 56: \A 57: // Allows the use of rem-calc() or lower-bound() in your settings\A 58: @import 'foundation/functions';\A 59: \A 60: // The default font-size is set to 100% of the browser style sheet (usually 16px)\A 61: // for compatibility with browser-based text zoom or user-set defaults.\A 62: \A 63: // Since the typical default browser font-size is 16px, that makes the calculation for grid size."; }

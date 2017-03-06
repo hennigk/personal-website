@@ -53,7 +53,6 @@ header{
 }
 .skills{
     h2, h3 {
-        // text-align: center;
         color: $header-color;
     }
     .panel {
@@ -69,8 +68,19 @@ header{
         }
     }
 }
-
-.work {
+.work{
+    h3 {
+        // text-align: center;
+        color: $header-color;
+    }
+    h4 {
+        color: $body-font-color;
+    }
+    li {
+        margin-bottom: 8px;
+    }
+}
+.projects {
     img {
         max-width: 400px;
     }
