@@ -1,4 +1,4 @@
-@import "settings";
+@import "foundation/settings";
 @import "foundation";
 
 $primary-background-color: #26C6DA;
@@ -70,7 +70,6 @@ header{
 }
 .work{
     h3 {
-        // text-align: center;
         color: $header-color;
     }
     h4 {
